@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Alimentos View Controller-->
+        <!--Alimentacion-->
         <scene sceneID="0ms-6W-Oha">
             <objects>
                 <viewController id="nfV-Xx-8i4" customClass="AlimentosViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,28 +22,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lPH-ag-zay">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <items>
-                                    <barButtonItem image="Add Rule-50.png" id="2KG-7a-vUa">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="RBw-am-DKN"/>
-                                    <barButtonItem image="Area Chart-501.png" id="WW7-KO-SaS">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="2PK-tb-xdO" kind="show" id="d1R-Qk-LzS"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="hYx-lG-xII"/>
-                                    <barButtonItem image="Caloric Energy-50.png" id="IJa-iW-JQh">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="fA8-az-7Zo" kind="show" id="1Rh-Uf-OCi"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
                             <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZGA-LH-kmu">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <textAttributes key="titleTextAttributes">
@@ -106,12 +84,9 @@
                             <constraint firstItem="ZGA-LH-kmu" firstAttribute="top" secondItem="bbg-aN-pvQ" secondAttribute="bottom" constant="8" id="2Zr-v9-aYI"/>
                             <constraint firstItem="W7n-Vk-zQD" firstAttribute="leading" secondItem="aeH-IC-ybe" secondAttribute="trailing" constant="32" id="766-TS-BIU"/>
                             <constraint firstItem="ZGA-LH-kmu" firstAttribute="top" secondItem="bbg-aN-pvQ" secondAttribute="bottom" id="8B5-nN-Hsl"/>
-                            <constraint firstItem="7kc-Xf-puM" firstAttribute="top" secondItem="lPH-ag-zay" secondAttribute="bottom" id="BU6-Yb-v0z"/>
                             <constraint firstItem="4qV-Zt-xwc" firstAttribute="top" secondItem="OBz-pP-MMk" secondAttribute="bottom" constant="13" id="COW-Zv-6yn"/>
                             <constraint firstItem="OBz-pP-MMk" firstAttribute="top" secondItem="W7n-Vk-zQD" secondAttribute="bottom" constant="14" id="Ctg-hv-N93"/>
-                            <constraint firstItem="lPH-ag-zay" firstAttribute="leading" secondItem="Xnc-D1-yzt" secondAttribute="leadingMargin" constant="-20" id="EB0-B1-E1f"/>
                             <constraint firstItem="OBz-pP-MMk" firstAttribute="top" secondItem="W7n-Vk-zQD" secondAttribute="bottom" constant="14" id="HEX-gd-gQ1"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="lPH-ag-zay" secondAttribute="trailing" constant="-20" id="LSX-Bn-QBW"/>
                             <constraint firstItem="OBz-pP-MMk" firstAttribute="centerX" secondItem="Xnc-D1-yzt" secondAttribute="centerX" id="PhV-Q7-ChC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZGA-LH-kmu" secondAttribute="trailing" constant="-20" id="REa-OW-fZe"/>
                             <constraint firstItem="ZGA-LH-kmu" firstAttribute="centerX" secondItem="Xnc-D1-yzt" secondAttribute="centerX" id="Rk2-2h-yBN"/>
@@ -119,7 +94,6 @@
                             <constraint firstItem="ZGA-LH-kmu" firstAttribute="centerX" secondItem="Xnc-D1-yzt" secondAttribute="centerX" id="UAF-gx-QRo"/>
                             <constraint firstItem="N04-Mn-kon" firstAttribute="trailing" secondItem="Xnc-D1-yzt" secondAttribute="trailingMargin" id="esh-XL-YwH"/>
                             <constraint firstItem="ZGA-LH-kmu" firstAttribute="leading" secondItem="Xnc-D1-yzt" secondAttribute="leadingMargin" constant="-20" id="llB-e3-kek"/>
-                            <constraint firstItem="lPH-ag-zay" firstAttribute="centerX" secondItem="Xnc-D1-yzt" secondAttribute="centerX" id="nWd-Fr-2Uv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZGA-LH-kmu" secondAttribute="trailing" constant="-20" id="sM1-Px-DOe"/>
                             <constraint firstItem="N04-Mn-kon" firstAttribute="leading" secondItem="W7n-Vk-zQD" secondAttribute="trailing" constant="23" id="u1R-e7-mc7"/>
                             <constraint firstItem="W7n-Vk-zQD" firstAttribute="top" secondItem="ZGA-LH-kmu" secondAttribute="bottom" constant="16" id="w7G-IJ-KMD"/>
@@ -130,6 +104,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Alimentacion" image="Add Rule-50.png" id="VeC-I6-3cO"/>
                     <connections>
                         <outlet property="pickerFoodView" destination="aeH-IC-ybe" id="qEc-jE-Nmm"/>
                         <outlet property="pickerQuantityView" destination="N04-Mn-kon" id="bfT-d5-UP8"/>
@@ -138,9 +113,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bjg-Hf-jbi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1906.5" y="-999.5"/>
+            <point key="canvasLocation" x="2183" y="-1146"/>
         </scene>
-        <!--View Controller-->
+        <!--Graficas-->
         <scene sceneID="ipa-kJ-1dm">
             <objects>
                 <viewController id="2PK-tb-xdO" sceneMemberID="viewController">
@@ -152,28 +127,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zTe-2u-rmF">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <items>
-                                    <barButtonItem image="Add Rule-50.png" id="6bg-v4-DrU">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="nfV-Xx-8i4" kind="show" id="iJd-0K-CDw"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="a3y-My-tEg"/>
-                                    <barButtonItem image="Area Chart-501.png" id="Qif-G7-Vc4">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="03l-3v-twA"/>
-                                    <barButtonItem image="Caloric Energy-50.png" id="bHh-97-VLh">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="fA8-az-7Zo" kind="show" id="P6s-b0-WWA"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
                             <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q5j-0M-up9">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <textAttributes key="titleTextAttributes">
@@ -195,21 +148,18 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="q5j-0M-up9" firstAttribute="centerX" secondItem="nOL-4r-QZg" secondAttribute="centerX" id="45r-2r-vwl"/>
-                            <constraint firstItem="zTe-2u-rmF" firstAttribute="leading" secondItem="nOL-4r-QZg" secondAttribute="leadingMargin" constant="-20" id="6AC-Zb-y0U"/>
                             <constraint firstItem="q5j-0M-up9" firstAttribute="top" secondItem="Owq-u3-zyd" secondAttribute="bottom" constant="8" id="FmU-CT-wxs"/>
                             <constraint firstAttribute="trailingMargin" secondItem="q5j-0M-up9" secondAttribute="trailing" constant="-20" id="Lxf-hu-rHB"/>
-                            <constraint firstItem="Xc7-GH-aGl" firstAttribute="top" secondItem="zTe-2u-rmF" secondAttribute="bottom" id="TN0-Bw-YTU"/>
-                            <constraint firstItem="zTe-2u-rmF" firstAttribute="centerX" secondItem="nOL-4r-QZg" secondAttribute="centerX" id="qnE-HJ-Ynt"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="zTe-2u-rmF" secondAttribute="trailing" constant="-20" id="vTt-Ar-fPq"/>
                             <constraint firstItem="q5j-0M-up9" firstAttribute="leading" secondItem="nOL-4r-QZg" secondAttribute="leadingMargin" constant="-20" id="xYd-lF-qBv"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Graficas" image="Line" id="jMY-J7-0pD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ppP-gX-OQ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2349.5" y="-999.5"/>
+            <point key="canvasLocation" x="2706" y="-1951"/>
         </scene>
-        <!--View Controller-->
+        <!--Dieta-->
         <scene sceneID="fo1-8s-xOo">
             <objects>
                 <viewController id="fA8-az-7Zo" sceneMemberID="viewController">
@@ -221,28 +171,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mZJ-ha-qvO">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <items>
-                                    <barButtonItem image="Add Rule-50.png" id="bAJ-5K-EjG">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="nfV-Xx-8i4" kind="show" id="CqH-xy-Zot"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="V4z-ZK-U9V"/>
-                                    <barButtonItem image="Area Chart-501.png" id="1G3-3W-I93">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="2PK-tb-xdO" kind="show" id="d57-VZ-tg1"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="9GW-0j-x8q"/>
-                                    <barButtonItem image="Caloric Energy-50.png" id="R4b-VI-c7e">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
                             <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RXI-2c-GFn">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <textAttributes key="titleTextAttributes">
@@ -266,19 +194,16 @@
                             <constraint firstAttribute="trailingMargin" secondItem="RXI-2c-GFn" secondAttribute="trailing" constant="-20" id="3lS-eB-URx"/>
                             <constraint firstItem="RXI-2c-GFn" firstAttribute="top" secondItem="xRc-rg-KAW" secondAttribute="bottom" constant="8" id="8N3-Br-DXh"/>
                             <constraint firstItem="RXI-2c-GFn" firstAttribute="centerX" secondItem="I3W-df-Lzy" secondAttribute="centerX" id="BPF-0X-BmP"/>
-                            <constraint firstItem="i44-lC-eod" firstAttribute="top" secondItem="mZJ-ha-qvO" secondAttribute="bottom" id="N2n-Bq-MgL"/>
-                            <constraint firstItem="mZJ-ha-qvO" firstAttribute="leading" secondItem="I3W-df-Lzy" secondAttribute="leadingMargin" constant="-20" id="aQl-6H-mrz"/>
-                            <constraint firstItem="mZJ-ha-qvO" firstAttribute="centerX" secondItem="I3W-df-Lzy" secondAttribute="centerX" id="iAp-pL-X7F"/>
                             <constraint firstItem="RXI-2c-GFn" firstAttribute="leading" secondItem="I3W-df-Lzy" secondAttribute="leadingMargin" constant="-20" id="jCW-mj-Kpk"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="mZJ-ha-qvO" secondAttribute="trailing" constant="-20" id="oZ6-d2-r5y"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Dieta" image="Caloric Energy-50.png" id="YO1-6k-4GK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XwS-67-Udb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2806.5" y="-999.5"/>
+            <point key="canvasLocation" x="3593" y="-1332"/>
         </scene>
-        <!--View Controller-->
+        <!--Mediciones-->
         <scene sceneID="1pF-my-3Vv">
             <objects>
                 <viewController id="4m4-Ux-aWw" sceneMemberID="viewController">
@@ -307,61 +232,42 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bP1-LD-gaE">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <items>
-                                    <barButtonItem image="Pill-50.png" id="HGb-RR-usi">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="S6b-EI-ZRE"/>
-                                    <barButtonItem image="Line Chart Filled-25.png" id="iQi-v5-nWm">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="gOY-Nl-Kvw" kind="show" id="9TQ-wh-0a2"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="hyH-hd-ofh"/>
-                                    <barButtonItem image="Alarm Clock-25.png" id="PSV-bH-oo1">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="fzw-fl-cPa" kind="show" id="Thm-4L-DNH"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Vxr-gn-K1i"/>
-                                    <barButtonItem image="Facebook Filled-25.png" id="QyJ-jx-hVu">
-                                        <connections>
-                                            <segue destination="dCq-KN-96Y" kind="show" id="1mv-U8-StZ"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="2q8-iH-ShR"/>
-                                    <barButtonItem image="Add Shopping Cart-50.png" id="bC5-RJ-FVa">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="tSj-k5-Ucz" kind="show" id="OSD-05-kac"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="bP1-LD-gaE" secondAttribute="trailing" constant="-20" id="0G5-uV-b7w"/>
                             <constraint firstItem="ZrX-Sr-yeJ" firstAttribute="centerX" secondItem="rCD-We-b7e" secondAttribute="centerX" id="0uR-Jf-M4p"/>
-                            <constraint firstItem="m0J-XB-S3M" firstAttribute="top" secondItem="bP1-LD-gaE" secondAttribute="bottom" id="6gu-Yq-0ts"/>
                             <constraint firstItem="ZrX-Sr-yeJ" firstAttribute="leading" secondItem="rCD-We-b7e" secondAttribute="leadingMargin" constant="-20" id="9gs-Vv-OLw"/>
-                            <constraint firstItem="bP1-LD-gaE" firstAttribute="centerX" secondItem="rCD-We-b7e" secondAttribute="centerX" id="Fse-YO-dmY"/>
-                            <constraint firstItem="bP1-LD-gaE" firstAttribute="leading" secondItem="rCD-We-b7e" secondAttribute="leadingMargin" constant="-20" id="JkI-Fg-O8C"/>
                             <constraint firstItem="ZrX-Sr-yeJ" firstAttribute="top" secondItem="RXK-e1-38u" secondAttribute="bottom" id="QOX-WO-bZK"/>
                             <constraint firstItem="ZrX-Sr-yeJ" firstAttribute="centerX" secondItem="rCD-We-b7e" secondAttribute="centerX" id="o7h-Y8-HG7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZrX-Sr-yeJ" secondAttribute="trailing" constant="-20" id="swA-nI-KJW"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Mediciones" image="Pill-50.png" selectedImage="Pill-50.png" id="QuG-Jt-B8r"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B6u-hP-MDS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1010.5" y="-1858.5"/>
+            <point key="canvasLocation" x="828" y="-2425"/>
         </scene>
-        <!--Facebook View Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="DEW-NM-qsg">
+            <objects>
+                <tabBarController id="4QW-3h-8Z1" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="uiT-7b-PZE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="nfV-Xx-8i4" kind="relationship" relationship="viewControllers" id="VZG-ZB-Fjr"/>
+                        <segue destination="2PK-tb-xdO" kind="relationship" relationship="viewControllers" id="W5g-ck-wAI"/>
+                        <segue destination="fA8-az-7Zo" kind="relationship" relationship="viewControllers" id="PG7-om-qtW"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TcN-aT-tbM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1842" y="-1888"/>
+        </scene>
+        <!--Facebook-->
         <scene sceneID="Wp8-aw-l6b">
             <objects>
                 <viewController id="dCq-KN-96Y" customClass="FacebookViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
@@ -373,40 +279,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PIr-K9-Cn8">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <items>
-                                    <barButtonItem image="Pill-50.png" id="eVW-In-Loh">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="4m4-Ux-aWw" kind="show" id="oDj-cV-OBK"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="PEb-5R-3HV"/>
-                                    <barButtonItem image="Line Chart Filled-25.png" id="Zel-09-7Ey">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="gOY-Nl-Kvw" kind="show" id="fAO-3J-u5R"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="XEA-y4-eFR"/>
-                                    <barButtonItem image="Alarm Clock-25.png" id="k5X-b4-1ib">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="fzw-fl-cPa" kind="show" id="RsU-ut-qWe"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="YPL-Rd-5bP"/>
-                                    <barButtonItem image="Facebook Filled-25.png" id="oUV-HH-ukr"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="bbO-yj-4f5"/>
-                                    <barButtonItem image="Add Shopping Cart-50.png" id="cXr-EJ-IxM">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="tSj-k5-Ucz" kind="show" id="xJs-dZ-4fS"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
                             <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="urA-LG-UWo">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <textAttributes key="titleTextAttributes">
@@ -424,7 +296,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MJC-g2-ecp">
+                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MJC-g2-ecp">
                                 <rect key="frame" x="0.0" y="72" width="375" height="551"/>
                                 <color key="backgroundColor" red="0.28958413004875183" green="0.31462949514389038" blue="0.32950475811958313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
@@ -432,28 +304,24 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="MJC-g2-ecp" secondAttribute="trailing" constant="-20" id="39T-i5-REl"/>
-                            <constraint firstItem="yzM-DW-Px3" firstAttribute="top" secondItem="PIr-K9-Cn8" secondAttribute="bottom" id="9VF-HR-TsD"/>
                             <constraint firstItem="MJC-g2-ecp" firstAttribute="top" secondItem="urA-LG-UWo" secondAttribute="bottom" id="ACe-hy-rWY"/>
-                            <constraint firstItem="PIr-K9-Cn8" firstAttribute="top" secondItem="MJC-g2-ecp" secondAttribute="bottom" id="BzK-Fl-89O"/>
-                            <constraint firstItem="PIr-K9-Cn8" firstAttribute="leading" secondItem="dJo-d8-kcQ" secondAttribute="leadingMargin" constant="-20" id="FPp-l9-BAX"/>
-                            <constraint firstItem="PIr-K9-Cn8" firstAttribute="centerX" secondItem="dJo-d8-kcQ" secondAttribute="centerX" id="Ia7-xB-HFu"/>
                             <constraint firstItem="urA-LG-UWo" firstAttribute="centerX" secondItem="dJo-d8-kcQ" secondAttribute="centerX" id="Idk-ia-vxq"/>
                             <constraint firstItem="MJC-g2-ecp" firstAttribute="leading" secondItem="dJo-d8-kcQ" secondAttribute="leadingMargin" constant="-20" id="MQB-1F-dnL"/>
                             <constraint firstItem="urA-LG-UWo" firstAttribute="top" secondItem="Zqu-oD-lm7" secondAttribute="bottom" constant="8" id="Uhj-ua-MEe"/>
                             <constraint firstItem="urA-LG-UWo" firstAttribute="leading" secondItem="dJo-d8-kcQ" secondAttribute="leadingMargin" constant="-20" id="cCH-l7-Fgk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="urA-LG-UWo" secondAttribute="trailing" constant="-20" id="w0M-YS-IfP"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="PIr-K9-Cn8" secondAttribute="trailing" constant="-20" id="zdv-Uj-zwG"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Facebook" image="Facebook" id="dER-rI-ohL"/>
                     <connections>
                         <outlet property="webView" destination="MJC-g2-ecp" id="zbT-BE-xr4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vbT-LR-E1M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-356.5" y="-1858.5"/>
+            <point key="canvasLocation" x="-1604" y="-2248"/>
         </scene>
-        <!--View Controller-->
+        <!--Tratamiento-->
         <scene sceneID="qoD-0w-72b">
             <objects>
                 <viewController id="gOY-Nl-Kvw" sceneMemberID="viewController">
@@ -465,41 +333,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K8Q-6m-min">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <items>
-                                    <barButtonItem image="Pill-50.png" id="30c-05-eti">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="4m4-Ux-aWw" kind="show" id="ylS-UZ-rb7"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="wty-9O-atp"/>
-                                    <barButtonItem image="Line Chart Filled-25.png" id="75g-Bn-jwo">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="QgX-PZ-ogc"/>
-                                    <barButtonItem image="Alarm Clock-25.png" id="l6D-OU-6D2">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="fzw-fl-cPa" kind="show" id="L9N-zH-w5b"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="K3F-bm-iux"/>
-                                    <barButtonItem image="Facebook Filled-25.png" id="4oa-5G-r3M">
-                                        <connections>
-                                            <segue destination="dCq-KN-96Y" kind="show" id="Bsp-gw-neb"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="bBY-01-YLN"/>
-                                    <barButtonItem image="Add Shopping Cart-50.png" id="SPI-zC-JA5">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="tSj-k5-Ucz" kind="show" id="0dO-Fz-lsD"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
                             <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FyT-b3-j3M">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <textAttributes key="titleTextAttributes">
@@ -522,20 +355,17 @@
                         <constraints>
                             <constraint firstItem="FyT-b3-j3M" firstAttribute="top" secondItem="aRD-Rd-2uw" secondAttribute="bottom" constant="8" id="1EZ-O8-tLj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="FyT-b3-j3M" secondAttribute="trailing" constant="-20" id="2je-Hg-FJe"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="K8Q-6m-min" secondAttribute="trailing" constant="-20" id="4zQ-Gl-8h4"/>
-                            <constraint firstItem="0kp-4N-ud4" firstAttribute="top" secondItem="K8Q-6m-min" secondAttribute="bottom" id="8qt-TG-p5U"/>
-                            <constraint firstItem="K8Q-6m-min" firstAttribute="centerX" secondItem="jbF-yP-Ea8" secondAttribute="centerX" id="Bq5-nR-k5k"/>
-                            <constraint firstItem="K8Q-6m-min" firstAttribute="leading" secondItem="jbF-yP-Ea8" secondAttribute="leadingMargin" constant="-20" id="TLL-6f-83g"/>
                             <constraint firstItem="FyT-b3-j3M" firstAttribute="leading" secondItem="jbF-yP-Ea8" secondAttribute="leadingMargin" constant="-20" id="Vyz-mG-36h"/>
                             <constraint firstItem="FyT-b3-j3M" firstAttribute="centerX" secondItem="jbF-yP-Ea8" secondAttribute="centerX" id="v62-MR-0al"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Tratamiento" image="Heart Monitor-50.png" id="Ygd-Ew-K9v"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lew-yY-55W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="582.5" y="-1858.5"/>
+            <point key="canvasLocation" x="130" y="-1916"/>
         </scene>
-        <!--View Controller-->
+        <!--Alarma-->
         <scene sceneID="LO8-ZJ-xSM">
             <objects>
                 <viewController id="fzw-fl-cPa" sceneMemberID="viewController">
@@ -547,41 +377,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KJ3-aY-REa">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <items>
-                                    <barButtonItem image="Pill-50.png" id="Fis-HM-ljH">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="4m4-Ux-aWw" kind="show" id="iBm-go-LQ6"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Gxm-i9-PaP"/>
-                                    <barButtonItem image="Line Chart Filled-25.png" id="iPx-ks-5WR">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="gOY-Nl-Kvw" kind="show" id="Vjw-kq-9GE"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="YfE-80-gRq"/>
-                                    <barButtonItem image="Alarm Clock-25.png" id="6pc-Z4-uUn">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="gBG-G5-XHv"/>
-                                    <barButtonItem image="Facebook Filled-25.png" id="Odc-wa-igY">
-                                        <connections>
-                                            <segue destination="dCq-KN-96Y" kind="show" id="GyO-dY-x4K"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="7pL-E2-d18"/>
-                                    <barButtonItem image="Add Shopping Cart-50.png" id="3Ck-0i-89L">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="tSj-k5-Ucz" kind="show" id="nVU-Tr-lfj"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
                             <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zKB-8G-TXr">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <textAttributes key="titleTextAttributes">
@@ -603,21 +398,18 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="zKB-8G-TXr" firstAttribute="top" secondItem="Xvo-vW-Ng4" secondAttribute="bottom" constant="8" id="3CW-Dq-fHt"/>
-                            <constraint firstItem="KJ3-aY-REa" firstAttribute="leading" secondItem="JOn-Dj-8Wa" secondAttribute="leadingMargin" constant="-20" id="Dc6-vu-qRT"/>
                             <constraint firstItem="zKB-8G-TXr" firstAttribute="centerX" secondItem="JOn-Dj-8Wa" secondAttribute="centerX" id="VMm-ff-N5l"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="KJ3-aY-REa" secondAttribute="trailing" constant="-20" id="am8-fu-I19"/>
-                            <constraint firstItem="48M-Ey-w7m" firstAttribute="top" secondItem="KJ3-aY-REa" secondAttribute="bottom" id="blC-nK-RoR"/>
-                            <constraint firstItem="KJ3-aY-REa" firstAttribute="centerX" secondItem="JOn-Dj-8Wa" secondAttribute="centerX" id="kqa-U5-dXx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zKB-8G-TXr" secondAttribute="trailing" constant="-20" id="v59-wV-CMG"/>
                             <constraint firstItem="zKB-8G-TXr" firstAttribute="leading" secondItem="JOn-Dj-8Wa" secondAttribute="leadingMargin" constant="-20" id="yV5-fD-BgJ"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Alarma" image="AlarmClock" id="oCT-i9-EOI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qpq-K7-3iD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="96.5" y="-1858.5"/>
+            <point key="canvasLocation" x="-842" y="-2257"/>
         </scene>
-        <!--View Controller-->
+        <!--Compras-->
         <scene sceneID="m1G-Vg-dIr">
             <objects>
                 <viewController id="tSj-k5-Ucz" sceneMemberID="viewController">
@@ -629,41 +421,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="94X-Kt-TRu">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <items>
-                                    <barButtonItem image="Pill-50.png" id="fnw-Th-Fek">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="4m4-Ux-aWw" kind="show" id="1SY-B5-kpo"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="k0i-rx-ion"/>
-                                    <barButtonItem image="Line Chart Filled-25.png" id="Cuq-iD-gKT">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="gOY-Nl-Kvw" kind="show" id="xzn-dz-ubl"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="J5B-u1-KRa"/>
-                                    <barButtonItem image="Alarm Clock-25.png" id="jkT-b9-FjU">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="fzw-fl-cPa" kind="show" id="dcP-1F-bWP"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="QJa-OQ-kij"/>
-                                    <barButtonItem image="Facebook Filled-25.png" id="H5x-hY-Qfm">
-                                        <connections>
-                                            <segue destination="dCq-KN-96Y" kind="show" id="ba8-zo-652"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Gav-pa-7Qv"/>
-                                    <barButtonItem image="Add Shopping Cart-50.png" id="yTR-kO-qc5">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
                             <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="21h-ya-a4L">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <textAttributes key="titleTextAttributes">
@@ -685,19 +442,37 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="21h-ya-a4L" firstAttribute="leading" secondItem="0oK-DT-MNp" secondAttribute="leadingMargin" constant="-20" id="4Nb-qI-fyo"/>
-                            <constraint firstItem="94X-Kt-TRu" firstAttribute="leading" secondItem="0oK-DT-MNp" secondAttribute="leadingMargin" constant="-20" id="6Xi-5H-gUo"/>
-                            <constraint firstItem="sRS-f9-YEW" firstAttribute="top" secondItem="94X-Kt-TRu" secondAttribute="bottom" id="Eru-Rh-W13"/>
                             <constraint firstItem="21h-ya-a4L" firstAttribute="centerX" secondItem="0oK-DT-MNp" secondAttribute="centerX" id="brx-Oy-thl"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="94X-Kt-TRu" secondAttribute="trailing" constant="-20" id="flR-3T-9hY"/>
-                            <constraint firstItem="94X-Kt-TRu" firstAttribute="centerX" secondItem="0oK-DT-MNp" secondAttribute="centerX" id="ugf-nz-xOw"/>
                             <constraint firstItem="21h-ya-a4L" firstAttribute="top" secondItem="cj2-Kt-ysR" secondAttribute="bottom" constant="8" id="wdX-7Z-tiv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="21h-ya-a4L" secondAttribute="trailing" constant="-20" id="x8V-fZ-2dT"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Compras" image="Add Shopping Cart-50.png" id="S1v-dF-mwR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y7Y-W5-2sa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-736.5" y="-1858.5"/>
+            <point key="canvasLocation" x="-2807" y="-2257"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="vAg-9y-UEi">
+            <objects>
+                <tabBarController id="bMA-L4-gNG" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="9cr-wt-zUT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="4m4-Ux-aWw" kind="relationship" relationship="viewControllers" id="4Zp-On-qHL"/>
+                        <segue destination="fzw-fl-cPa" kind="relationship" relationship="viewControllers" id="3ZQ-w9-s3M"/>
+                        <segue destination="dCq-KN-96Y" kind="relationship" relationship="viewControllers" id="xXi-Zy-KUR"/>
+                        <segue destination="tSj-k5-Ucz" kind="relationship" relationship="viewControllers" id="PNz-jg-Ywl"/>
+                        <segue destination="gOY-Nl-Kvw" kind="relationship" relationship="viewControllers" id="vXZ-r6-GeT"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DlX-3W-xfd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="351" y="-1215"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="hor-YJ-xbY">
@@ -730,7 +505,7 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="tips.png"/>
                                 <connections>
-                                    <segue destination="Mdw-D7-JNB" kind="show" id="e4M-JY-Z9U"/>
+                                    <segue destination="uPi-Ic-og2" kind="show" id="wE1-7V-d7W"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Calendario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HsG-lb-poG">
@@ -785,7 +560,7 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="alimentos.png"/>
                                 <connections>
-                                    <segue destination="nfV-Xx-8i4" kind="show" id="QBP-VV-uNK"/>
+                                    <segue destination="4QW-3h-8Z1" kind="show" id="wmz-pG-feU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08d-7z-cPM">
@@ -796,7 +571,7 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="insulina.png"/>
                                 <connections>
-                                    <segue destination="4m4-Ux-aWw" kind="show" id="xaW-sf-ULF"/>
+                                    <segue destination="bMA-L4-gNG" kind="show" id="lbg-Os-gUP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6Y-w4-P7C">
@@ -818,7 +593,7 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="historialMedico.png"/>
                                 <connections>
-                                    <segue destination="86t-xF-FUV" kind="show" id="cxA-Xu-XfX"/>
+                                    <segue destination="YeQ-NJ-b53" kind="show" id="jwx-17-4Ec"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Foros de Discusión" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v3Y-5c-Aoh">
@@ -863,7 +638,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zSQ-Rp-Zyt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="815.5" y="-47.5"/>
+            <point key="canvasLocation" x="582" y="-129"/>
         </scene>
         <!--Tips e Informacion-->
         <scene sceneID="ey3-3I-vwV">
@@ -897,25 +672,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FZz-XE-GMR">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="RbN-la-nfC"/>
-                                </constraints>
-                                <items>
-                                    <barButtonItem image="Info-50.png" id="2z2-fB-1AW">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="jMf-ap-sha"/>
-                                    <barButtonItem image="Christmas Star Filled-25.png" id="SdT-04-y4S">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="D2i-vy-CIC" kind="show" id="0u9-hf-1L6"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
-                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IT8-ch-Np1">
+                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IT8-ch-Np1">
                                 <rect key="frame" x="0.0" y="64" width="375" height="559"/>
                                 <color key="backgroundColor" red="0.28958413004875183" green="0.31462949514389038" blue="0.32950475811958313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
@@ -924,25 +681,39 @@
                         <constraints>
                             <constraint firstItem="IT8-ch-Np1" firstAttribute="top" secondItem="auq-nM-uou" secondAttribute="bottom" id="2Xa-HS-i8V"/>
                             <constraint firstItem="auq-nM-uou" firstAttribute="centerX" secondItem="epO-yW-icc" secondAttribute="centerX" id="Hq8-Ar-6gW"/>
-                            <constraint firstItem="YA5-WK-Upp" firstAttribute="top" secondItem="FZz-XE-GMR" secondAttribute="bottom" id="Nns-Lp-aPp"/>
                             <constraint firstItem="auq-nM-uou" firstAttribute="leading" secondItem="epO-yW-icc" secondAttribute="leadingMargin" constant="-20" id="TPy-ZP-vVs"/>
                             <constraint firstItem="auq-nM-uou" firstAttribute="top" secondItem="fsE-ad-c3Y" secondAttribute="bottom" id="VYa-fX-ABs"/>
-                            <constraint firstItem="FZz-XE-GMR" firstAttribute="centerX" secondItem="epO-yW-icc" secondAttribute="centerX" id="Wyb-Ub-fer"/>
                             <constraint firstAttribute="trailingMargin" secondItem="auq-nM-uou" secondAttribute="trailing" constant="-20" id="XYt-eY-afE"/>
-                            <constraint firstItem="FZz-XE-GMR" firstAttribute="top" secondItem="IT8-ch-Np1" secondAttribute="bottom" id="eT3-5j-Itb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="IT8-ch-Np1" secondAttribute="trailing" constant="-20" id="jjL-un-KLC"/>
-                            <constraint firstItem="FZz-XE-GMR" firstAttribute="leading" secondItem="epO-yW-icc" secondAttribute="leadingMargin" constant="-20" id="rmh-22-Lvd"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="FZz-XE-GMR" secondAttribute="trailing" constant="-20" id="sTm-R4-IHN"/>
                             <constraint firstItem="IT8-ch-Np1" firstAttribute="leading" secondItem="epO-yW-icc" secondAttribute="leadingMargin" constant="-20" id="vhR-gm-gdq"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Tipo" image="Info-50.png" id="JNA-J1-4Is"/>
                     <connections>
                         <outlet property="webView" destination="IT8-ch-Np1" id="Kjb-ej-WNb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t2s-wV-pNb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="204.5" y="1130.5"/>
+            <point key="canvasLocation" x="-311" y="1490"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="s7o-9x-vh9">
+            <objects>
+                <tabBarController id="uPi-Ic-og2" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="cXd-Hw-Yyj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="D2i-vy-CIC" kind="relationship" relationship="viewControllers" id="eCZ-cd-k9I"/>
+                        <segue destination="Mdw-D7-JNB" kind="relationship" relationship="viewControllers" id="3WO-Yz-Phi"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sZ9-fu-2Rv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1031" y="699"/>
         </scene>
         <!--Rewards-->
         <scene sceneID="hOA-cr-cj8">
@@ -956,21 +727,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i1O-0o-JtZ">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <items>
-                                    <barButtonItem image="Info-50.png" id="SPw-Ik-KQI">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="Mdw-D7-JNB" kind="show" id="py2-bD-Yc8"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="KeP-Eq-Bxb"/>
-                                    <barButtonItem image="Christmas Star Filled-25.png" id="Ole-wW-NTm">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
                             <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="orJ-4D-yWK">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <textAttributes key="titleTextAttributes">
@@ -992,19 +748,16 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="orJ-4D-yWK" firstAttribute="top" secondItem="XRd-w5-ozK" secondAttribute="bottom" id="3SN-gA-DkV"/>
-                            <constraint firstItem="i1O-0o-JtZ" firstAttribute="centerX" secondItem="Ok7-Ya-eVR" secondAttribute="centerX" id="3cE-HC-WKx"/>
-                            <constraint firstItem="v9R-ul-l2s" firstAttribute="top" secondItem="i1O-0o-JtZ" secondAttribute="bottom" id="5kj-5B-yIk"/>
                             <constraint firstItem="orJ-4D-yWK" firstAttribute="leading" secondItem="Ok7-Ya-eVR" secondAttribute="leadingMargin" constant="-20" id="G0T-5E-gRp"/>
                             <constraint firstItem="orJ-4D-yWK" firstAttribute="centerX" secondItem="Ok7-Ya-eVR" secondAttribute="centerX" id="Xd1-AQ-SaZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="orJ-4D-yWK" secondAttribute="trailing" constant="-20" id="YLU-ry-VmB"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="i1O-0o-JtZ" secondAttribute="trailing" constant="-20" id="amF-gL-fhG"/>
-                            <constraint firstItem="i1O-0o-JtZ" firstAttribute="leading" secondItem="Ok7-Ya-eVR" secondAttribute="leadingMargin" constant="-20" id="mmo-h2-Uxt"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Recompensas" image="Christmas" id="j6f-pp-Rzd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mVD-FR-2mu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-196.5" y="1130.5"/>
+            <point key="canvasLocation" x="-1311" y="1471"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="KLw-cR-KA7">
@@ -1047,9 +800,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nX9-Xo-xbm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1063" y="965"/>
+            <point key="canvasLocation" x="434" y="1981"/>
         </scene>
-        <!--View Controller-->
+        <!--Historial-->
         <scene sceneID="1ci-eP-dbA">
             <objects>
                 <viewController id="86t-xF-FUV" sceneMemberID="viewController">
@@ -1061,42 +814,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="74F-eO-PLB">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <items>
-                                    <barButtonItem image="Doctors Bag-50.png" id="Nmu-d1-Lel">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="y6U-XZ-C73"/>
-                                    <barButtonItem image="Diabetes-50.png" id="wyw-jb-j5r">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="CKj-bf-oLm" kind="show" id="wgj-pN-x2S"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="3Ps-Fp-xoI"/>
-                                    <barButtonItem image="Health Book-25.png" id="zzI-vg-8Uq">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="CZc-uE-B1V" kind="show" id="pZu-RG-rIP"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="gk8-zK-18F"/>
-                                    <barButtonItem image="Treatment Plan-25.png" id="cgJ-D5-nF7">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="zKs-Te-7kP" kind="show" id="hZQ-Oa-v00"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Bab-zI-Vx2"/>
-                                    <barButtonItem image="Chat Filled-25.png" id="S2J-c1-dVd">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="lLz-pj-pbh" kind="show" id="zVP-at-p8L"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
                             <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hUF-2e-hW0">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <textAttributes key="titleTextAttributes">
@@ -1119,22 +836,19 @@
                         <constraints>
                             <constraint firstItem="hUF-2e-hW0" firstAttribute="leading" secondItem="aYe-4L-H8G" secondAttribute="leadingMargin" constant="-20" id="7Dn-Zx-TDh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hUF-2e-hW0" secondAttribute="trailing" constant="-20" id="AIi-v8-hyB"/>
-                            <constraint firstItem="74F-eO-PLB" firstAttribute="centerX" secondItem="aYe-4L-H8G" secondAttribute="centerX" id="Ml4-hA-pxl"/>
                             <constraint firstItem="hUF-2e-hW0" firstAttribute="top" secondItem="rxn-Tx-nhZ" secondAttribute="bottom" id="ZtO-c4-gue"/>
                             <constraint firstItem="hUF-2e-hW0" firstAttribute="centerX" secondItem="aYe-4L-H8G" secondAttribute="centerX" id="eh8-Sm-28i"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hUF-2e-hW0" secondAttribute="trailing" constant="-20" id="fyd-3X-p8k"/>
-                            <constraint firstItem="74F-eO-PLB" firstAttribute="leading" secondItem="aYe-4L-H8G" secondAttribute="leadingMargin" constant="-20" id="gv4-Qb-E8v"/>
-                            <constraint firstItem="3By-IY-cIS" firstAttribute="top" secondItem="74F-eO-PLB" secondAttribute="bottom" id="jtv-dm-Vfq"/>
                             <constraint firstItem="hUF-2e-hW0" firstAttribute="leading" secondItem="aYe-4L-H8G" secondAttribute="leadingMargin" constant="-20" id="nWy-yv-bWu"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="74F-eO-PLB" secondAttribute="trailing" constant="-20" id="uhl-Ws-Ygo"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Historial" image="Health" id="FaD-HQ-CYK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vVp-62-icU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1730.5" y="1298.5"/>
+            <point key="canvasLocation" x="874" y="1117"/>
         </scene>
-        <!--Glucosa View Controller-->
+        <!--Glucosa-->
         <scene sceneID="oX7-Q5-Fjv">
             <objects>
                 <viewController id="CKj-bf-oLm" customClass="GlucosaViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
@@ -1146,42 +860,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e20-vd-0CM">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <items>
-                                    <barButtonItem image="Doctors Bag-50.png" id="dGi-Y2-2HX">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="86t-xF-FUV" kind="show" id="9ea-bG-tll"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="XKX-hQ-yoh"/>
-                                    <barButtonItem image="Diabetes-50.png" id="PVN-4Z-g9L">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="lWn-1M-6VK"/>
-                                    <barButtonItem image="Health Book-25.png" id="ne1-9f-sAZ">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="CZc-uE-B1V" kind="show" id="8Do-uS-JfN"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="geB-eg-NpJ"/>
-                                    <barButtonItem image="Treatment Plan-25.png" id="ODN-Qg-v4j">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="zKs-Te-7kP" kind="show" id="sRP-vS-tfV"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="B5c-Dc-eZv"/>
-                                    <barButtonItem image="Chat Filled-25.png" id="NZY-qT-kG4">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="lLz-pj-pbh" kind="show" id="rxL-qH-Tph"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
                             <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BB3-oc-RzJ">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <textAttributes key="titleTextAttributes">
@@ -1248,19 +926,15 @@
                             <constraint firstItem="BB3-oc-RzJ" firstAttribute="top" secondItem="2QD-6Q-PFB" secondAttribute="bottom" constant="8" id="0x5-hC-qG5"/>
                             <constraint firstItem="HMj-Xt-mhA" firstAttribute="top" secondItem="sk8-fn-OoW" secondAttribute="bottom" constant="10" id="2MT-Ef-81I"/>
                             <constraint firstItem="HMj-Xt-mhA" firstAttribute="trailing" secondItem="XF0-9Y-ymG" secondAttribute="trailingMargin" id="30Q-Xh-2sR"/>
-                            <constraint firstItem="e20-vd-0CM" firstAttribute="centerX" secondItem="XF0-9Y-ymG" secondAttribute="centerX" id="59b-Ur-hUK"/>
                             <constraint firstItem="sk8-fn-OoW" firstAttribute="centerX" secondItem="XF0-9Y-ymG" secondAttribute="centerX" id="6lg-Ug-Jpg"/>
                             <constraint firstItem="QYT-Yc-jEo" firstAttribute="top" secondItem="qTL-gJ-eBp" secondAttribute="bottom" constant="16" id="7ph-YD-Pnk"/>
                             <constraint firstItem="FYi-f1-5S4" firstAttribute="top" secondItem="HMj-Xt-mhA" secondAttribute="bottom" constant="25" id="ABc-jO-mdd"/>
                             <constraint firstItem="FYi-f1-5S4" firstAttribute="centerX" secondItem="XF0-9Y-ymG" secondAttribute="centerX" id="Atr-jk-U5s"/>
                             <constraint firstItem="QYT-Yc-jEo" firstAttribute="leading" secondItem="XF0-9Y-ymG" secondAttribute="leadingMargin" id="T7n-Gn-bRm"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="e20-vd-0CM" secondAttribute="trailing" constant="-20" id="UQw-O1-igR"/>
-                            <constraint firstItem="e20-vd-0CM" firstAttribute="leading" secondItem="XF0-9Y-ymG" secondAttribute="leadingMargin" constant="-20" id="a8H-PD-gS4"/>
                             <constraint firstItem="HMj-Xt-mhA" firstAttribute="centerX" secondItem="XF0-9Y-ymG" secondAttribute="centerX" id="czk-yk-fvM"/>
                             <constraint firstItem="qTL-gJ-eBp" firstAttribute="centerX" secondItem="XF0-9Y-ymG" secondAttribute="centerX" id="dDq-iz-DQz"/>
                             <constraint firstItem="oJK-My-Ppb" firstAttribute="top" secondItem="FYi-f1-5S4" secondAttribute="bottom" constant="13" id="dg1-7l-Hlw"/>
                             <constraint firstItem="BB3-oc-RzJ" firstAttribute="leading" secondItem="XF0-9Y-ymG" secondAttribute="leadingMargin" constant="-20" id="hYH-ba-HKq"/>
-                            <constraint firstItem="bIL-Px-YsM" firstAttribute="top" secondItem="e20-vd-0CM" secondAttribute="bottom" id="iPl-gv-ZXf"/>
                             <constraint firstAttribute="trailingMargin" secondItem="BB3-oc-RzJ" secondAttribute="trailing" constant="-20" id="j7s-06-FJN"/>
                             <constraint firstItem="oJK-My-Ppb" firstAttribute="trailing" secondItem="XF0-9Y-ymG" secondAttribute="trailingMargin" id="jtZ-PR-Ghd"/>
                             <constraint firstItem="HMj-Xt-mhA" firstAttribute="leading" secondItem="XF0-9Y-ymG" secondAttribute="leadingMargin" id="nMB-KG-fJq"/>
@@ -1271,6 +945,7 @@
                             <constraint firstItem="qTL-gJ-eBp" firstAttribute="top" secondItem="BB3-oc-RzJ" secondAttribute="bottom" constant="21" id="wFU-l0-sPQ"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Glucosa" image="Diabetes-50.png" id="ZWD-ad-tFz"/>
                     <connections>
                         <outlet property="datePicker" destination="QYT-Yc-jEo" id="aOw-LE-1NN"/>
                         <outlet property="labelGlucose" destination="oJK-My-Ppb" id="CkQ-of-rvy"/>
@@ -1279,9 +954,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dME-wY-5iK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2146.5" y="1298.5"/>
+            <point key="canvasLocation" x="1628" y="1066"/>
         </scene>
-        <!--View Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="eIq-Sh-cWV">
+            <objects>
+                <tabBarController id="YeQ-NJ-b53" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="b9D-RX-Pop">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="86t-xF-FUV" kind="relationship" relationship="viewControllers" id="ERD-Co-i3W"/>
+                        <segue destination="CKj-bf-oLm" kind="relationship" relationship="viewControllers" id="emI-Eb-5fC"/>
+                        <segue destination="CZc-uE-B1V" kind="relationship" relationship="viewControllers" id="XVb-Sx-Ong"/>
+                        <segue destination="zKs-Te-7kP" kind="relationship" relationship="viewControllers" id="Krr-jE-ogt"/>
+                        <segue destination="lLz-pj-pbh" kind="relationship" relationship="viewControllers" id="ARR-kO-d0l"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bvd-3P-jhi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1690" y="723"/>
+        </scene>
+        <!--Chat-->
         <scene sceneID="emP-6x-BaG">
             <objects>
                 <viewController id="lLz-pj-pbh" sceneMemberID="viewController">
@@ -1293,42 +989,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oc9-rY-vdt">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <items>
-                                    <barButtonItem image="Doctors Bag-50.png" id="ODs-Iq-hAe">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="86t-xF-FUV" kind="show" id="hhi-9C-hT6"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="HJY-7L-Be1"/>
-                                    <barButtonItem image="Diabetes-50.png" id="4f4-b3-WE2">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="CKj-bf-oLm" kind="show" id="T8o-9g-SqU"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="AyZ-N2-mHn"/>
-                                    <barButtonItem image="Health Book-25.png" id="ljT-Zx-3pB">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="CZc-uE-B1V" kind="show" id="r3R-UQ-DqH"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="CZk-0p-kGd"/>
-                                    <barButtonItem image="Treatment Plan-25.png" id="LAg-KD-HAM">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="zKs-Te-7kP" kind="show" id="JFU-ud-Jze"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Kgm-Oz-aPB"/>
-                                    <barButtonItem image="Chat Filled-25.png" id="WGx-Hi-yEi">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
                             <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eOI-wb-qpj">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <textAttributes key="titleTextAttributes">
@@ -1349,22 +1009,19 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ho4-be-itd" firstAttribute="top" secondItem="oc9-rY-vdt" secondAttribute="bottom" id="1YI-7V-1qI"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="oc9-rY-vdt" secondAttribute="trailing" constant="-20" id="Blw-cg-Jp9"/>
                             <constraint firstItem="eOI-wb-qpj" firstAttribute="leading" secondItem="Nzy-Qv-Zgv" secondAttribute="leadingMargin" constant="-20" id="JMc-ax-0o2"/>
-                            <constraint firstItem="oc9-rY-vdt" firstAttribute="leading" secondItem="Nzy-Qv-Zgv" secondAttribute="leadingMargin" constant="-20" id="KOz-pT-7E6"/>
-                            <constraint firstItem="oc9-rY-vdt" firstAttribute="centerX" secondItem="Nzy-Qv-Zgv" secondAttribute="centerX" id="KdR-j2-FjL"/>
                             <constraint firstItem="eOI-wb-qpj" firstAttribute="top" secondItem="bzh-y0-wZL" secondAttribute="bottom" constant="8" id="MUI-9N-iGI"/>
                             <constraint firstAttribute="trailingMargin" secondItem="eOI-wb-qpj" secondAttribute="trailing" constant="-20" id="YsR-6w-uaI"/>
                             <constraint firstItem="eOI-wb-qpj" firstAttribute="centerX" secondItem="Nzy-Qv-Zgv" secondAttribute="centerX" id="ccr-Em-VtD"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Chat" image="Chat" id="dhe-zA-EFW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ehV-Ul-BBZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3429.5" y="1298.5"/>
+            <point key="canvasLocation" x="3871" y="1302"/>
         </scene>
-        <!--View Controller-->
+        <!--FichaMedica-->
         <scene sceneID="X1f-Xd-3yB">
             <objects>
                 <viewController id="zKs-Te-7kP" sceneMemberID="viewController">
@@ -1376,42 +1033,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JQB-Za-5qD">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <items>
-                                    <barButtonItem image="Doctors Bag-50.png" id="xYK-8H-KBc">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="86t-xF-FUV" kind="show" id="xro-xd-Iv9"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="tX1-m5-XNW"/>
-                                    <barButtonItem image="Diabetes-50.png" id="2PK-js-v2s">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="CKj-bf-oLm" kind="show" id="cVr-5E-zHA"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="3Z4-W4-K9w"/>
-                                    <barButtonItem image="Health Book-25.png" id="sXT-GT-o0l">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="CZc-uE-B1V" kind="show" id="62P-GE-viX"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="i97-el-tKb"/>
-                                    <barButtonItem image="Treatment Plan-25.png" id="LvL-6B-to4">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Xug-5e-qc5"/>
-                                    <barButtonItem image="Chat Filled-25.png" id="2WS-xS-kId">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="lLz-pj-pbh" kind="show" id="FAM-wf-pUn"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
                             <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nkw-Qo-c58">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <textAttributes key="titleTextAttributes">
@@ -1432,22 +1053,19 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="JQB-Za-5qD" firstAttribute="centerX" secondItem="nL4-Mq-khP" secondAttribute="centerX" id="0zk-Ra-Dco"/>
                             <constraint firstItem="Nkw-Qo-c58" firstAttribute="leading" secondItem="nL4-Mq-khP" secondAttribute="leadingMargin" constant="-20" id="4PT-x8-ksb"/>
                             <constraint firstItem="Nkw-Qo-c58" firstAttribute="top" secondItem="Y8A-lq-KbP" secondAttribute="bottom" constant="8" id="DHK-5f-LHI"/>
                             <constraint firstItem="Nkw-Qo-c58" firstAttribute="centerX" secondItem="nL4-Mq-khP" secondAttribute="centerX" id="GQq-Zj-Hbd"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="JQB-Za-5qD" secondAttribute="trailing" constant="-20" id="YWl-3R-pLn"/>
-                            <constraint firstItem="rN5-Vo-SNd" firstAttribute="top" secondItem="JQB-Za-5qD" secondAttribute="bottom" id="Yfo-t3-ukj"/>
-                            <constraint firstItem="JQB-Za-5qD" firstAttribute="leading" secondItem="nL4-Mq-khP" secondAttribute="leadingMargin" constant="-20" id="bdh-Lf-v39"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Nkw-Qo-c58" secondAttribute="trailing" constant="-20" id="bhm-pI-HHy"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="FichaMedica" image="TreatmentPlan" id="f4Q-nU-pEO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sRZ-e2-PcV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3003.5" y="1298.5"/>
+            <point key="canvasLocation" x="3102" y="1511"/>
         </scene>
-        <!--Consulta View Controller-->
+        <!--Consultas-->
         <scene sceneID="VbB-m8-9o2">
             <objects>
                 <viewController id="CZc-uE-B1V" customClass="ConsultaViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
@@ -1459,42 +1077,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4YU-hv-SQc">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <items>
-                                    <barButtonItem image="Doctors Bag-50.png" id="x5R-Lv-za3">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="86t-xF-FUV" kind="show" id="HK5-6v-BX0"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="kgs-P4-McI"/>
-                                    <barButtonItem image="Diabetes-50.png" id="wzB-3K-LK7">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="CKj-bf-oLm" kind="show" id="tP6-D1-DQu"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="VWz-Zg-CPv"/>
-                                    <barButtonItem image="Health Book-25.png" id="FBB-1b-Hqp">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="USv-zL-IWq"/>
-                                    <barButtonItem image="Treatment Plan-25.png" id="eKd-j2-vZI">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="zKs-Te-7kP" kind="show" id="VS9-eh-RY6"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="U2o-fR-eqq"/>
-                                    <barButtonItem image="Chat Filled-25.png" id="cKt-Yc-OPg">
-                                        <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="lLz-pj-pbh" kind="show" id="g8P-vT-ji6"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
                             <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eIf-Nj-C9M">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <textAttributes key="titleTextAttributes">
@@ -1559,24 +1141,21 @@
                             <constraint firstItem="ew4-3J-co9" firstAttribute="centerX" secondItem="8Sx-gS-MWW" secondAttribute="centerX" id="974-Q9-kBJ"/>
                             <constraint firstItem="uBr-6p-3Br" firstAttribute="centerX" secondItem="8Sx-gS-MWW" secondAttribute="centerX" id="BoK-EN-nyZ"/>
                             <constraint firstItem="aQc-vC-gBF" firstAttribute="top" secondItem="ATo-AY-Fak" secondAttribute="bottom" constant="8" id="IQj-wv-8LA"/>
-                            <constraint firstItem="7Xm-68-MdD" firstAttribute="top" secondItem="4YU-hv-SQc" secondAttribute="bottom" id="J2g-bd-FJ3"/>
                             <constraint firstItem="aQc-vC-gBF" firstAttribute="centerX" secondItem="8Sx-gS-MWW" secondAttribute="centerX" id="Jff-m9-ddM"/>
                             <constraint firstItem="uBr-6p-3Br" firstAttribute="trailing" secondItem="8Sx-gS-MWW" secondAttribute="trailingMargin" id="LAz-ef-h1h"/>
                             <constraint firstItem="uBr-6p-3Br" firstAttribute="leading" secondItem="8Sx-gS-MWW" secondAttribute="leadingMargin" id="NZN-TK-FRo"/>
                             <constraint firstItem="eIf-Nj-C9M" firstAttribute="top" secondItem="ImJ-YO-DyX" secondAttribute="bottom" constant="8" id="OSA-hr-p3b"/>
-                            <constraint firstItem="4YU-hv-SQc" firstAttribute="leading" secondItem="8Sx-gS-MWW" secondAttribute="leadingMargin" constant="-20" id="Q41-LL-A2O"/>
                             <constraint firstItem="uBr-6p-3Br" firstAttribute="top" secondItem="ew4-3J-co9" secondAttribute="bottom" constant="13" id="Rpk-qg-bAz"/>
                             <constraint firstItem="ATo-AY-Fak" firstAttribute="top" secondItem="uBr-6p-3Br" secondAttribute="bottom" constant="8" id="SHx-HF-t01"/>
                             <constraint firstItem="o4U-BG-YHY" firstAttribute="top" secondItem="aQc-vC-gBF" secondAttribute="bottom" constant="8" id="Xxl-ep-Bf9"/>
                             <constraint firstItem="eIf-Nj-C9M" firstAttribute="centerX" secondItem="8Sx-gS-MWW" secondAttribute="centerX" id="bqU-PO-fCr"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="4YU-hv-SQc" secondAttribute="trailing" constant="-20" id="fmH-4V-QRf"/>
                             <constraint firstItem="ew4-3J-co9" firstAttribute="top" secondItem="eIf-Nj-C9M" secondAttribute="bottom" constant="19" id="hF2-10-esl"/>
                             <constraint firstItem="ATo-AY-Fak" firstAttribute="centerX" secondItem="8Sx-gS-MWW" secondAttribute="centerX" id="lOZ-dQ-7bD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="eIf-Nj-C9M" secondAttribute="trailing" constant="-20" id="miy-Tt-PYU"/>
-                            <constraint firstItem="4YU-hv-SQc" firstAttribute="centerX" secondItem="8Sx-gS-MWW" secondAttribute="centerX" id="ozZ-Yb-SGF"/>
                             <constraint firstItem="aQc-vC-gBF" firstAttribute="trailing" secondItem="8Sx-gS-MWW" secondAttribute="trailingMargin" id="syN-cJ-7Zm"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Consultas" image="Doctors Bag-50.png" id="HsD-mo-M9m"/>
                     <connections>
                         <outlet property="datePicker" destination="uBr-6p-3Br" id="se8-Ol-wja"/>
                         <outlet property="doctorPicker" destination="aQc-vC-gBF" id="aHB-wE-zdY"/>
@@ -1584,7 +1163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tXL-EY-VLy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2583.5" y="1298.5"/>
+            <point key="canvasLocation" x="2407" y="1298"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2Vc-yA-2Et">
@@ -1764,28 +1343,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GEF-Ai-0WN" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="143.5" y="-47.5"/>
+            <point key="canvasLocation" x="-410" y="-113"/>
         </scene>
     </scenes>
     <resources>
         <image name="Add Rule-50.png" width="25" height="25"/>
         <image name="Add Shopping Cart-50.png" width="25" height="25"/>
-        <image name="Alarm Clock-25.png" width="25" height="25"/>
-        <image name="Area Chart-501.png" width="20" height="20"/>
+        <image name="AlarmClock" width="25" height="25"/>
         <image name="Caloric Energy-50.png" width="25" height="25"/>
-        <image name="Chat Filled-25.png" width="25" height="25"/>
-        <image name="Christmas Star Filled-25.png" width="25" height="25"/>
+        <image name="Chat" width="25" height="25"/>
+        <image name="Christmas" width="25" height="25"/>
         <image name="Diabetes-50.png" width="20" height="20"/>
         <image name="Doctors Bag-50.png" width="20" height="20"/>
         <image name="FAQ-512.png" width="100" height="130"/>
-        <image name="Facebook Filled-25.png" width="25" height="25"/>
-        <image name="Health Book-25.png" width="25" height="25"/>
+        <image name="Facebook" width="25" height="25"/>
+        <image name="Health" width="25" height="25"/>
+        <image name="Heart Monitor-50.png" width="20" height="20"/>
         <image name="Image_3.png" width="144" height="153"/>
         <image name="Info-50.png" width="25" height="25"/>
-        <image name="Line Chart Filled-25.png" width="25" height="25"/>
+        <image name="Line" width="25" height="25"/>
         <image name="Menu-501.png" width="20" height="20"/>
         <image name="Pill-50.png" width="20" height="20"/>
-        <image name="Treatment Plan-25.png" width="25" height="25"/>
+        <image name="TreatmentPlan" width="25" height="25"/>
         <image name="alimentos.png" width="100" height="129"/>
         <image name="calendario.png" width="100" height="130"/>
         <image name="historialMedico.png" width="100" height="129"/>
@@ -1794,20 +1373,7 @@
         <image name="tips.png" width="100" height="129"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xJs-dZ-4fS"/>
-        <segue reference="Bsp-gw-neb"/>
-        <segue reference="fAO-3J-u5R"/>
-        <segue reference="RsU-ut-qWe"/>
-        <segue reference="sRP-vS-tfV"/>
-        <segue reference="tP6-D1-DQu"/>
-        <segue reference="8Do-uS-JfN"/>
-        <segue reference="rxL-qH-Tph"/>
-        <segue reference="xyg-eQ-hY7"/>
-        <segue reference="QBP-VV-uNK"/>
-        <segue reference="xaW-sf-ULF"/>
-        <segue reference="cxA-Xu-XfX"/>
-        <segue reference="e4M-JY-Z9U"/>
-        <segue reference="d1R-Qk-LzS"/>
-        <segue reference="1Rh-Uf-OCi"/>
+        <segue reference="J3p-xq-qvu"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.99103271959999995" green="0.27473458649999999" blue="0.2705377638" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>
