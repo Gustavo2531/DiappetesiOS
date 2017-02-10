@@ -113,12 +113,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bjg-Hf-jbi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2183" y="-1146"/>
+            <point key="canvasLocation" x="1831" y="-2357"/>
         </scene>
         <!--Graficas-->
         <scene sceneID="ipa-kJ-1dm">
             <objects>
-                <viewController id="2PK-tb-xdO" sceneMemberID="viewController">
+                <viewController id="2PK-tb-xdO" customClass="GraficasViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Owq-u3-zyd"/>
                         <viewControllerLayoutGuide type="bottom" id="Xc7-GH-aGl"/>
@@ -138,7 +138,7 @@
                                         <barButtonItem key="leftBarButtonItem" image="Menu-501.png" id="f0R-uh-NAp">
                                             <color key="tintColor" red="0.98823529409999999" green="0.050980392159999999" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
-                                                <segue destination="L58-Zu-CeN" kind="show" id="WW2-wX-GYf"/>
+                                                <action selector="returnMenu:" destination="2PK-tb-xdO" id="7uf-sb-yTW"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -157,12 +157,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ppP-gX-OQ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2706" y="-1951"/>
+            <point key="canvasLocation" x="2796" y="-2003"/>
         </scene>
         <!--Dieta-->
         <scene sceneID="fo1-8s-xOo">
             <objects>
-                <viewController id="fA8-az-7Zo" sceneMemberID="viewController">
+                <viewController id="fA8-az-7Zo" customClass="DietaViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xRc-rg-KAW"/>
                         <viewControllerLayoutGuide type="bottom" id="i44-lC-eod"/>
@@ -182,7 +182,7 @@
                                         <barButtonItem key="leftBarButtonItem" image="Menu-501.png" id="WBH-YT-q4D">
                                             <color key="tintColor" red="0.98823529409999999" green="0.050980392159999999" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
-                                                <segue destination="L58-Zu-CeN" kind="show" id="PiQ-sA-2a5"/>
+                                                <action selector="returnMenu:" destination="fA8-az-7Zo" id="Tvw-mV-cMI"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -201,12 +201,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XwS-67-Udb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3593" y="-1332"/>
+            <point key="canvasLocation" x="2422" y="-1296"/>
         </scene>
         <!--Mediciones-->
         <scene sceneID="1pF-my-3Vv">
             <objects>
-                <viewController id="4m4-Ux-aWw" sceneMemberID="viewController">
+                <viewController id="4m4-Ux-aWw" customClass="MedicamentosViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RXK-e1-38u"/>
                         <viewControllerLayoutGuide type="bottom" id="m0J-XB-S3M"/>
@@ -222,11 +222,11 @@
                                     <color key="textColor" red="0.98823529409999999" green="0.050980392159999999" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Mediciones" id="QDK-eG-DnS">
+                                    <navigationItem title="Medicamentos" id="QDK-eG-DnS">
                                         <barButtonItem key="leftBarButtonItem" image="Menu-501.png" id="8pq-Hm-WGx">
                                             <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
-                                                <segue destination="L58-Zu-CeN" kind="show" id="dYI-lh-apD"/>
+                                                <action selector="returnMenu:" destination="4m4-Ux-aWw" id="Cse-d2-stG"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -265,7 +265,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TcN-aT-tbM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1842" y="-1888"/>
+            <point key="canvasLocation" x="1271" y="-1070"/>
         </scene>
         <!--Facebook-->
         <scene sceneID="Wp8-aw-l6b">
@@ -290,7 +290,7 @@
                                         <barButtonItem key="leftBarButtonItem" image="Menu-501.png" id="4Sw-fR-105">
                                             <color key="tintColor" red="0.98823529409999999" green="0.050980392159999999" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
-                                                <segue destination="L58-Zu-CeN" kind="show" id="Lo2-Kn-jv0"/>
+                                                <action selector="returnMenu:" destination="dCq-KN-96Y" id="mc6-TM-g9S"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -324,7 +324,7 @@
         <!--Tratamiento-->
         <scene sceneID="qoD-0w-72b">
             <objects>
-                <viewController id="gOY-Nl-Kvw" sceneMemberID="viewController">
+                <viewController id="gOY-Nl-Kvw" customClass="TratamientoViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aRD-Rd-2uw"/>
                         <viewControllerLayoutGuide type="bottom" id="0kp-4N-ud4"/>
@@ -344,7 +344,7 @@
                                         <barButtonItem key="leftBarButtonItem" image="Menu-501.png" id="ABD-LI-1CV">
                                             <color key="tintColor" red="0.98823529409999999" green="0.050980392159999999" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
-                                                <segue destination="L58-Zu-CeN" kind="show" id="GKm-vx-9Zv"/>
+                                                <action selector="returnMenu:" destination="gOY-Nl-Kvw" id="asR-j9-RM3"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -363,12 +363,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lew-yY-55W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130" y="-1916"/>
+            <point key="canvasLocation" x="-20" y="-2257"/>
         </scene>
         <!--Alarma-->
         <scene sceneID="LO8-ZJ-xSM">
             <objects>
-                <viewController id="fzw-fl-cPa" sceneMemberID="viewController">
+                <viewController id="fzw-fl-cPa" customClass="AlarmasViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xvo-vW-Ng4"/>
                         <viewControllerLayoutGuide type="bottom" id="48M-Ey-w7m"/>
@@ -388,7 +388,7 @@
                                         <barButtonItem key="leftBarButtonItem" image="Menu-501.png" id="4j3-06-qP2">
                                             <color key="tintColor" red="0.98823529409999999" green="0.050980392159999999" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
-                                                <segue destination="L58-Zu-CeN" kind="show" id="xKh-Y5-ReD"/>
+                                                <action selector="returnMenu:" destination="fzw-fl-cPa" id="DMQ-1c-7a3"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -412,7 +412,7 @@
         <!--Compras-->
         <scene sceneID="m1G-Vg-dIr">
             <objects>
-                <viewController id="tSj-k5-Ucz" sceneMemberID="viewController">
+                <viewController id="tSj-k5-Ucz" customClass="ComprasUOtroViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cj2-Kt-ysR"/>
                         <viewControllerLayoutGuide type="bottom" id="sRS-f9-YEW"/>
@@ -432,7 +432,7 @@
                                         <barButtonItem key="leftBarButtonItem" image="Menu-501.png" id="v0D-1d-g52">
                                             <color key="tintColor" red="0.98823529409999999" green="0.050980392159999999" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
-                                                <segue destination="L58-Zu-CeN" kind="show" id="Epa-6n-l8w"/>
+                                                <action selector="returnMenu:" destination="tSj-k5-Ucz" id="apv-UE-brp"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -472,7 +472,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DlX-3W-xfd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="351" y="-1215"/>
+            <point key="canvasLocation" x="-1641" y="-1232"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="hor-YJ-xbY">
@@ -526,8 +526,8 @@
                                 <color key="textColor" red="0.97254901960784312" green="0.0" blue="0.086274509803921567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Mediciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggq-eG-FFe">
-                                <rect key="frame" x="12" y="302" width="88" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Medicamentos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggq-eG-FFe">
+                                <rect key="frame" x="12" y="302" width="113" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.97254901960784312" green="0.0" blue="0.086274509803921567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -638,7 +638,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zSQ-Rp-Zyt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="582" y="-129"/>
+            <point key="canvasLocation" x="522" y="-114"/>
         </scene>
         <!--Tips e Informacion-->
         <scene sceneID="ey3-3I-vwV">
@@ -666,7 +666,7 @@
                                         <barButtonItem key="leftBarButtonItem" image="Menu-501.png" id="dS7-ga-BZ9">
                                             <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
-                                                <segue destination="L58-Zu-CeN" kind="show" id="hwL-mT-FpT"/>
+                                                <action selector="returnMenu:" destination="Mdw-D7-JNB" id="kVz-pz-Ej2"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -718,7 +718,7 @@
         <!--Rewards-->
         <scene sceneID="hOA-cr-cj8">
             <objects>
-                <viewController title="Rewards" id="D2i-vy-CIC" sceneMemberID="viewController">
+                <viewController title="Rewards" id="D2i-vy-CIC" customClass="RewardsViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XRd-w5-ozK"/>
                         <viewControllerLayoutGuide type="bottom" id="v9R-ul-l2s"/>
@@ -738,7 +738,7 @@
                                         <barButtonItem key="leftBarButtonItem" image="Menu-501.png" id="Bae-nc-7TN">
                                             <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
-                                                <segue destination="L58-Zu-CeN" kind="show" id="m8w-OA-5az"/>
+                                                <action selector="returnMenu:" destination="D2i-vy-CIC" id="x5o-zg-bfv"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -759,10 +759,10 @@
             </objects>
             <point key="canvasLocation" x="-1311" y="1471"/>
         </scene>
-        <!--View Controller-->
+        <!--Foro View Controller-->
         <scene sceneID="KLw-cR-KA7">
             <objects>
-                <viewController id="1qi-V9-5HY" sceneMemberID="viewController">
+                <viewController id="1qi-V9-5HY" customClass="ForoViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QVh-pj-orH"/>
                         <viewControllerLayoutGuide type="bottom" id="LN9-70-bkG"/>
@@ -782,7 +782,7 @@
                                         <barButtonItem key="leftBarButtonItem" image="Menu-501.png" id="x6a-8F-z0q">
                                             <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
-                                                <segue destination="L58-Zu-CeN" kind="show" id="JyI-6H-MHK"/>
+                                                <action selector="returnMenu:" destination="1qi-V9-5HY" id="38P-z1-I7Z"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -800,12 +800,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nX9-Xo-xbm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="434" y="1981"/>
+            <point key="canvasLocation" x="582" y="1200"/>
         </scene>
-        <!--Historial-->
+        <!--HistorialMedico-->
         <scene sceneID="1ci-eP-dbA">
             <objects>
-                <viewController id="86t-xF-FUV" sceneMemberID="viewController">
+                <viewController title="HistorialMedico" id="86t-xF-FUV" customClass="HistorialMedicoViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rxn-Tx-nhZ"/>
                         <viewControllerLayoutGuide type="bottom" id="3By-IY-cIS"/>
@@ -825,7 +825,7 @@
                                         <barButtonItem key="leftBarButtonItem" image="Menu-501.png" id="1az-pt-Iu0">
                                             <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
-                                                <segue destination="L58-Zu-CeN" kind="show" id="J3p-xq-qvu"/>
+                                                <action selector="returnMenu:" destination="86t-xF-FUV" id="dWs-Gv-pLB"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -846,7 +846,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vVp-62-icU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="874" y="1117"/>
+            <point key="canvasLocation" x="1906" y="1710"/>
         </scene>
         <!--Glucosa-->
         <scene sceneID="oX7-Q5-Fjv">
@@ -954,12 +954,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dME-wY-5iK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1601" y="1816"/>
+            <point key="canvasLocation" x="2582" y="1710"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="eIq-Sh-cWV">
             <objects>
-                <tabBarController id="YeQ-NJ-b53" sceneMemberID="viewController">
+                <tabBarController id="YeQ-NJ-b53" customClass="TabBarViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="b9D-RX-Pop">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -975,12 +975,12 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bvd-3P-jhi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1690" y="723"/>
+            <point key="canvasLocation" x="3498" y="766"/>
         </scene>
         <!--Chat-->
         <scene sceneID="emP-6x-BaG">
             <objects>
-                <viewController id="lLz-pj-pbh" sceneMemberID="viewController">
+                <viewController id="lLz-pj-pbh" customClass="ChatViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bzh-y0-wZL"/>
                         <viewControllerLayoutGuide type="bottom" id="ho4-be-itd"/>
@@ -1000,7 +1000,7 @@
                                         <barButtonItem key="leftBarButtonItem" image="Menu-501.png" id="UCO-Xt-6wh">
                                             <color key="tintColor" red="0.98823529409999999" green="0.050980392159999999" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
-                                                <segue destination="L58-Zu-CeN" kind="show" id="zDc-mP-wrp"/>
+                                                <action selector="returnMenu:" destination="lLz-pj-pbh" id="Liw-vs-a9Q"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -1019,12 +1019,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ehV-Ul-BBZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3871" y="1302"/>
+            <point key="canvasLocation" x="4822" y="1711"/>
         </scene>
         <!--FichaMedica-->
         <scene sceneID="X1f-Xd-3yB">
             <objects>
-                <viewController id="zKs-Te-7kP" sceneMemberID="viewController">
+                <viewController id="zKs-Te-7kP" customClass="FichaMedicaViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Y8A-lq-KbP"/>
                         <viewControllerLayoutGuide type="bottom" id="rN5-Vo-SNd"/>
@@ -1044,7 +1044,7 @@
                                         <barButtonItem key="leftBarButtonItem" image="Menu-501.png" id="rQe-VD-19C">
                                             <color key="tintColor" red="0.98823529409999999" green="0.050980392159999999" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
-                                                <segue destination="L58-Zu-CeN" kind="show" id="JMV-Eq-mNh"/>
+                                                <action selector="returnMenu:" destination="zKs-Te-7kP" id="yYl-H5-aa6"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -1063,7 +1063,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sRZ-e2-PcV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3404" y="1789"/>
+            <point key="canvasLocation" x="4066" y="1712"/>
         </scene>
         <!--Consultas-->
         <scene sceneID="VbB-m8-9o2">
@@ -1155,7 +1155,19 @@
                             <constraint firstItem="aQc-vC-gBF" firstAttribute="trailing" secondItem="8Sx-gS-MWW" secondAttribute="trailingMargin" id="syN-cJ-7Zm"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Consultas" image="Doctors Bag-50.png" id="HsD-mo-M9m"/>
+                    <tabBarItem key="tabBarItem" title="Consultas" image="Doctors Bag-50.png" id="HsD-mo-M9m">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="barTintColor">
+                                <color key="value" red="0.90532433986663818" green="0.20840843021869659" blue="0.18030156195163727" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="setSelectedImageColor">
+                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <connections>
                         <outlet property="datePicker" destination="uBr-6p-3Br" id="se8-Ol-wja"/>
                         <outlet property="doctorPicker" destination="aQc-vC-gBF" id="aHB-wE-zdY"/>
@@ -1163,12 +1175,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tXL-EY-VLy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2385" y="1914"/>
+            <point key="canvasLocation" x="3338" y="1711"/>
         </scene>
-        <!--View Controller-->
+        <!--Calendario View Controller-->
         <scene sceneID="2Vc-yA-2Et">
             <objects>
-                <viewController id="6Zk-We-Go7" sceneMemberID="viewController">
+                <viewController id="6Zk-We-Go7" customClass="CalendarioViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jEz-mI-uuy"/>
                         <viewControllerLayoutGuide type="bottom" id="oEu-zx-gTd"/>
@@ -1189,7 +1201,7 @@
                                         <barButtonItem key="leftBarButtonItem" image="Menu-501.png" id="guo-GF-tct">
                                             <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
-                                                <segue destination="L58-Zu-CeN" kind="show" id="CVK-Ap-beK"/>
+                                                <action selector="Calendario:" destination="6Zk-We-Go7" id="Raf-lZ-fJ5"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -1206,7 +1218,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Avq-oT-XXe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1906.5" y="-47.5"/>
+            <point key="canvasLocation" x="2063" y="-129"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gzV-7u-fkZ">
@@ -1372,8 +1384,5 @@
         <image name="rounded-512.png" width="40" height="40"/>
         <image name="tips.png" width="100" height="129"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="Biv-AS-cUp"/>
-    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.99103271959999995" green="0.27473458649999999" blue="0.2705377638" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>

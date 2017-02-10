@@ -125,6 +125,7 @@ class AlimentosViewController: UIViewController, UIPickerViewDataSource, UIPicke
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "fondo4.png")
         self.view.insertSubview(backgroundImage, at: 0)
+        
 
         
         

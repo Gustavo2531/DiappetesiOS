@@ -93,6 +93,19 @@
 		B64934541E4D24E500FBE007 /* fondomorado.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64934511E4D24E500FBE007 /* fondomorado.jpg */; };
 		B64934561E4D266100FBE007 /* fondo2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64934551E4D266100FBE007 /* fondo2.jpg */; };
 		B64934581E4D28C900FBE007 /* fondo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64934571E4D28C900FBE007 /* fondo.jpg */; };
+		B64A358D1E4E4AC000B8E7AA /* HistorialMedicoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64A358C1E4E4AC000B8E7AA /* HistorialMedicoViewController.swift */; };
+		B64A358F1E4E4B8600B8E7AA /* FichaMedicaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64A358E1E4E4B8600B8E7AA /* FichaMedicaViewController.swift */; };
+		B64A35911E4E4BEA00B8E7AA /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64A35901E4E4BEA00B8E7AA /* ChatViewController.swift */; };
+		B64A35931E4E733E00B8E7AA /* RewardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64A35921E4E733E00B8E7AA /* RewardsViewController.swift */; };
+		B64A35951E4E741500B8E7AA /* MedicamentosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64A35941E4E741500B8E7AA /* MedicamentosViewController.swift */; };
+		B64A35971E4E746900B8E7AA /* TratamientoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64A35961E4E746900B8E7AA /* TratamientoViewController.swift */; };
+		B64A35991E4E74BE00B8E7AA /* AlarmasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64A35981E4E74BE00B8E7AA /* AlarmasViewController.swift */; };
+		B64A359B1E4E76B000B8E7AA /* ComprasUOtroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64A359A1E4E76B000B8E7AA /* ComprasUOtroViewController.swift */; };
+		B64A359D1E4E775200B8E7AA /* CalendarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64A359C1E4E775200B8E7AA /* CalendarioViewController.swift */; };
+		B64A35A01E4E77B400B8E7AA /* ForoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64A359F1E4E77B400B8E7AA /* ForoViewController.swift */; };
+		B64A35A21E4E781000B8E7AA /* GraficasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64A35A11E4E781000B8E7AA /* GraficasViewController.swift */; };
+		B64A35A41E4E785B00B8E7AA /* DietaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64A35A31E4E785B00B8E7AA /* DietaViewController.swift */; };
+		B64A35A61E4E7AF300B8E7AA /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64A35A51E4E7AF300B8E7AA /* TabBarViewController.swift */; };
 		B6D6B3531E4E3F870010BC75 /* fondo4.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D6B3521E4E3F870010BC75 /* fondo4.png */; };
 /* End PBXBuildFile section */
 
@@ -187,6 +200,19 @@
 		B64934511E4D24E500FBE007 /* fondomorado.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fondomorado.jpg; path = Resources/fondomorado.jpg; sourceTree = SOURCE_ROOT; };
 		B64934551E4D266100FBE007 /* fondo2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fondo2.jpg; path = Resources/fondo2.jpg; sourceTree = SOURCE_ROOT; };
 		B64934571E4D28C900FBE007 /* fondo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fondo.jpg; path = Resources/fondo.jpg; sourceTree = SOURCE_ROOT; };
+		B64A358C1E4E4AC000B8E7AA /* HistorialMedicoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistorialMedicoViewController.swift; sourceTree = "<group>"; };
+		B64A358E1E4E4B8600B8E7AA /* FichaMedicaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FichaMedicaViewController.swift; sourceTree = "<group>"; };
+		B64A35901E4E4BEA00B8E7AA /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		B64A35921E4E733E00B8E7AA /* RewardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardsViewController.swift; sourceTree = "<group>"; };
+		B64A35941E4E741500B8E7AA /* MedicamentosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicamentosViewController.swift; sourceTree = "<group>"; };
+		B64A35961E4E746900B8E7AA /* TratamientoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TratamientoViewController.swift; sourceTree = "<group>"; };
+		B64A35981E4E74BE00B8E7AA /* AlarmasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmasViewController.swift; sourceTree = "<group>"; };
+		B64A359A1E4E76B000B8E7AA /* ComprasUOtroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComprasUOtroViewController.swift; sourceTree = "<group>"; };
+		B64A359C1E4E775200B8E7AA /* CalendarioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarioViewController.swift; sourceTree = "<group>"; };
+		B64A359F1E4E77B400B8E7AA /* ForoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForoViewController.swift; sourceTree = "<group>"; };
+		B64A35A11E4E781000B8E7AA /* GraficasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraficasViewController.swift; sourceTree = "<group>"; };
+		B64A35A31E4E785B00B8E7AA /* DietaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DietaViewController.swift; sourceTree = "<group>"; };
+		B64A35A51E4E7AF300B8E7AA /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		B6D6B3521E4E3F870010BC75 /* fondo4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fondo4.png; path = Resources/fondo4.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -240,6 +266,7 @@
 		81BA81471A49DA1800E65899 /* ParseStarterProject */ = {
 			isa = PBXGroup;
 			children = (
+				B64A359E1E4E77A400B8E7AA /* Foros */,
 				B6D6B3581E4E41DA0010BC75 /* TipsYRecompensasController */,
 				B6D6B3571E4E41D00010BC75 /* HistorialMedicoController */,
 				B6D6B3561E4E41C00010BC75 /* MedicionesController */,
@@ -248,6 +275,7 @@
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
 				81BA814C1A49DA1800E65899 /* ViewController.swift */,
 				844D4E041D120DF30098C0C1 /* Main.storyboard */,
+				B64A35A51E4E7AF300B8E7AA /* TabBarViewController.swift */,
 				849429C21D18EB1500AFE68C /* MenuViewController.swift */,
 				84DF5DA21D17AF9F004ED18F /* cell.swift */,
 				84DF5DA01D17AF91004ED18F /* PostImageViewController.swift */,
@@ -356,10 +384,20 @@
 			path = ../../../../Downloads/icons;
 			sourceTree = "<group>";
 		};
+		B64A359E1E4E77A400B8E7AA /* Foros */ = {
+			isa = PBXGroup;
+			children = (
+				B64A359F1E4E77B400B8E7AA /* ForoViewController.swift */,
+			);
+			name = Foros;
+			sourceTree = "<group>";
+		};
 		B6D6B3541E4E41990010BC75 /* AlimentacionControllers */ = {
 			isa = PBXGroup;
 			children = (
 				849241A41D18CC210008696C /* AlimentosViewController.swift */,
+				B64A35A11E4E781000B8E7AA /* GraficasViewController.swift */,
+				B64A35A31E4E785B00B8E7AA /* DietaViewController.swift */,
 			);
 			name = AlimentacionControllers;
 			sourceTree = "<group>";
@@ -367,6 +405,7 @@
 		B6D6B3551E4E41B70010BC75 /* CalendarioController */ = {
 			isa = PBXGroup;
 			children = (
+				B64A359C1E4E775200B8E7AA /* CalendarioViewController.swift */,
 			);
 			name = CalendarioController;
 			sourceTree = "<group>";
@@ -375,6 +414,10 @@
 			isa = PBXGroup;
 			children = (
 				849241A21D18CA9A0008696C /* FacebookViewController.swift */,
+				B64A35941E4E741500B8E7AA /* MedicamentosViewController.swift */,
+				B64A35961E4E746900B8E7AA /* TratamientoViewController.swift */,
+				B64A35981E4E74BE00B8E7AA /* AlarmasViewController.swift */,
+				B64A359A1E4E76B000B8E7AA /* ComprasUOtroViewController.swift */,
 			);
 			name = MedicionesController;
 			sourceTree = "<group>";
@@ -384,6 +427,9 @@
 			children = (
 				8492419E1D18AA5C0008696C /* ConsultaViewController.swift */,
 				8492419C1D18902F0008696C /* GlucosaViewController.swift */,
+				B64A358C1E4E4AC000B8E7AA /* HistorialMedicoViewController.swift */,
+				B64A358E1E4E4B8600B8E7AA /* FichaMedicaViewController.swift */,
+				B64A35901E4E4BEA00B8E7AA /* ChatViewController.swift */,
 			);
 			name = HistorialMedicoController;
 			sourceTree = "<group>";
@@ -392,6 +438,7 @@
 			isa = PBXGroup;
 			children = (
 				849241A01D18B5FC0008696C /* TipsViewController.swift */,
+				B64A35921E4E733E00B8E7AA /* RewardsViewController.swift */,
 			);
 			name = TipsYRecompensasController;
 			sourceTree = "<group>";
@@ -532,17 +579,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B64A359B1E4E76B000B8E7AA /* ComprasUOtroViewController.swift in Sources */,
+				B64A35991E4E74BE00B8E7AA /* AlarmasViewController.swift in Sources */,
 				84DF5DA11D17AF91004ED18F /* PostImageViewController.swift in Sources */,
 				84DF5DA31D17AF9F004ED18F /* cell.swift in Sources */,
+				B64A359D1E4E775200B8E7AA /* CalendarioViewController.swift in Sources */,
 				849241A31D18CA9A0008696C /* FacebookViewController.swift in Sources */,
+				B64A35A01E4E77B400B8E7AA /* ForoViewController.swift in Sources */,
 				844D4E171D122AAF0098C0C1 /* FeedTableViewController.swift in Sources */,
 				81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */,
 				844D4E031D120DA70098C0C1 /* TableViewController.swift in Sources */,
+				B64A35A41E4E785B00B8E7AA /* DietaViewController.swift in Sources */,
 				849241A51D18CC210008696C /* AlimentosViewController.swift in Sources */,
+				B64A35951E4E741500B8E7AA /* MedicamentosViewController.swift in Sources */,
+				B64A35A61E4E7AF300B8E7AA /* TabBarViewController.swift in Sources */,
 				849429C31D18EB1500AFE68C /* MenuViewController.swift in Sources */,
+				B64A35971E4E746900B8E7AA /* TratamientoViewController.swift in Sources */,
+				B64A358D1E4E4AC000B8E7AA /* HistorialMedicoViewController.swift in Sources */,
 				849241A11D18B5FC0008696C /* TipsViewController.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
+				B64A358F1E4E4B8600B8E7AA /* FichaMedicaViewController.swift in Sources */,
+				B64A35A21E4E781000B8E7AA /* GraficasViewController.swift in Sources */,
 				8492419D1D18902F0008696C /* GlucosaViewController.swift in Sources */,
+				B64A35931E4E733E00B8E7AA /* RewardsViewController.swift in Sources */,
+				B64A35911E4E4BEA00B8E7AA /* ChatViewController.swift in Sources */,
 				8492419F1D18AA5C0008696C /* ConsultaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
