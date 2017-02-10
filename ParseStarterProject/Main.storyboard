@@ -33,7 +33,7 @@
                                         <barButtonItem key="leftBarButtonItem" image="Menu-501.png" id="GTN-Hs-vIC">
                                             <color key="tintColor" red="0.9882352941176471" green="0.050980392156862744" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
-                                                <segue destination="L58-Zu-CeN" kind="show" id="Wen-JV-XfJ"/>
+                                                <action selector="returnMenu:" destination="nfV-Xx-8i4" id="zT3-9B-7qI"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -508,7 +508,7 @@
                                     <segue destination="uPi-Ic-og2" kind="show" id="wE1-7V-d7W"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Calendario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HsG-lb-poG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Calendario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HsG-lb-poG">
                                 <rect key="frame" x="10" y="168" width="83" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.97254901960784312" green="0.0" blue="0.086274509803921567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -603,7 +603,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="bJP-cq-j73" firstAttribute="leading" secondItem="sla-pw-BoH" secondAttribute="leadingMargin" id="0Db-be-9JO"/>
                             <constraint firstItem="MzN-j8-HZt" firstAttribute="top" secondItem="rXR-fe-SPn" secondAttribute="bottom" constant="9" id="6GO-Z7-7rB"/>
@@ -871,7 +871,7 @@
                                         <barButtonItem key="leftBarButtonItem" image="Menu-501.png" id="nNh-kP-7fB">
                                             <color key="tintColor" red="0.98823529409999999" green="0.050980392159999999" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
-                                                <segue destination="L58-Zu-CeN" kind="show" id="xyg-eQ-hY7"/>
+                                                <action selector="returnMenu:" destination="CKj-bf-oLm" id="bxL-TT-uoC"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -954,7 +954,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dME-wY-5iK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1628" y="1066"/>
+            <point key="canvasLocation" x="1601" y="1816"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="eIq-Sh-cWV">
@@ -1063,7 +1063,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sRZ-e2-PcV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3102" y="1511"/>
+            <point key="canvasLocation" x="3404" y="1789"/>
         </scene>
         <!--Consultas-->
         <scene sceneID="VbB-m8-9o2">
@@ -1088,7 +1088,7 @@
                                         <barButtonItem key="leftBarButtonItem" image="Menu-501.png" id="HYp-ue-Dzj">
                                             <color key="tintColor" red="0.98823529409999999" green="0.050980392159999999" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
-                                                <segue destination="L58-Zu-CeN" kind="show" id="taJ-wE-Dsa"/>
+                                                <action selector="returnMenu:" destination="CZc-uE-B1V" id="3JO-io-MsC"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -1163,7 +1163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tXL-EY-VLy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2407" y="1298"/>
+            <point key="canvasLocation" x="2385" y="1914"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2Vc-yA-2Et">
@@ -1373,7 +1373,7 @@
         <image name="tips.png" width="100" height="129"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="J3p-xq-qvu"/>
+        <segue reference="Biv-AS-cUp"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.99103271959999995" green="0.27473458649999999" blue="0.2705377638" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>

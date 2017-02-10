@@ -11,6 +11,15 @@ import Parse
 
 class GlucosaViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
+    @IBAction func returnMenu(_ sender: Any) {
+        let transition: CATransition = CATransition()
+        transition.duration = 0.5
+        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        transition.type = kCATransitionPush
+        transition.subtype = kCATransitionFromRight
+        self.view.window!.layer.add(transition, forKey: nil)
+        self.dismiss(animated: false, completion: nil)
+    }
     //private let pickerViewData = Array(0...600)     // contents will be 0, 1, 2, 3...59, change to whatever you want
     //private let pickerViewRows = 100_000
     

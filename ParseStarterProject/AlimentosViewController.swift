@@ -107,13 +107,25 @@ class AlimentosViewController: UIViewController, UIPickerViewDataSource, UIPicke
         
     }
     
+    @IBAction func returnMenu(_ sender: Any) {
+        let transition: CATransition = CATransition()
+        transition.duration = 0.5
+        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        transition.type = kCATransitionPush
+        transition.subtype = kCATransitionFromRight
+        self.view.window!.layer.add(transition, forKey: nil)
+        self.dismiss(animated: false, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.pickerFoodView.dataSource = self;
         self.pickerFoodView.delegate = self;
         self.pickerQuantityView.dataSource = self;
         self.pickerQuantityView.delegate = self;
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "iOS-7-Wallpaper-2-577x1024.png")!)
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named: "fondo4.png")
+        self.view.insertSubview(backgroundImage, at: 0)
+
         
         
         

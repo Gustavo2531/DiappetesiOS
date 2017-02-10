@@ -10,6 +10,16 @@ import UIKit
 import Parse
 class ConsultaViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate  {
     
+    @IBAction func returnMenu(_ sender: Any) {
+//        dismiss(animated: true, completion: nil)
+        let transition: CATransition = CATransition()
+        transition.duration = 0.5
+        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        transition.type = kCATransitionPush
+        transition.subtype = kCATransitionFromRight
+        self.view.window!.layer.add(transition, forKey: nil)
+        self.dismiss(animated: false, completion: nil)
+    }
     var pickerDataSource = ["Dra. Cortés","Dra. Camargo","Dra. Puerto","Dra. Zamora","Dr. Abdo","Dr. Orihuela"];
     
     
@@ -41,8 +51,10 @@ class ConsultaViewController: UIViewController, UIPickerViewDataSource, UIPicker
         super.viewDidLoad()
         self.doctorPicker.dataSource = self;
         self.doctorPicker.delegate = self;
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "iOS-7-Wallpaper-2-577x1024.png")!)
-        
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named: "fondo4.png")
+        self.view.insertSubview(backgroundImage, at: 0)
+
 
 
         // Do any additional setup after loading the view.

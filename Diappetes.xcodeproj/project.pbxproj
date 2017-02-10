@@ -88,6 +88,12 @@
 		B64934381E4D1BCE00FBE007 /* iOS-7-Wallpaper-2-577x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = B64934301E4D1BCE00FBE007 /* iOS-7-Wallpaper-2-577x1024.png */; };
 		B64934391E4D1BCE00FBE007 /* fondos-de-pantalla-de-iOS-9-11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64934311E4D1BCE00FBE007 /* fondos-de-pantalla-de-iOS-9-11.jpg */; };
 		B649343B1E4D1C2F00FBE007 /* rounded-512.png in Resources */ = {isa = PBXBuildFile; fileRef = B649343A1E4D1C2F00FBE007 /* rounded-512.png */; };
+		B64934521E4D24E500FBE007 /* fondonaranja.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B649344F1E4D24E500FBE007 /* fondonaranja.jpg */; };
+		B64934531E4D24E500FBE007 /* fondoazul.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64934501E4D24E500FBE007 /* fondoazul.jpg */; };
+		B64934541E4D24E500FBE007 /* fondomorado.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64934511E4D24E500FBE007 /* fondomorado.jpg */; };
+		B64934561E4D266100FBE007 /* fondo2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64934551E4D266100FBE007 /* fondo2.jpg */; };
+		B64934581E4D28C900FBE007 /* fondo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64934571E4D28C900FBE007 /* fondo.jpg */; };
+		B6D6B3531E4E3F870010BC75 /* fondo4.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D6B3521E4E3F870010BC75 /* fondo4.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -176,6 +182,12 @@
 		B64934301E4D1BCE00FBE007 /* iOS-7-Wallpaper-2-577x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iOS-7-Wallpaper-2-577x1024.png"; path = "Resources/iOS-7-Wallpaper-2-577x1024.png"; sourceTree = SOURCE_ROOT; };
 		B64934311E4D1BCE00FBE007 /* fondos-de-pantalla-de-iOS-9-11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "fondos-de-pantalla-de-iOS-9-11.jpg"; path = "Resources/fondos-de-pantalla-de-iOS-9-11.jpg"; sourceTree = SOURCE_ROOT; };
 		B649343A1E4D1C2F00FBE007 /* rounded-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rounded-512.png"; path = "ParseStarterProject/rounded-512.png"; sourceTree = SOURCE_ROOT; };
+		B649344F1E4D24E500FBE007 /* fondonaranja.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fondonaranja.jpg; path = Resources/fondonaranja.jpg; sourceTree = SOURCE_ROOT; };
+		B64934501E4D24E500FBE007 /* fondoazul.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fondoazul.jpg; path = Resources/fondoazul.jpg; sourceTree = SOURCE_ROOT; };
+		B64934511E4D24E500FBE007 /* fondomorado.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fondomorado.jpg; path = Resources/fondomorado.jpg; sourceTree = SOURCE_ROOT; };
+		B64934551E4D266100FBE007 /* fondo2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fondo2.jpg; path = Resources/fondo2.jpg; sourceTree = SOURCE_ROOT; };
+		B64934571E4D28C900FBE007 /* fondo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fondo.jpg; path = Resources/fondo.jpg; sourceTree = SOURCE_ROOT; };
+		B6D6B3521E4E3F870010BC75 /* fondo4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fondo4.png; path = Resources/fondo4.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,15 +240,15 @@
 		81BA81471A49DA1800E65899 /* ParseStarterProject */ = {
 			isa = PBXGroup;
 			children = (
+				B6D6B3581E4E41DA0010BC75 /* TipsYRecompensasController */,
+				B6D6B3571E4E41D00010BC75 /* HistorialMedicoController */,
+				B6D6B3561E4E41C00010BC75 /* MedicionesController */,
+				B6D6B3551E4E41B70010BC75 /* CalendarioController */,
+				B6D6B3541E4E41990010BC75 /* AlimentacionControllers */,
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
 				81BA814C1A49DA1800E65899 /* ViewController.swift */,
-				8492419C1D18902F0008696C /* GlucosaViewController.swift */,
 				844D4E041D120DF30098C0C1 /* Main.storyboard */,
 				849429C21D18EB1500AFE68C /* MenuViewController.swift */,
-				849241A41D18CC210008696C /* AlimentosViewController.swift */,
-				849241A21D18CA9A0008696C /* FacebookViewController.swift */,
-				849241A01D18B5FC0008696C /* TipsViewController.swift */,
-				8492419E1D18AA5C0008696C /* ConsultaViewController.swift */,
 				84DF5DA21D17AF9F004ED18F /* cell.swift */,
 				84DF5DA01D17AF91004ED18F /* PostImageViewController.swift */,
 				84DF5D791D179B1D004ED18F /* icons */,
@@ -278,6 +290,12 @@
 		84DF5D791D179B1D004ED18F /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				B6D6B3521E4E3F870010BC75 /* fondo4.png */,
+				B64934571E4D28C900FBE007 /* fondo.jpg */,
+				B64934551E4D266100FBE007 /* fondo2.jpg */,
+				B649344F1E4D24E500FBE007 /* fondonaranja.jpg */,
+				B64934501E4D24E500FBE007 /* fondoazul.jpg */,
+				B64934511E4D24E500FBE007 /* fondomorado.jpg */,
 				B649343A1E4D1C2F00FBE007 /* rounded-512.png */,
 				B64934041E4D1BA000FBE007 /* Menu-501.png */,
 				849429C41D18EBF400AFE68C /* FAQ-512.png */,
@@ -336,6 +354,46 @@
 			);
 			name = icons;
 			path = ../../../../Downloads/icons;
+			sourceTree = "<group>";
+		};
+		B6D6B3541E4E41990010BC75 /* AlimentacionControllers */ = {
+			isa = PBXGroup;
+			children = (
+				849241A41D18CC210008696C /* AlimentosViewController.swift */,
+			);
+			name = AlimentacionControllers;
+			sourceTree = "<group>";
+		};
+		B6D6B3551E4E41B70010BC75 /* CalendarioController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CalendarioController;
+			sourceTree = "<group>";
+		};
+		B6D6B3561E4E41C00010BC75 /* MedicionesController */ = {
+			isa = PBXGroup;
+			children = (
+				849241A21D18CA9A0008696C /* FacebookViewController.swift */,
+			);
+			name = MedicionesController;
+			sourceTree = "<group>";
+		};
+		B6D6B3571E4E41D00010BC75 /* HistorialMedicoController */ = {
+			isa = PBXGroup;
+			children = (
+				8492419E1D18AA5C0008696C /* ConsultaViewController.swift */,
+				8492419C1D18902F0008696C /* GlucosaViewController.swift */,
+			);
+			name = HistorialMedicoController;
+			sourceTree = "<group>";
+		};
+		B6D6B3581E4E41DA0010BC75 /* TipsYRecompensasController */ = {
+			isa = PBXGroup;
+			children = (
+				849241A01D18B5FC0008696C /* TipsViewController.swift */,
+			);
+			name = TipsYRecompensasController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,9 +457,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				84DF5D8E1D179B1D004ED18F /* Info-50.png in Resources */,
+				B64934561E4D266100FBE007 /* fondo2.jpg in Resources */,
 				849241971D1880E30008696C /* fondos-de-pantalla-de-iOS-9-11.jpg in Resources */,
 				849241AF1D18E6910008696C /* insulina.png in Resources */,
 				B649341E1E4D1BAE00FBE007 /* Treatment Plan-25.png in Resources */,
+				B64934541E4D24E500FBE007 /* fondomorado.jpg in Resources */,
 				B649341F1E4D1BAE00FBE007 /* Chat Filled-25.png in Resources */,
 				84DF5D901D179B1D004ED18F /* Menu-501.png in Resources */,
 				84DF5D951D17A441004ED18F /* Chat Filled-25.png in Resources */,
@@ -414,16 +474,19 @@
 				84DF5D8D1D179B1D004ED18F /* Heart Monitor-50.png in Resources */,
 				84DF5D861D179B1D004ED18F /* Add Rule-50.png in Resources */,
 				B64934281E4D1BAE00FBE007 /* Doctors Bag-50.png in Resources */,
+				B64934531E4D24E500FBE007 /* fondoazul.jpg in Resources */,
 				849241A91D18E4530008696C /* historialMedico.png in Resources */,
 				B64934051E4D1BA000FBE007 /* Menu-501.png in Resources */,
 				B64934181E4D1BAE00FBE007 /* Line Chart Filled-25.png in Resources */,
 				84DF5D9D1D17A9D0004ED18F /* Facebook Filled-25.png in Resources */,
 				84DF5D9F1D17A9D7004ED18F /* Line Chart Filled-25.png in Resources */,
+				B64934581E4D28C900FBE007 /* fondo.jpg in Resources */,
 				B649341D1E4D1BAE00FBE007 /* Christmas Star Filled-25.png in Resources */,
 				84DF5D8B1D179B1D004ED18F /* Diabetes-50.png in Resources */,
 				814C3ACB1B69877600E307BB /* Images.xcassets in Resources */,
 				84DF5D991D17A694004ED18F /* Christmas Star Filled-25.png in Resources */,
 				849241AD1D18E45D0008696C /* calendario.png in Resources */,
+				B64934521E4D24E500FBE007 /* fondonaranja.jpg in Resources */,
 				844D4E051D120DF30098C0C1 /* Main.storyboard in Resources */,
 				B64934251E4D1BAE00FBE007 /* Heart Monitor-50.png in Resources */,
 				B64934261E4D1BAE00FBE007 /* AED-50.png in Resources */,
@@ -452,6 +515,7 @@
 				849241991D1883930008696C /* iOS-7-Wallpaper-2-577x1024.png in Resources */,
 				849241A71D18E44E0008696C /* tips.png in Resources */,
 				B64934371E4D1BCE00FBE007 /* tips.png in Resources */,
+				B6D6B3531E4E3F870010BC75 /* fondo4.png in Resources */,
 				842117751D16EA63005ED9FA /* Image_3.png in Resources */,
 				849429C51D18EBF400AFE68C /* FAQ-512.png in Resources */,
 				84DF5D9B1D17A9B9004ED18F /* Alarm Clock-25.png in Resources */,

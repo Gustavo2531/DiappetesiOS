@@ -12,7 +12,10 @@ class MenuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "iOS-7-Wallpaper-2-577x1024.png")!)
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named: "fondo4.png")
+        self.view.insertSubview(backgroundImage, at: 0)
+//        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "fondo4.png")!)
 
         // Do any additional setup after loading the view.
     }
