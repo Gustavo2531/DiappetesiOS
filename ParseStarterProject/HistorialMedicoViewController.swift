@@ -15,7 +15,7 @@ class HistorialMedicoViewController: UIViewController {
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "fondo4.png")
         self.view.insertSubview(backgroundImage, at: 0)
-        
+        self.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.red], for:.selected)
         
 
         // Do any additional setup after loading the view.
@@ -35,7 +35,10 @@ class HistorialMedicoViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.tabBar.tintColor = UIColor.red
+    }
     /*
     // MARK: - Navigation
 

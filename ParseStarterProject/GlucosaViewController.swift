@@ -122,7 +122,11 @@ class GlucosaViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         super.viewDidLoad()
         self.pickerView.dataSource = self;
         self.pickerView.delegate = self;
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "iOS-7-Wallpaper-2-577x1024.png")!)
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named: "fondo4.png")
+        self.view.insertSubview(backgroundImage, at: 0)
+
+        self.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.red], for:.selected)
         
         self.pickerView.selectRow( pickerDataSource.index(of: 100.0)!, inComponent: 0, animated: true)
 
@@ -139,6 +143,11 @@ class GlucosaViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return pickerDataSource.count;
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.tabBar.tintColor = UIColor.red
+        
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {

@@ -54,12 +54,15 @@ class ConsultaViewController: UIViewController, UIPickerViewDataSource, UIPicker
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "fondo4.png")
         self.view.insertSubview(backgroundImage, at: 0)
-
-
+        
+        self.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.red], for:.selected)
 
         // Do any additional setup after loading the view.
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.tabBar.tintColor = UIColor.red
+    }
     @IBAction func solicitarConsulta(_ sender: AnyObject) {
           //print(datePicker.datePickerMode())
        activityIndicator = UIActivityIndicatorView(frame: self.view.frame)

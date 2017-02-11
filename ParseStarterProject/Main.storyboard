@@ -474,6 +474,34 @@
             </objects>
             <point key="canvasLocation" x="-1641" y="-1232"/>
         </scene>
+        <!--Table View Controller-->
+        <scene sceneID="L5f-RU-BjP">
+            <objects>
+                <tableViewController id="7FD-Kd-W9W" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="2ML-o6-w1Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="RsD-Hd-l68">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RsD-Hd-l68" id="0ue-qm-3sL">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="7FD-Kd-W9W" id="X6N-DD-Lec"/>
+                            <outlet property="delegate" destination="7FD-Kd-W9W" id="k3x-LS-a4j"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vYb-0t-9Jn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-210" y="-793"/>
+        </scene>
         <!--Menu View Controller-->
         <scene sceneID="hor-YJ-xbY">
             <objects>
@@ -542,6 +570,9 @@
                                     <navigationItem title="Diappetes" id="5km-8F-hoN">
                                         <barButtonItem key="leftBarButtonItem" image="rounded-512.png" id="AXw-az-LPy">
                                             <color key="tintColor" red="0.97254901960784312" green="0.0" blue="0.086274509803921567" alpha="0.99520474137931036" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <segue destination="7FD-Kd-W9W" kind="show" id="oJ6-ja-cky"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -688,9 +719,9 @@
                             <constraint firstItem="IT8-ch-Np1" firstAttribute="leading" secondItem="epO-yW-icc" secondAttribute="leadingMargin" constant="-20" id="vhR-gm-gdq"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Tipo" image="Info-50.png" id="JNA-J1-4Is"/>
+                    <tabBarItem key="tabBarItem" title="Tips" image="Info-50.png" id="JNA-J1-4Is"/>
                     <connections>
-                        <outlet property="webView" destination="IT8-ch-Np1" id="Kjb-ej-WNb"/>
+                        <outlet property="webView" destination="IT8-ch-Np1" id="dcE-7b-fnz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t2s-wV-pNb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -842,7 +873,13 @@
                             <constraint firstItem="hUF-2e-hW0" firstAttribute="leading" secondItem="aYe-4L-H8G" secondAttribute="leadingMargin" constant="-20" id="nWy-yv-bWu"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Historial" image="Health" id="FaD-HQ-CYK"/>
+                    <tabBarItem key="tabBarItem" title="Historial" image="Health" id="FaD-HQ-CYK">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="keyPath">
+                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vVp-62-icU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -945,7 +982,13 @@
                             <constraint firstItem="qTL-gJ-eBp" firstAttribute="top" secondItem="BB3-oc-RzJ" secondAttribute="bottom" constant="21" id="wFU-l0-sPQ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Glucosa" image="Diabetes-50.png" id="ZWD-ad-tFz"/>
+                    <tabBarItem key="tabBarItem" title="Glucosa" image="Diabetes-50.png" id="ZWD-ad-tFz">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="keyPath">
+                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <connections>
                         <outlet property="datePicker" destination="QYT-Yc-jEo" id="aOw-LE-1NN"/>
                         <outlet property="labelGlucose" destination="oJK-My-Ppb" id="CkQ-of-rvy"/>
@@ -956,10 +999,10 @@
             </objects>
             <point key="canvasLocation" x="2582" y="1710"/>
         </scene>
-        <!--Tab Bar View Controller-->
+        <!--Tab Bar Controller-->
         <scene sceneID="eIq-Sh-cWV">
             <objects>
-                <tabBarController id="YeQ-NJ-b53" customClass="TabBarViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="YeQ-NJ-b53" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="b9D-RX-Pop">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1054,12 +1097,18 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Nkw-Qo-c58" firstAttribute="leading" secondItem="nL4-Mq-khP" secondAttribute="leadingMargin" constant="-20" id="4PT-x8-ksb"/>
-                            <constraint firstItem="Nkw-Qo-c58" firstAttribute="top" secondItem="Y8A-lq-KbP" secondAttribute="bottom" constant="8" id="DHK-5f-LHI"/>
+                            <constraint firstItem="Nkw-Qo-c58" firstAttribute="top" secondItem="Y8A-lq-KbP" secondAttribute="bottom" constant="8" id="Ea1-Gq-kjW"/>
                             <constraint firstItem="Nkw-Qo-c58" firstAttribute="centerX" secondItem="nL4-Mq-khP" secondAttribute="centerX" id="GQq-Zj-Hbd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Nkw-Qo-c58" secondAttribute="trailing" constant="-20" id="bhm-pI-HHy"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="FichaMedica" image="TreatmentPlan" id="f4Q-nU-pEO"/>
+                    <tabBarItem key="tabBarItem" title="FichaMedica" image="TreatmentPlan" id="f4Q-nU-pEO">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sRZ-e2-PcV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1158,13 +1207,7 @@
                     <tabBarItem key="tabBarItem" title="Consultas" image="Doctors Bag-50.png" id="HsD-mo-M9m">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
-                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="color" keyPath="barTintColor">
-                                <color key="value" red="0.90532433986663818" green="0.20840843021869659" blue="0.18030156195163727" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="color" keyPath="setSelectedImageColor">
-                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </tabBarItem>
@@ -1355,7 +1398,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GEF-Ai-0WN" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-410" y="-113"/>
+            <point key="canvasLocation" x="-1716" y="0.0"/>
         </scene>
     </scenes>
     <resources>

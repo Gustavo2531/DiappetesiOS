@@ -10,14 +10,11 @@ import UIKit
 
 class TipsViewController: UIViewController {
 
-    @IBOutlet var webView: UIWebView!
     
+    @IBOutlet weak var webView: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = UIImage(named: "fondo4.png")
-        self.view.insertSubview(backgroundImage, at: 0)
-
+       
         
         let url = URL(string: "http://fundacioncarlosslim.org/?s=diabetes")!
         
@@ -27,7 +24,15 @@ class TipsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//        self.tabBarController?.tabBar.tintColor = UIColor.red
+//        let url = URL(string: "http://fundacioncarlosslim.org/?s=diabetes")!
+//        
+//        webView.loadRequest(URLRequest(url: url))
+//
+//    }
+//    
         /*let task = NSURLSession.sharedSession().dataTaskWithURL(url) { (data, response, error) -> Void in
          
          //will happen when task completes
