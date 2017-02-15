@@ -24,40 +24,13 @@
 		844D4E0B1D1214C00098C0C1 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844D4E081D1214C00098C0C1 /* ParseFacebookUtilsV4.framework */; };
 		844D4E111D12184D0098C0C1 /* Man_Woman_Avatar-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 844D4E101D12184D0098C0C1 /* Man_Woman_Avatar-512.png */; };
 		844D4E171D122AAF0098C0C1 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844D4E161D122AAF0098C0C1 /* FeedTableViewController.swift */; };
-		849241971D1880E30008696C /* fondos-de-pantalla-de-iOS-9-11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 849241961D1880E30008696C /* fondos-de-pantalla-de-iOS-9-11.jpg */; };
-		849241991D1883930008696C /* iOS-7-Wallpaper-2-577x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 849241981D1883930008696C /* iOS-7-Wallpaper-2-577x1024.png */; };
 		8492419D1D18902F0008696C /* GlucosaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8492419C1D18902F0008696C /* GlucosaViewController.swift */; };
 		8492419F1D18AA5C0008696C /* ConsultaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8492419E1D18AA5C0008696C /* ConsultaViewController.swift */; };
 		849241A11D18B5FC0008696C /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849241A01D18B5FC0008696C /* TipsViewController.swift */; };
 		849241A31D18CA9A0008696C /* FacebookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849241A21D18CA9A0008696C /* FacebookViewController.swift */; };
 		849241A51D18CC210008696C /* AlimentosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849241A41D18CC210008696C /* AlimentosViewController.swift */; };
-		849241A71D18E44E0008696C /* tips.png in Resources */ = {isa = PBXBuildFile; fileRef = 849241A61D18E44E0008696C /* tips.png */; };
-		849241A91D18E4530008696C /* historialMedico.png in Resources */ = {isa = PBXBuildFile; fileRef = 849241A81D18E4530008696C /* historialMedico.png */; };
-		849241AB1D18E4580008696C /* alimentos.png in Resources */ = {isa = PBXBuildFile; fileRef = 849241AA1D18E4580008696C /* alimentos.png */; };
-		849241AD1D18E45D0008696C /* calendario.png in Resources */ = {isa = PBXBuildFile; fileRef = 849241AC1D18E45D0008696C /* calendario.png */; };
-		849241AF1D18E6910008696C /* insulina.png in Resources */ = {isa = PBXBuildFile; fileRef = 849241AE1D18E6910008696C /* insulina.png */; };
 		849429C31D18EB1500AFE68C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849429C21D18EB1500AFE68C /* MenuViewController.swift */; };
-		849429C51D18EBF400AFE68C /* FAQ-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 849429C41D18EBF400AFE68C /* FAQ-512.png */; };
 		84DF5D741D176D97004ED18F /* Captura de pantalla 2016-06-19 a las 7.15.28 p.m..png in Resources */ = {isa = PBXBuildFile; fileRef = 84DF5D731D176D97004ED18F /* Captura de pantalla 2016-06-19 a las 7.15.28 p.m..png */; };
-		84DF5D861D179B1D004ED18F /* Add Rule-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DF5D7A1D179B1D004ED18F /* Add Rule-50.png */; };
-		84DF5D871D179B1D004ED18F /* Add Shopping Cart-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DF5D7B1D179B1D004ED18F /* Add Shopping Cart-50.png */; };
-		84DF5D881D179B1D004ED18F /* AED-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DF5D7C1D179B1D004ED18F /* AED-50.png */; };
-		84DF5D891D179B1D004ED18F /* Area Chart-501.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DF5D7D1D179B1D004ED18F /* Area Chart-501.png */; };
-		84DF5D8A1D179B1D004ED18F /* Caloric Energy-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DF5D7E1D179B1D004ED18F /* Caloric Energy-50.png */; };
-		84DF5D8B1D179B1D004ED18F /* Diabetes-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DF5D7F1D179B1D004ED18F /* Diabetes-50.png */; };
-		84DF5D8C1D179B1D004ED18F /* Doctors Bag-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DF5D801D179B1D004ED18F /* Doctors Bag-50.png */; };
-		84DF5D8D1D179B1D004ED18F /* Heart Monitor-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DF5D811D179B1D004ED18F /* Heart Monitor-50.png */; };
-		84DF5D8E1D179B1D004ED18F /* Info-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DF5D821D179B1D004ED18F /* Info-50.png */; };
-		84DF5D8F1D179B1D004ED18F /* Medical Doctor-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DF5D831D179B1D004ED18F /* Medical Doctor-50.png */; };
-		84DF5D901D179B1D004ED18F /* Menu-501.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DF5D841D179B1D004ED18F /* Menu-501.png */; };
-		84DF5D911D179B1D004ED18F /* Pill-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DF5D851D179B1D004ED18F /* Pill-50.png */; };
-		84DF5D931D17A2DD004ED18F /* Health Book-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DF5D921D17A2DD004ED18F /* Health Book-25.png */; };
-		84DF5D951D17A441004ED18F /* Chat Filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DF5D941D17A441004ED18F /* Chat Filled-25.png */; };
-		84DF5D971D17A4DE004ED18F /* Treatment Plan-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DF5D961D17A4DE004ED18F /* Treatment Plan-25.png */; };
-		84DF5D991D17A694004ED18F /* Christmas Star Filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DF5D981D17A694004ED18F /* Christmas Star Filled-25.png */; };
-		84DF5D9B1D17A9B9004ED18F /* Alarm Clock-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DF5D9A1D17A9B9004ED18F /* Alarm Clock-25.png */; };
-		84DF5D9D1D17A9D0004ED18F /* Facebook Filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DF5D9C1D17A9D0004ED18F /* Facebook Filled-25.png */; };
-		84DF5D9F1D17A9D7004ED18F /* Line Chart Filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DF5D9E1D17A9D7004ED18F /* Line Chart Filled-25.png */; };
 		84DF5DA11D17AF91004ED18F /* PostImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DF5DA01D17AF91004ED18F /* PostImageViewController.swift */; };
 		84DF5DA31D17AF9F004ED18F /* cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DF5DA21D17AF9F004ED18F /* cell.swift */; };
 		B64934051E4D1BA000FBE007 /* Menu-501.png in Resources */ = {isa = PBXBuildFile; fileRef = B64934041E4D1BA000FBE007 /* Menu-501.png */; };
@@ -106,13 +79,15 @@
 		B64A35A21E4E781000B8E7AA /* GraficasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64A35A11E4E781000B8E7AA /* GraficasViewController.swift */; };
 		B64A35A41E4E785B00B8E7AA /* DietaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64A35A31E4E785B00B8E7AA /* DietaViewController.swift */; };
 		B64A35A61E4E7AF300B8E7AA /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64A35A51E4E7AF300B8E7AA /* TabBarViewController.swift */; };
+		B64CDF431E550BB2003C8C7D /* EventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CDF421E550BB2003C8C7D /* EventVC.swift */; };
+		B64CDF451E550DE5003C8C7D /* AddEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CDF441E550DE5003C8C7D /* AddEventVC.swift */; };
 		B6D6B3531E4E3F870010BC75 /* fondo4.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D6B3521E4E3F870010BC75 /* fondo4.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		814C3AC81B69877600E307BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		814C3AC91B69877600E307BB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		81BA81451A49DA1800E65899 /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81BA81451A49DA1800E65899 /* Diappetes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diappetes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81BA814A1A49DA1800E65899 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81BA814C1A49DA1800E65899 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		81BA816B1A49DB6800E65899 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
@@ -131,40 +106,13 @@
 		844D4E081D1214C00098C0C1 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
 		844D4E101D12184D0098C0C1 /* Man_Woman_Avatar-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Man_Woman_Avatar-512.png"; sourceTree = "<group>"; };
 		844D4E161D122AAF0098C0C1 /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
-		849241961D1880E30008696C /* fondos-de-pantalla-de-iOS-9-11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "fondos-de-pantalla-de-iOS-9-11.jpg"; path = "../../Documents/AppsdeXcode/Diappetes/Resources/fondos-de-pantalla-de-iOS-9-11.jpg"; sourceTree = "<group>"; };
-		849241981D1883930008696C /* iOS-7-Wallpaper-2-577x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iOS-7-Wallpaper-2-577x1024.png"; path = "../../Documents/AppsdeXcode/Diappetes/Resources/iOS-7-Wallpaper-2-577x1024.png"; sourceTree = "<group>"; };
 		8492419C1D18902F0008696C /* GlucosaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlucosaViewController.swift; sourceTree = "<group>"; };
 		8492419E1D18AA5C0008696C /* ConsultaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsultaViewController.swift; sourceTree = "<group>"; };
 		849241A01D18B5FC0008696C /* TipsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
 		849241A21D18CA9A0008696C /* FacebookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookViewController.swift; sourceTree = "<group>"; };
 		849241A41D18CC210008696C /* AlimentosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlimentosViewController.swift; sourceTree = "<group>"; };
-		849241A61D18E44E0008696C /* tips.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tips.png; path = ../../Documents/AppsdeXcode/Diappetes/Resources/tips.png; sourceTree = "<group>"; };
-		849241A81D18E4530008696C /* historialMedico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = historialMedico.png; path = ../../Documents/AppsdeXcode/Diappetes/Resources/historialMedico.png; sourceTree = "<group>"; };
-		849241AA1D18E4580008696C /* alimentos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = alimentos.png; path = ../../Documents/AppsdeXcode/Diappetes/Resources/alimentos.png; sourceTree = "<group>"; };
-		849241AC1D18E45D0008696C /* calendario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calendario.png; path = ../../Documents/AppsdeXcode/Diappetes/Resources/calendario.png; sourceTree = "<group>"; };
-		849241AE1D18E6910008696C /* insulina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = insulina.png; path = ../../Documents/AppsdeXcode/Diappetes/Resources/insulina.png; sourceTree = "<group>"; };
 		849429C21D18EB1500AFE68C /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		849429C41D18EBF400AFE68C /* FAQ-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "FAQ-512.png"; path = "../../Documents/AppsdeXcode/Diappetes/Resources/FAQ-512.png"; sourceTree = "<group>"; };
 		84DF5D731D176D97004ED18F /* Captura de pantalla 2016-06-19 a las 7.15.28 p.m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de pantalla 2016-06-19 a las 7.15.28 p.m..png"; sourceTree = "<group>"; };
-		84DF5D7A1D179B1D004ED18F /* Add Rule-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Add Rule-50.png"; path = "../../Documents/AppsdeXcode/Diappetes/Resources/icons/Add Rule-50.png"; sourceTree = "<group>"; };
-		84DF5D7B1D179B1D004ED18F /* Add Shopping Cart-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Add Shopping Cart-50.png"; path = "../../Documents/AppsdeXcode/Diappetes/Resources/icons/Add Shopping Cart-50.png"; sourceTree = "<group>"; };
-		84DF5D7C1D179B1D004ED18F /* AED-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AED-50.png"; path = "../../Documents/AppsdeXcode/Diappetes/Resources/icons/AED-50.png"; sourceTree = "<group>"; };
-		84DF5D7D1D179B1D004ED18F /* Area Chart-501.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Area Chart-501.png"; path = "../../Documents/AppsdeXcode/Diappetes/Resources/icons/Area Chart-501.png"; sourceTree = "<group>"; };
-		84DF5D7E1D179B1D004ED18F /* Caloric Energy-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Caloric Energy-50.png"; path = "../../Documents/AppsdeXcode/Diappetes/Resources/icons/Caloric Energy-50.png"; sourceTree = "<group>"; };
-		84DF5D7F1D179B1D004ED18F /* Diabetes-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Diabetes-50.png"; path = "../../Documents/AppsdeXcode/Diappetes/Resources/icons/Diabetes-50.png"; sourceTree = "<group>"; };
-		84DF5D801D179B1D004ED18F /* Doctors Bag-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Doctors Bag-50.png"; path = "../../Documents/AppsdeXcode/Diappetes/Resources/icons/Doctors Bag-50.png"; sourceTree = "<group>"; };
-		84DF5D811D179B1D004ED18F /* Heart Monitor-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Heart Monitor-50.png"; path = "../../Documents/AppsdeXcode/Diappetes/Resources/icons/Heart Monitor-50.png"; sourceTree = "<group>"; };
-		84DF5D821D179B1D004ED18F /* Info-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Info-50.png"; path = "../../Documents/AppsdeXcode/Diappetes/Resources/icons/Info-50.png"; sourceTree = "<group>"; };
-		84DF5D831D179B1D004ED18F /* Medical Doctor-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Medical Doctor-50.png"; path = "../../Documents/AppsdeXcode/Diappetes/Resources/icons/Medical Doctor-50.png"; sourceTree = "<group>"; };
-		84DF5D841D179B1D004ED18F /* Menu-501.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Menu-501.png"; path = "../../Documents/AppsdeXcode/Diappetes/Resources/icons/Menu-501.png"; sourceTree = "<group>"; };
-		84DF5D851D179B1D004ED18F /* Pill-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Pill-50.png"; path = "../../Documents/AppsdeXcode/Diappetes/Resources/icons/Pill-50.png"; sourceTree = "<group>"; };
-		84DF5D921D17A2DD004ED18F /* Health Book-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Health Book-25.png"; path = "../../Documents/AppsdeXcode/Diappetes/Resources/icons/Health Book-25.png"; sourceTree = "<group>"; };
-		84DF5D941D17A441004ED18F /* Chat Filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Chat Filled-25.png"; path = "../../Documents/AppsdeXcode/Diappetes/Resources/icons/Chat Filled-25.png"; sourceTree = "<group>"; };
-		84DF5D961D17A4DE004ED18F /* Treatment Plan-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Treatment Plan-25.png"; path = "../../Documents/AppsdeXcode/Diappetes/Resources/icons/Treatment Plan-25.png"; sourceTree = "<group>"; };
-		84DF5D981D17A694004ED18F /* Christmas Star Filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Christmas Star Filled-25.png"; path = "../../Documents/AppsdeXcode/Diappetes/Resources/icons/Christmas Star Filled-25.png"; sourceTree = "<group>"; };
-		84DF5D9A1D17A9B9004ED18F /* Alarm Clock-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Alarm Clock-25.png"; path = "../../Documents/AppsdeXcode/Diappetes/Resources/icons/Alarm Clock-25.png"; sourceTree = "<group>"; };
-		84DF5D9C1D17A9D0004ED18F /* Facebook Filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Facebook Filled-25.png"; path = "../../Documents/AppsdeXcode/Diappetes/Resources/icons/Facebook Filled-25.png"; sourceTree = "<group>"; };
-		84DF5D9E1D17A9D7004ED18F /* Line Chart Filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Line Chart Filled-25.png"; path = "../../Documents/AppsdeXcode/Diappetes/Resources/icons/Line Chart Filled-25.png"; sourceTree = "<group>"; };
 		84DF5DA01D17AF91004ED18F /* PostImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostImageViewController.swift; sourceTree = "<group>"; };
 		84DF5DA21D17AF9F004ED18F /* cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cell.swift; sourceTree = "<group>"; };
 		B64934041E4D1BA000FBE007 /* Menu-501.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Menu-501.png"; path = "Resources/icons/Menu-501.png"; sourceTree = SOURCE_ROOT; };
@@ -213,6 +161,8 @@
 		B64A35A11E4E781000B8E7AA /* GraficasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraficasViewController.swift; sourceTree = "<group>"; };
 		B64A35A31E4E785B00B8E7AA /* DietaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DietaViewController.swift; sourceTree = "<group>"; };
 		B64A35A51E4E7AF300B8E7AA /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		B64CDF421E550BB2003C8C7D /* EventVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventVC.swift; sourceTree = "<group>"; };
+		B64CDF441E550DE5003C8C7D /* AddEventVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventVC.swift; sourceTree = "<group>"; };
 		B6D6B3521E4E3F870010BC75 /* fondo4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fondo4.png; path = Resources/fondo4.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -239,6 +189,7 @@
 		814C3AC51B69877600E307BB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B649342E1E4D1BCE00FBE007 /* alimentos.png */,
 				814C3AC81B69877600E307BB /* Images.xcassets */,
 				814C3AC91B69877600E307BB /* Info.plist */,
 			);
@@ -258,7 +209,7 @@
 		81BA81461A49DA1800E65899 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				81BA81451A49DA1800E65899 /* InstagramClone.app */,
+				81BA81451A49DA1800E65899 /* Diappetes.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -326,12 +277,10 @@
 				B64934511E4D24E500FBE007 /* fondomorado.jpg */,
 				B649343A1E4D1C2F00FBE007 /* rounded-512.png */,
 				B64934041E4D1BA000FBE007 /* Menu-501.png */,
-				849429C41D18EBF400AFE68C /* FAQ-512.png */,
 				B649342A1E4D1BCE00FBE007 /* insulina.png */,
 				B649342B1E4D1BCE00FBE007 /* FAQ-512.png */,
 				B649342C1E4D1BCE00FBE007 /* historialMedico.png */,
 				B649342D1E4D1BCE00FBE007 /* calendario.png */,
-				B649342E1E4D1BCE00FBE007 /* alimentos.png */,
 				B649342F1E4D1BCE00FBE007 /* tips.png */,
 				B64934301E4D1BCE00FBE007 /* iOS-7-Wallpaper-2-577x1024.png */,
 				B64934311E4D1BCE00FBE007 /* fondos-de-pantalla-de-iOS-9-11.jpg */,
@@ -353,32 +302,6 @@
 				B64934151E4D1BAE00FBE007 /* Pill-50.png */,
 				B64934161E4D1BAE00FBE007 /* Doctors Bag-50.png */,
 				B64934171E4D1BAE00FBE007 /* Area Chart-501.png */,
-				84DF5D9A1D17A9B9004ED18F /* Alarm Clock-25.png */,
-				84DF5D7A1D179B1D004ED18F /* Add Rule-50.png */,
-				849241AE1D18E6910008696C /* insulina.png */,
-				849241AC1D18E45D0008696C /* calendario.png */,
-				849241A81D18E4530008696C /* historialMedico.png */,
-				849241AA1D18E4580008696C /* alimentos.png */,
-				84DF5D7B1D179B1D004ED18F /* Add Shopping Cart-50.png */,
-				84DF5D981D17A694004ED18F /* Christmas Star Filled-25.png */,
-				84DF5D941D17A441004ED18F /* Chat Filled-25.png */,
-				849241A61D18E44E0008696C /* tips.png */,
-				84DF5D921D17A2DD004ED18F /* Health Book-25.png */,
-				84DF5D9C1D17A9D0004ED18F /* Facebook Filled-25.png */,
-				84DF5D9E1D17A9D7004ED18F /* Line Chart Filled-25.png */,
-				84DF5D7C1D179B1D004ED18F /* AED-50.png */,
-				84DF5D961D17A4DE004ED18F /* Treatment Plan-25.png */,
-				84DF5D7D1D179B1D004ED18F /* Area Chart-501.png */,
-				84DF5D7E1D179B1D004ED18F /* Caloric Energy-50.png */,
-				849241981D1883930008696C /* iOS-7-Wallpaper-2-577x1024.png */,
-				84DF5D7F1D179B1D004ED18F /* Diabetes-50.png */,
-				84DF5D801D179B1D004ED18F /* Doctors Bag-50.png */,
-				84DF5D811D179B1D004ED18F /* Heart Monitor-50.png */,
-				849241961D1880E30008696C /* fondos-de-pantalla-de-iOS-9-11.jpg */,
-				84DF5D821D179B1D004ED18F /* Info-50.png */,
-				84DF5D831D179B1D004ED18F /* Medical Doctor-50.png */,
-				84DF5D841D179B1D004ED18F /* Menu-501.png */,
-				84DF5D851D179B1D004ED18F /* Pill-50.png */,
 			);
 			name = icons;
 			path = ../../../../Downloads/icons;
@@ -406,6 +329,8 @@
 			isa = PBXGroup;
 			children = (
 				B64A359C1E4E775200B8E7AA /* CalendarioViewController.swift */,
+				B64CDF421E550BB2003C8C7D /* EventVC.swift */,
+				B64CDF441E550DE5003C8C7D /* AddEventVC.swift */,
 			);
 			name = CalendarioController;
 			sourceTree = "<group>";
@@ -460,7 +385,7 @@
 			);
 			name = Diappetes;
 			productName = ParseStarterProject;
-			productReference = 81BA81451A49DA1800E65899 /* InstagramClone.app */;
+			productReference = 81BA81451A49DA1800E65899 /* Diappetes.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -503,72 +428,45 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84DF5D8E1D179B1D004ED18F /* Info-50.png in Resources */,
 				B64934561E4D266100FBE007 /* fondo2.jpg in Resources */,
-				849241971D1880E30008696C /* fondos-de-pantalla-de-iOS-9-11.jpg in Resources */,
-				849241AF1D18E6910008696C /* insulina.png in Resources */,
 				B649341E1E4D1BAE00FBE007 /* Treatment Plan-25.png in Resources */,
 				B64934541E4D24E500FBE007 /* fondomorado.jpg in Resources */,
 				B649341F1E4D1BAE00FBE007 /* Chat Filled-25.png in Resources */,
-				84DF5D901D179B1D004ED18F /* Menu-501.png in Resources */,
-				84DF5D951D17A441004ED18F /* Chat Filled-25.png in Resources */,
 				B649341B1E4D1BAE00FBE007 /* Add Shopping Cart-50.png in Resources */,
 				B649341C1E4D1BAE00FBE007 /* Info-50.png in Resources */,
-				84DF5D871D179B1D004ED18F /* Add Shopping Cart-50.png in Resources */,
 				B64934321E4D1BCE00FBE007 /* insulina.png in Resources */,
-				84DF5D881D179B1D004ED18F /* AED-50.png in Resources */,
 				B649343B1E4D1C2F00FBE007 /* rounded-512.png in Resources */,
-				84DF5D8D1D179B1D004ED18F /* Heart Monitor-50.png in Resources */,
-				84DF5D861D179B1D004ED18F /* Add Rule-50.png in Resources */,
 				B64934281E4D1BAE00FBE007 /* Doctors Bag-50.png in Resources */,
 				B64934531E4D24E500FBE007 /* fondoazul.jpg in Resources */,
-				849241A91D18E4530008696C /* historialMedico.png in Resources */,
 				B64934051E4D1BA000FBE007 /* Menu-501.png in Resources */,
 				B64934181E4D1BAE00FBE007 /* Line Chart Filled-25.png in Resources */,
-				84DF5D9D1D17A9D0004ED18F /* Facebook Filled-25.png in Resources */,
-				84DF5D9F1D17A9D7004ED18F /* Line Chart Filled-25.png in Resources */,
 				B64934581E4D28C900FBE007 /* fondo.jpg in Resources */,
 				B649341D1E4D1BAE00FBE007 /* Christmas Star Filled-25.png in Resources */,
-				84DF5D8B1D179B1D004ED18F /* Diabetes-50.png in Resources */,
 				814C3ACB1B69877600E307BB /* Images.xcassets in Resources */,
-				84DF5D991D17A694004ED18F /* Christmas Star Filled-25.png in Resources */,
-				849241AD1D18E45D0008696C /* calendario.png in Resources */,
 				B64934521E4D24E500FBE007 /* fondonaranja.jpg in Resources */,
 				844D4E051D120DF30098C0C1 /* Main.storyboard in Resources */,
 				B64934251E4D1BAE00FBE007 /* Heart Monitor-50.png in Resources */,
 				B64934261E4D1BAE00FBE007 /* AED-50.png in Resources */,
-				84DF5D911D179B1D004ED18F /* Pill-50.png in Resources */,
 				B64934211E4D1BAE00FBE007 /* Caloric Energy-50.png in Resources */,
-				84DF5D8F1D179B1D004ED18F /* Medical Doctor-50.png in Resources */,
 				B64934381E4D1BCE00FBE007 /* iOS-7-Wallpaper-2-577x1024.png in Resources */,
-				84DF5D891D179B1D004ED18F /* Area Chart-501.png in Resources */,
 				B649341A1E4D1BAE00FBE007 /* Alarm Clock-25.png in Resources */,
 				B64934331E4D1BCE00FBE007 /* FAQ-512.png in Resources */,
 				B64934341E4D1BCE00FBE007 /* historialMedico.png in Resources */,
 				84DF5D741D176D97004ED18F /* Captura de pantalla 2016-06-19 a las 7.15.28 p.m..png in Resources */,
-				84DF5D8A1D179B1D004ED18F /* Caloric Energy-50.png in Resources */,
-				84DF5D971D17A4DE004ED18F /* Treatment Plan-25.png in Resources */,
 				B64934351E4D1BCE00FBE007 /* calendario.png in Resources */,
 				B64934191E4D1BAE00FBE007 /* Facebook Filled-25.png in Resources */,
 				B64934221E4D1BAE00FBE007 /* Add Rule-50.png in Resources */,
 				B64934241E4D1BAE00FBE007 /* Medical Doctor-50.png in Resources */,
 				B64934231E4D1BAE00FBE007 /* Diabetes-50.png in Resources */,
-				849241AB1D18E4580008696C /* alimentos.png in Resources */,
 				B64934361E4D1BCE00FBE007 /* alimentos.png in Resources */,
 				B64934291E4D1BAE00FBE007 /* Area Chart-501.png in Resources */,
 				B64934271E4D1BAE00FBE007 /* Pill-50.png in Resources */,
 				844D4E111D12184D0098C0C1 /* Man_Woman_Avatar-512.png in Resources */,
 				B64934391E4D1BCE00FBE007 /* fondos-de-pantalla-de-iOS-9-11.jpg in Resources */,
-				849241991D1883930008696C /* iOS-7-Wallpaper-2-577x1024.png in Resources */,
-				849241A71D18E44E0008696C /* tips.png in Resources */,
 				B64934371E4D1BCE00FBE007 /* tips.png in Resources */,
 				B6D6B3531E4E3F870010BC75 /* fondo4.png in Resources */,
 				842117751D16EA63005ED9FA /* Image_3.png in Resources */,
-				849429C51D18EBF400AFE68C /* FAQ-512.png in Resources */,
-				84DF5D9B1D17A9B9004ED18F /* Alarm Clock-25.png in Resources */,
-				84DF5D931D17A2DD004ED18F /* Health Book-25.png in Resources */,
 				B64934201E4D1BAE00FBE007 /* Health Book-25.png in Resources */,
-				84DF5D8C1D179B1D004ED18F /* Doctors Bag-50.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,12 +482,14 @@
 				84DF5DA11D17AF91004ED18F /* PostImageViewController.swift in Sources */,
 				84DF5DA31D17AF9F004ED18F /* cell.swift in Sources */,
 				B64A359D1E4E775200B8E7AA /* CalendarioViewController.swift in Sources */,
+				B64CDF451E550DE5003C8C7D /* AddEventVC.swift in Sources */,
 				849241A31D18CA9A0008696C /* FacebookViewController.swift in Sources */,
 				B64A35A01E4E77B400B8E7AA /* ForoViewController.swift in Sources */,
 				844D4E171D122AAF0098C0C1 /* FeedTableViewController.swift in Sources */,
 				81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */,
 				844D4E031D120DA70098C0C1 /* TableViewController.swift in Sources */,
 				B64A35A41E4E785B00B8E7AA /* DietaViewController.swift in Sources */,
+				B64CDF431E550BB2003C8C7D /* EventVC.swift in Sources */,
 				849241A51D18CC210008696C /* AlimentosViewController.swift in Sources */,
 				B64A35951E4E741500B8E7AA /* MedicamentosViewController.swift in Sources */,
 				B64A35A61E4E7AF300B8E7AA /* TabBarViewController.swift in Sources */,
@@ -697,6 +597,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = YES;
 				DEVELOPMENT_TEAM = AG2VLNQY6U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -705,7 +606,7 @@
 				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mx.IA.Diappetes;
-				PRODUCT_NAME = InstagramClone;
+				PRODUCT_NAME = Diappetes;
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
 			};
@@ -718,6 +619,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = YES;
 				DEVELOPMENT_TEAM = AG2VLNQY6U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -726,7 +628,7 @@
 				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mx.IA.Diappetes;
-				PRODUCT_NAME = InstagramClone;
+				PRODUCT_NAME = Diappetes;
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
 			};

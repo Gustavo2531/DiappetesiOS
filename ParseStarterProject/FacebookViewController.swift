@@ -20,18 +20,9 @@ class FacebookViewController: UIViewController {
         self.view.window!.layer.add(transition, forKey: nil)
         self.dismiss(animated: false, completion: nil)
     }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.tabBarController?.tabBar.tintColor = UIColor.blue
-        let url = URL(string: "https://www.facebook.com")!
-        
-        webView.loadRequest(URLRequest(url: url))
-    }
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = UIImage(named: "fondo4.png")
-        self.view.insertSubview(backgroundImage, at: 0)
         self.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.blue], for:.selected)
         
         let url = URL(string: "https://www.facebook.com")!
@@ -41,6 +32,15 @@ class FacebookViewController: UIViewController {
         
         
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let url = URL(string: "http://www.facebook.com")!
+        
+        webView.loadRequest(URLRequest(url: url))
+        
     }
     
     /*let task = NSURLSession.sharedSession().dataTaskWithURL(url) { (data, response, error) -> Void in

@@ -24,15 +24,15 @@ class TipsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//        self.tabBarController?.tabBar.tintColor = UIColor.red
-//        let url = URL(string: "http://fundacioncarlosslim.org/?s=diabetes")!
-//        
-//        webView.loadRequest(URLRequest(url: url))
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        let url = URL(string: "http://fundacioncarlosslim.org/?s=diabetes")!
+        
+        webView.loadRequest(URLRequest(url: url))
+
+    }
 //
-//    }
-//    
         /*let task = NSURLSession.sharedSession().dataTaskWithURL(url) { (data, response, error) -> Void in
          
          //will happen when task completes
