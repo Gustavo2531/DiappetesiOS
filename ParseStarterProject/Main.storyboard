@@ -153,7 +153,7 @@
                             <constraint firstItem="q5j-0M-up9" firstAttribute="leading" secondItem="nOL-4r-QZg" secondAttribute="leadingMargin" constant="-20" id="xYd-lF-qBv"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Graficas" image="Line" id="jMY-J7-0pD"/>
+                    <tabBarItem key="tabBarItem" title="Graficas" image="Line Chart Filled-25.png" id="jMY-J7-0pD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ppP-gX-OQ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -313,7 +313,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="urA-LG-UWo" secondAttribute="trailing" constant="-20" id="w0M-YS-IfP"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Facebook" image="Facebook" id="dER-rI-ohL"/>
+                    <tabBarItem key="tabBarItem" title="Facebook" image="Facebook Filled-25.png" id="dER-rI-ohL"/>
                     <connections>
                         <outlet property="webView" destination="Kac-6N-uCa" id="El1-Jh-2tU"/>
                     </connections>
@@ -404,7 +404,7 @@
                             <constraint firstItem="zKB-8G-TXr" firstAttribute="leading" secondItem="JOn-Dj-8Wa" secondAttribute="leadingMargin" constant="-20" id="yV5-fD-BgJ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Alarma" image="AlarmClock" id="oCT-i9-EOI"/>
+                    <tabBarItem key="tabBarItem" title="Alarma" image="Alarm Clock-25.png" id="oCT-i9-EOI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qpq-K7-3iD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -501,7 +501,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vYb-0t-9Jn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-210" y="-793"/>
+            <point key="canvasLocation" x="126" y="-1008"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="hor-YJ-xbY">
@@ -787,7 +787,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="orJ-4D-yWK" secondAttribute="trailing" constant="-20" id="YLU-ry-VmB"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Recompensas" image="Christmas" id="j6f-pp-Rzd"/>
+                    <tabBarItem key="tabBarItem" title="Recompensas" image="Christmas Star Filled-25.png" id="j6f-pp-Rzd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mVD-FR-2mu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -876,7 +876,7 @@
                             <constraint firstItem="hUF-2e-hW0" firstAttribute="leading" secondItem="aYe-4L-H8G" secondAttribute="leadingMargin" constant="-20" id="nWy-yv-bWu"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Historial" image="Health" id="FaD-HQ-CYK">
+                    <tabBarItem key="tabBarItem" title="Historial" image="Health Book-25.png" id="FaD-HQ-CYK">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="keyPath">
                                 <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1227,7 +1227,7 @@
         <scene sceneID="A15-fi-7OI">
             <objects>
                 <navigationController id="q6x-33-RM6" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nay-5I-BzU">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="nay-5I-BzU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1563,12 +1563,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u5R-FO-0h7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3090" y="187"/>
+            <point key="canvasLocation" x="3754" y="-459"/>
         </scene>
         <!--Agregar Evento-->
         <scene sceneID="8Nr-U5-iXX">
             <objects>
-                <viewController storyboardIdentifier="AddEventVCID" title="Agregar Evento" id="hfj-1S-ckS" customClass="AddEventVC" customModule="SOCalenderEvent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddEventVCID" title="Agregar Evento" id="hfj-1S-ckS" customClass="AddEventVC" customModule="Diappetes" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="glD-xd-kDj"/>
                         <viewControllerLayoutGuide type="bottom" id="oaB-ek-vJf"/>
@@ -1674,19 +1674,19 @@
     <resources>
         <image name="Add Rule-50.png" width="25" height="25"/>
         <image name="Add Shopping Cart-50.png" width="25" height="25"/>
-        <image name="AlarmClock" width="25" height="25"/>
+        <image name="Alarm Clock-25.png" width="25" height="25"/>
         <image name="Caloric Energy-50.png" width="25" height="25"/>
         <image name="Chat" width="25" height="25"/>
-        <image name="Christmas" width="25" height="25"/>
-        <image name="Diabetes-50.png" width="20" height="20"/>
-        <image name="Doctors Bag-50.png" width="20" height="20"/>
+        <image name="Christmas Star Filled-25.png" width="25" height="25"/>
+        <image name="Diabetes-50.png" width="30" height="30"/>
+        <image name="Doctors Bag-50.png" width="30" height="30"/>
         <image name="FAQ-512.png" width="100" height="130"/>
-        <image name="Facebook" width="25" height="25"/>
-        <image name="Health" width="25" height="25"/>
+        <image name="Facebook Filled-25.png" width="25" height="25"/>
+        <image name="Health Book-25.png" width="25" height="25"/>
         <image name="Heart Monitor-50.png" width="20" height="20"/>
         <image name="Image_3.png" width="144" height="153"/>
         <image name="Info-50.png" width="25" height="25"/>
-        <image name="Line" width="25" height="25"/>
+        <image name="Line Chart Filled-25.png" width="25" height="25"/>
         <image name="Menu-501.png" width="20" height="20"/>
         <image name="Pill-50.png" width="20" height="20"/>
         <image name="TreatmentPlan" width="25" height="25"/>
