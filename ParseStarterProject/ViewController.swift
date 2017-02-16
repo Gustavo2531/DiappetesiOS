@@ -16,7 +16,7 @@
 import UIKit
 import Parse
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
     var signupActive = true
     
@@ -139,6 +139,15 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func backgroundTap(sender: UIControl) {
+        username.resignFirstResponder()
+        password.resignFirstResponder()
+        
+    }
+    
+    @IBAction func textFieldDoneEditing(sender: UITextField) {
+        sender.resignFirstResponder()
+    }
     
     @IBAction func logIn(_ sender: AnyObject) {
         
@@ -169,11 +178,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        username.delegate=self
+        password.delegate=self
         
 
         
         
     }
+    
+    
     
     override func viewDidAppear(_ animated: Bool) {
         
