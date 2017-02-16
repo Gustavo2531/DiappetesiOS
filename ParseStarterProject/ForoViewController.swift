@@ -10,13 +10,24 @@ import UIKit
 
 class ForoViewController: UIViewController {
 
+    @IBOutlet weak var WebView: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = UIImage(named: "fondo4.png")
-        self.view.insertSubview(backgroundImage, at: 0)
+        let url=URL(string: "http://diappetes.2369504.n4.nabble.com")!
+        
+        WebView.loadRequest(URLRequest(url: url))
+        
+        
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let url=URL(string: "http://diappetes.2369504.n4.nabble.com")!
+        
+        WebView.loadRequest(URLRequest(url: url))
     }
 
     override func didReceiveMemoryWarning() {
