@@ -122,10 +122,7 @@ class GlucosaViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         super.viewDidLoad()
         self.pickerView.dataSource = self;
         self.pickerView.delegate = self;
-        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = UIImage(named: "fondo4.png")
-        self.view.insertSubview(backgroundImage, at: 0)
-
+        
         self.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.red], for:.selected)
         
         self.pickerView.selectRow( pickerDataSource.index(of: 100.0)!, inComponent: 0, animated: true)

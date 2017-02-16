@@ -106,6 +106,7 @@
 		B64A35A61E4E7AF300B8E7AA /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64A35A51E4E7AF300B8E7AA /* TabBarViewController.swift */; };
 		B64CDF431E550BB2003C8C7D /* EventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CDF421E550BB2003C8C7D /* EventVC.swift */; };
 		B64CDF451E550DE5003C8C7D /* AddEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CDF441E550DE5003C8C7D /* AddEventVC.swift */; };
+		B68B56C91E553D9B008BCD46 /* Diabetes Monitor-50.png in Resources */ = {isa = PBXBuildFile; fileRef = B68B56C81E553D9B008BCD46 /* Diabetes Monitor-50.png */; };
 		B6D6B3531E4E3F870010BC75 /* fondo4.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D6B3521E4E3F870010BC75 /* fondo4.png */; };
 /* End PBXBuildFile section */
 
@@ -213,6 +214,7 @@
 		B64A35A51E4E7AF300B8E7AA /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		B64CDF421E550BB2003C8C7D /* EventVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventVC.swift; sourceTree = "<group>"; };
 		B64CDF441E550DE5003C8C7D /* AddEventVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventVC.swift; sourceTree = "<group>"; };
+		B68B56C81E553D9B008BCD46 /* Diabetes Monitor-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Diabetes Monitor-50.png"; path = "Resources/Diabetes Monitor-50.png"; sourceTree = SOURCE_ROOT; };
 		B6D6B3521E4E3F870010BC75 /* fondo4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fondo4.png; path = Resources/fondo4.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -321,6 +323,7 @@
 		84DF5D791D179B1D004ED18F /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				B68B56C81E553D9B008BCD46 /* Diabetes Monitor-50.png */,
 				B635EB831E551DC000D9D611 /* Chat Filled-50.png */,
 				B6D6B3521E4E3F870010BC75 /* fondo4.png */,
 				B64934571E4D28C900FBE007 /* fondo.jpg */,
@@ -545,6 +548,7 @@
 				B649341A1E4D1BAE00FBE007 /* Alarm Clock-25.png in Resources */,
 				B64934331E4D1BCE00FBE007 /* FAQ-512.png in Resources */,
 				B635EB671E551BD000D9D611 /* Icon-App-20x20@3x.png in Resources */,
+				B68B56C91E553D9B008BCD46 /* Diabetes Monitor-50.png in Resources */,
 				B64934341E4D1BCE00FBE007 /* historialMedico.png in Resources */,
 				84DF5D741D176D97004ED18F /* Captura de pantalla 2016-06-19 a las 7.15.28 p.m..png in Resources */,
 				B64934351E4D1BCE00FBE007 /* calendario.png in Resources */,

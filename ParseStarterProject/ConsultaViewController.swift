@@ -51,10 +51,7 @@ class ConsultaViewController: UIViewController, UIPickerViewDataSource, UIPicker
         super.viewDidLoad()
         self.doctorPicker.dataSource = self;
         self.doctorPicker.delegate = self;
-        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = UIImage(named: "fondo4.png")
-        self.view.insertSubview(backgroundImage, at: 0)
-        
+                
         self.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.red], for:.selected)
 
         // Do any additional setup after loading the view.
