@@ -12,9 +12,6 @@ class DietaViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = UIImage(named: "fondo4.png")
-        self.view.insertSubview(backgroundImage, at: 0)
         self.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.red], for:.selected)
         // Do any additional setup after loading the view.
     }

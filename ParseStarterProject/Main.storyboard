@@ -249,7 +249,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RXI-2c-GFn">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RXI-2c-GFn">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <textAttributes key="titleTextAttributes">
                                     <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="27"/>
@@ -266,20 +266,109 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desayuno" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Hu-pU-pCY">
+                                <rect key="frame" x="26" y="104" width="87" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="syW-Si-IcU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comida" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IcO-iZ-CEO">
+                                <rect key="frame" x="26" y="209" width="71" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="71" id="ACs-BR-3lK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cena" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mt1-vO-N5r">
+                                <rect key="frame" x="26" y="343" width="50" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="M6a-7a-T57"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 vaso de leche" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnm-UR-7SJ">
+                                <rect key="frame" x="51" y="133" width="118" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 pieza de fruta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Yf-16-mbM">
+                                <rect key="frame" x="51" y="162" width="118" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 botella de agua" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfB-ms-18Y">
+                                <rect key="frame" x="51" y="238" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pollo con verduras al vapor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6f6-Cu-SVh">
+                                <rect key="frame" x="51" y="267" width="207" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Consome de pollo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37M-iF-7an">
+                                <rect key="frame" x="51" y="296" width="139" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 vaso de leche" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHO-a1-Drs">
+                                <rect key="frame" x="51" y="372" width="118" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 manzana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duk-gG-zOR">
+                                <rect key="frame" x="51" y="401" width="82" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="RXI-2c-GFn" secondAttribute="trailing" constant="-20" id="3lS-eB-URx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RXI-2c-GFn" secondAttribute="trailing" constant="-16" id="3lS-eB-URx"/>
+                            <constraint firstItem="pnm-UR-7SJ" firstAttribute="top" secondItem="4Hu-pU-pCY" secondAttribute="bottom" constant="8" symbolic="YES" id="3mC-A8-PuX"/>
+                            <constraint firstItem="6f6-Cu-SVh" firstAttribute="leading" secondItem="4Hu-pU-pCY" secondAttribute="leading" constant="25" id="5DQ-bj-jXH"/>
                             <constraint firstItem="RXI-2c-GFn" firstAttribute="top" secondItem="xRc-rg-KAW" secondAttribute="bottom" constant="8" id="8N3-Br-DXh"/>
+                            <constraint firstItem="dfB-ms-18Y" firstAttribute="leading" secondItem="4Hu-pU-pCY" secondAttribute="leading" constant="25" id="Aoo-40-ViY"/>
                             <constraint firstItem="RXI-2c-GFn" firstAttribute="centerX" secondItem="I3W-df-Lzy" secondAttribute="centerX" id="BPF-0X-BmP"/>
-                            <constraint firstItem="RXI-2c-GFn" firstAttribute="leading" secondItem="I3W-df-Lzy" secondAttribute="leadingMargin" constant="-20" id="jCW-mj-Kpk"/>
+                            <constraint firstItem="2Yf-16-mbM" firstAttribute="top" secondItem="pnm-UR-7SJ" secondAttribute="bottom" constant="8" symbolic="YES" id="D1S-FK-7WQ"/>
+                            <constraint firstItem="mt1-vO-N5r" firstAttribute="leading" secondItem="4Hu-pU-pCY" secondAttribute="leading" id="DKX-IN-g2C"/>
+                            <constraint firstItem="37M-iF-7an" firstAttribute="top" secondItem="6f6-Cu-SVh" secondAttribute="bottom" constant="8" symbolic="YES" id="DhK-eF-mXx"/>
+                            <constraint firstItem="pnm-UR-7SJ" firstAttribute="leading" secondItem="4Hu-pU-pCY" secondAttribute="leading" constant="25" id="EHx-6e-Xf8"/>
+                            <constraint firstItem="mt1-vO-N5r" firstAttribute="top" secondItem="37M-iF-7an" secondAttribute="bottom" constant="26" id="F26-6v-tIv"/>
+                            <constraint firstItem="dfB-ms-18Y" firstAttribute="top" secondItem="IcO-iZ-CEO" secondAttribute="bottom" constant="8" symbolic="YES" id="FTe-PH-0pO"/>
+                            <constraint firstItem="YHO-a1-Drs" firstAttribute="leading" secondItem="4Hu-pU-pCY" secondAttribute="leading" constant="25" id="HK4-dM-UC7"/>
+                            <constraint firstItem="duk-gG-zOR" firstAttribute="leading" secondItem="4Hu-pU-pCY" secondAttribute="leading" constant="25" id="IbA-RX-Mqe"/>
+                            <constraint firstItem="YHO-a1-Drs" firstAttribute="top" secondItem="mt1-vO-N5r" secondAttribute="bottom" constant="8" symbolic="YES" id="JHN-eH-OXW"/>
+                            <constraint firstItem="6f6-Cu-SVh" firstAttribute="top" secondItem="dfB-ms-18Y" secondAttribute="bottom" constant="8" symbolic="YES" id="UJl-3m-IY2"/>
+                            <constraint firstItem="IcO-iZ-CEO" firstAttribute="leading" secondItem="4Hu-pU-pCY" secondAttribute="leading" id="aTG-QH-f5o"/>
+                            <constraint firstItem="4Hu-pU-pCY" firstAttribute="leading" secondItem="I3W-df-Lzy" secondAttribute="leadingMargin" constant="10" id="bjF-Ag-hkb"/>
+                            <constraint firstItem="IcO-iZ-CEO" firstAttribute="top" secondItem="2Yf-16-mbM" secondAttribute="bottom" constant="26" id="bto-aN-5Dc"/>
+                            <constraint firstItem="RXI-2c-GFn" firstAttribute="leading" secondItem="I3W-df-Lzy" secondAttribute="leadingMargin" constant="-16" id="jCW-mj-Kpk"/>
+                            <constraint firstItem="37M-iF-7an" firstAttribute="leading" secondItem="4Hu-pU-pCY" secondAttribute="leading" constant="25" id="qeZ-cP-uI9"/>
+                            <constraint firstItem="duk-gG-zOR" firstAttribute="top" secondItem="YHO-a1-Drs" secondAttribute="bottom" constant="8" symbolic="YES" id="sLV-mA-ZWd"/>
+                            <constraint firstItem="4Hu-pU-pCY" firstAttribute="top" secondItem="RXI-2c-GFn" secondAttribute="bottom" constant="32" id="v4i-2N-YoE"/>
+                            <constraint firstItem="2Yf-16-mbM" firstAttribute="leading" secondItem="4Hu-pU-pCY" secondAttribute="leading" constant="25" id="xrU-uf-HdF"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dieta" image="Caloric Energy-50.png" id="YO1-6k-4GK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XwS-67-Udb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2422" y="-1296"/>
+            <point key="canvasLocation" x="2421.5999999999999" y="-1296.7016491754123"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="pYM-Ye-qwK">
