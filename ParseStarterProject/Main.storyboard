@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M1f-kJ-pRD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M1f-kJ-pRD">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -232,21 +232,94 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Medicamento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJu-Yk-A71">
+                                <rect key="frame" x="44" y="108" width="141" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="141" id="4QQ-ky-XfG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dosis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6r-Ar-dTe">
+                                <rect key="frame" x="211" y="108" width="64" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Paracetamol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxA-nl-rq5">
+                                <rect key="frame" x="44" y="178" width="96" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="750 mg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BjN-xc-uI2">
+                                <rect key="frame" x="211" y="177" width="59" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Aspirina" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWO-Vy-jcX">
+                                <rect key="frame" x="44" y="242" width="62" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="500 mg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQ8-5r-P92">
+                                <rect key="frame" x="211" y="241" width="60" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ibupofreno" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kw-bL-Lnv">
+                                <rect key="frame" x="44" y="314" width="84" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="200 mg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dkk-D8-KC5">
+                                <rect key="frame" x="211" y="314" width="60" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dk-jh-u2N">
+                                <rect key="frame" x="44" y="359" width="125" height="30"/>
+                                <state key="normal" title="Ir a mi tratamiento"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="bQ8-5r-P92" firstAttribute="leading" secondItem="BjN-xc-uI2" secondAttribute="leading" id="0Ko-g0-FUo"/>
                             <constraint firstItem="ZrX-Sr-yeJ" firstAttribute="centerX" secondItem="rCD-We-b7e" secondAttribute="centerX" id="0uR-Jf-M4p"/>
                             <constraint firstItem="ZrX-Sr-yeJ" firstAttribute="leading" secondItem="rCD-We-b7e" secondAttribute="leadingMargin" constant="-20" id="9gs-Vv-OLw"/>
+                            <constraint firstItem="MJu-Yk-A71" firstAttribute="top" secondItem="ZrX-Sr-yeJ" secondAttribute="bottom" constant="36" id="DVF-Nv-aYG"/>
+                            <constraint firstItem="bQ8-5r-P92" firstAttribute="leading" secondItem="nWO-Vy-jcX" secondAttribute="trailing" constant="105" id="GVH-bN-PeN"/>
+                            <constraint firstItem="BjN-xc-uI2" firstAttribute="leading" secondItem="gxA-nl-rq5" secondAttribute="trailing" constant="71" id="Pol-I6-Dl7"/>
                             <constraint firstItem="ZrX-Sr-yeJ" firstAttribute="top" secondItem="RXK-e1-38u" secondAttribute="bottom" id="QOX-WO-bZK"/>
+                            <constraint firstItem="Dkk-D8-KC5" firstAttribute="leading" secondItem="7kw-bL-Lnv" secondAttribute="trailing" constant="83" id="RzU-qh-bCE"/>
+                            <constraint firstItem="A6r-Ar-dTe" firstAttribute="leading" secondItem="MJu-Yk-A71" secondAttribute="trailing" constant="26" id="V9c-1o-ELU"/>
+                            <constraint firstItem="Dkk-D8-KC5" firstAttribute="top" secondItem="bQ8-5r-P92" secondAttribute="bottom" constant="52" id="duH-Nk-Ak8"/>
+                            <constraint firstItem="bQ8-5r-P92" firstAttribute="top" secondItem="BjN-xc-uI2" secondAttribute="bottom" constant="43" id="fGw-ay-e1T"/>
+                            <constraint firstItem="9dk-jh-u2N" firstAttribute="leading" secondItem="7kw-bL-Lnv" secondAttribute="leading" id="fot-gT-gq0"/>
+                            <constraint firstItem="BjN-xc-uI2" firstAttribute="top" secondItem="A6r-Ar-dTe" secondAttribute="bottom" constant="48" id="gBk-R1-iB8"/>
+                            <constraint firstItem="7kw-bL-Lnv" firstAttribute="top" secondItem="nWO-Vy-jcX" secondAttribute="bottom" constant="51" id="h4W-Zn-c6M"/>
+                            <constraint firstItem="MJu-Yk-A71" firstAttribute="leading" secondItem="rCD-We-b7e" secondAttribute="leadingMargin" constant="28" id="kAY-me-xcE"/>
+                            <constraint firstItem="9dk-jh-u2N" firstAttribute="top" secondItem="7kw-bL-Lnv" secondAttribute="bottom" constant="24" id="l5B-7g-cSo"/>
+                            <constraint firstItem="bQ8-5r-P92" firstAttribute="leading" secondItem="Dkk-D8-KC5" secondAttribute="leading" id="lEC-hf-zgG"/>
                             <constraint firstItem="ZrX-Sr-yeJ" firstAttribute="centerX" secondItem="rCD-We-b7e" secondAttribute="centerX" id="o7h-Y8-HG7"/>
+                            <constraint firstItem="A6r-Ar-dTe" firstAttribute="top" secondItem="ZrX-Sr-yeJ" secondAttribute="bottom" constant="36" id="orc-a8-GbF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZrX-Sr-yeJ" secondAttribute="trailing" constant="-20" id="swA-nI-KJW"/>
+                            <constraint firstItem="nWO-Vy-jcX" firstAttribute="top" secondItem="gxA-nl-rq5" secondAttribute="bottom" constant="43" id="uEW-s5-g6r"/>
+                            <constraint firstItem="gxA-nl-rq5" firstAttribute="top" secondItem="MJu-Yk-A71" secondAttribute="bottom" constant="49" id="vi8-dI-GWA"/>
+                            <constraint firstItem="gxA-nl-rq5" firstAttribute="leading" secondItem="rCD-We-b7e" secondAttribute="leadingMargin" constant="28" id="wZX-hl-ara"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Mediciones" image="Pill-50.png" selectedImage="Pill-50.png" id="QuG-Jt-B8r"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B6u-hP-MDS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="828" y="-2425"/>
+            <point key="canvasLocation" x="828" y="-2425.6371814092954"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="DEW-NM-qsg">
@@ -322,94 +395,6 @@
             </objects>
             <point key="canvasLocation" x="-1604" y="-2248.4257871064469"/>
         </scene>
-        <!--Tratamiento-->
-        <scene sceneID="qoD-0w-72b">
-            <objects>
-                <viewController id="gOY-Nl-Kvw" customClass="TratamientoViewController" customModule="Diappetes" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="aRD-Rd-2uw"/>
-                        <viewControllerLayoutGuide type="bottom" id="0kp-4N-ud4"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="jbF-yP-Ea8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FyT-b3-j3M">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="27"/>
-                                    <color key="textColor" red="0.98823529409999999" green="0.050980392159999999" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Tratamiento" id="Pb3-Dy-eVI">
-                                        <barButtonItem key="leftBarButtonItem" image="Menu-501.png" id="ABD-LI-1CV">
-                                            <color key="tintColor" red="0.98823529409999999" green="0.050980392159999999" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <connections>
-                                                <action selector="returnMenu:" destination="gOY-Nl-Kvw" id="asR-j9-RM3"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="FyT-b3-j3M" firstAttribute="top" secondItem="aRD-Rd-2uw" secondAttribute="bottom" constant="8" id="1EZ-O8-tLj"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="FyT-b3-j3M" secondAttribute="trailing" constant="-20" id="2je-Hg-FJe"/>
-                            <constraint firstItem="FyT-b3-j3M" firstAttribute="leading" secondItem="jbF-yP-Ea8" secondAttribute="leadingMargin" constant="-20" id="Vyz-mG-36h"/>
-                            <constraint firstItem="FyT-b3-j3M" firstAttribute="centerX" secondItem="jbF-yP-Ea8" secondAttribute="centerX" id="v62-MR-0al"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Tratamiento" image="Heart Monitor-50.png" id="Ygd-Ew-K9v"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Lew-yY-55W" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-20" y="-2257"/>
-        </scene>
-        <!--Alarma-->
-        <scene sceneID="LO8-ZJ-xSM">
-            <objects>
-                <viewController id="fzw-fl-cPa" customClass="AlarmasViewController" customModule="Diappetes" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Xvo-vW-Ng4"/>
-                        <viewControllerLayoutGuide type="bottom" id="48M-Ey-w7m"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="JOn-Dj-8Wa">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zKB-8G-TXr">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="27"/>
-                                    <color key="textColor" red="0.98823529409999999" green="0.050980392159999999" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Alarmas" id="orw-gf-UaR">
-                                        <barButtonItem key="leftBarButtonItem" image="Menu-501.png" id="4j3-06-qP2">
-                                            <color key="tintColor" red="0.98823529409999999" green="0.050980392159999999" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <connections>
-                                                <action selector="returnMenu:" destination="fzw-fl-cPa" id="DMQ-1c-7a3"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="zKB-8G-TXr" firstAttribute="top" secondItem="Xvo-vW-Ng4" secondAttribute="bottom" constant="8" id="3CW-Dq-fHt"/>
-                            <constraint firstItem="zKB-8G-TXr" firstAttribute="centerX" secondItem="JOn-Dj-8Wa" secondAttribute="centerX" id="VMm-ff-N5l"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="zKB-8G-TXr" secondAttribute="trailing" constant="-20" id="v59-wV-CMG"/>
-                            <constraint firstItem="zKB-8G-TXr" firstAttribute="leading" secondItem="JOn-Dj-8Wa" secondAttribute="leadingMargin" constant="-20" id="yV5-fD-BgJ"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Alarma" image="Alarm Clock-25.png" id="oCT-i9-EOI"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qpq-K7-3iD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-842" y="-2257"/>
-        </scene>
         <!--Compras-->
         <scene sceneID="m1G-Vg-dIr">
             <objects>
@@ -439,20 +424,31 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k9e-Ut-aAj">
+                                <rect key="frame" x="16" y="90" width="333" height="520"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="21h-ya-a4L" firstAttribute="leading" secondItem="0oK-DT-MNp" secondAttribute="leadingMargin" constant="-20" id="4Nb-qI-fyo"/>
+                            <constraint firstItem="sRS-f9-YEW" firstAttribute="top" secondItem="k9e-Ut-aAj" secondAttribute="bottom" constant="8" id="ad3-OW-hom"/>
+                            <constraint firstItem="k9e-Ut-aAj" firstAttribute="leading" secondItem="0oK-DT-MNp" secondAttribute="leadingMargin" id="bLR-rt-81G"/>
                             <constraint firstItem="21h-ya-a4L" firstAttribute="centerX" secondItem="0oK-DT-MNp" secondAttribute="centerX" id="brx-Oy-thl"/>
+                            <constraint firstItem="k9e-Ut-aAj" firstAttribute="top" secondItem="21h-ya-a4L" secondAttribute="bottom" constant="18" id="tln-02-2pi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="k9e-Ut-aAj" secondAttribute="trailing" constant="10" id="wJk-Ir-TAt"/>
                             <constraint firstItem="21h-ya-a4L" firstAttribute="top" secondItem="cj2-Kt-ysR" secondAttribute="bottom" constant="8" id="wdX-7Z-tiv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="21h-ya-a4L" secondAttribute="trailing" constant="-20" id="x8V-fZ-2dT"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Compras" image="Add Shopping Cart-50.png" id="S1v-dF-mwR"/>
+                    <connections>
+                        <outlet property="WebView" destination="k9e-Ut-aAj" id="gEW-Oj-ews"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y7Y-W5-2sa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2807" y="-2257"/>
+            <point key="canvasLocation" x="-2807.1999999999998" y="-2257.4212893553226"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="vAg-9y-UEi">
@@ -465,10 +461,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="4m4-Ux-aWw" kind="relationship" relationship="viewControllers" id="4Zp-On-qHL"/>
-                        <segue destination="fzw-fl-cPa" kind="relationship" relationship="viewControllers" id="3ZQ-w9-s3M"/>
                         <segue destination="dCq-KN-96Y" kind="relationship" relationship="viewControllers" id="xXi-Zy-KUR"/>
                         <segue destination="tSj-k5-Ucz" kind="relationship" relationship="viewControllers" id="PNz-jg-Ywl"/>
-                        <segue destination="gOY-Nl-Kvw" kind="relationship" relationship="viewControllers" id="vXZ-r6-GeT"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DlX-3W-xfd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -488,7 +482,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RsD-Hd-l68" id="0ue-qm-3sL">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -1214,7 +1208,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kwr-Ob-P99">
-                                <rect key="frame" x="14" y="232.5" width="335" height="61"/>
+                                <rect key="frame" x="14" y="233" width="335" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="TWw-Lw-Rgh"/>
                                 </constraints>
@@ -1649,7 +1643,7 @@
                                         <rect key="frame" x="0.0" y="28" width="600" height="104"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bXP-3h-9B2" id="Xx9-lU-fHw">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="103.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="103"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5CP-om-KPZ">
@@ -1818,7 +1812,6 @@
     <resources>
         <image name="Add Rule-50.png" width="25" height="25"/>
         <image name="Add Shopping Cart-50.png" width="25" height="25"/>
-        <image name="Alarm Clock-25.png" width="25" height="25"/>
         <image name="Caloric Energy-50.png" width="25" height="25"/>
         <image name="Chat" width="25" height="25"/>
         <image name="Christmas Star Filled-25.png" width="25" height="25"/>
@@ -1828,7 +1821,6 @@
         <image name="FAQ-512.png" width="100" height="130"/>
         <image name="Facebook Filled-25.png" width="25" height="25"/>
         <image name="Health Book-25.png" width="25" height="25"/>
-        <image name="Heart Monitor-50.png" width="20" height="20"/>
         <image name="Image_3.png" width="144" height="153"/>
         <image name="Info-50.png" width="25" height="25"/>
         <image name="Line Chart Filled-25.png" width="25" height="25"/>

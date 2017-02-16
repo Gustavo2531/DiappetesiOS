@@ -10,17 +10,21 @@ import UIKit
 
 class ComprasUOtroViewController: UIViewController {
 
+    @IBOutlet weak var WebView: UIWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = UIImage(named: "fondo4.png")
-        self.view.insertSubview(backgroundImage, at: 0)
         self.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.red], for:.selected)
+        
+        let url = URL (string: "https://www.farmaciasanpablo.com.mx/es/MXN/Todas-las-Categor%C3%ADas/Medicamentos/c/06")!
+        WebView.loadRequest(URLRequest(url:url))
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.tabBarController?.tabBar.tintColor = UIColor.red
+        let url = URL (string: "https://www.farmaciasanpablo.com.mx/es/MXN/Todas-las-Categor%C3%ADas/Medicamentos/c/06")!
+        WebView.loadRequest(URLRequest(url:url))
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
