@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M1f-kJ-pRD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M1f-kJ-pRD">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -1103,56 +1103,62 @@
                         <segue destination="CKj-bf-oLm" kind="relationship" relationship="viewControllers" id="emI-Eb-5fC"/>
                         <segue destination="CZc-uE-B1V" kind="relationship" relationship="viewControllers" id="XVb-Sx-Ong"/>
                         <segue destination="zKs-Te-7kP" kind="relationship" relationship="viewControllers" id="Krr-jE-ogt"/>
-                        <segue destination="lLz-pj-pbh" kind="relationship" relationship="viewControllers" id="ARR-kO-d0l"/>
+                        <segue destination="DsA-hU-Evi" kind="relationship" relationship="viewControllers" id="HgH-pi-7Tp"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bvd-3P-jhi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3498" y="766"/>
         </scene>
-        <!--Chat-->
-        <scene sceneID="emP-6x-BaG">
+        <!--Mapa-->
+        <scene sceneID="kxN-Zn-Fc7">
             <objects>
-                <viewController id="lLz-pj-pbh" customClass="ChatViewController" customModule="Diappetes" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="DsA-hU-Evi" customClass="MapViewController" customModule="Diappetes" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="bzh-y0-wZL"/>
-                        <viewControllerLayoutGuide type="bottom" id="ho4-be-itd"/>
+                        <viewControllerLayoutGuide type="top" id="mSG-LO-99p"/>
+                        <viewControllerLayoutGuide type="bottom" id="mqj-fX-SKJ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Nzy-Qv-Zgv">
+                    <view key="view" contentMode="scaleToFill" id="9gV-Fe-cqO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eOI-wb-qpj">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E6O-eV-7Ge">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <textAttributes key="titleTextAttributes">
                                     <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="27"/>
                                     <color key="textColor" red="0.98823529409999999" green="0.050980392159999999" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Chat" id="JBS-9x-CDB">
-                                        <barButtonItem key="leftBarButtonItem" image="Menu-501.png" id="UCO-Xt-6wh">
+                                    <navigationItem title="Mapa" id="g4U-Xe-uKV">
+                                        <barButtonItem key="leftBarButtonItem" image="Menu-501.png" id="sBZ-O9-nvC">
                                             <color key="tintColor" red="0.98823529409999999" green="0.050980392159999999" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
-                                                <action selector="returnMenu:" destination="lLz-pj-pbh" id="Liw-vs-a9Q"/>
+                                                <action selector="returnMenu:" destination="DsA-hU-Evi" id="RGV-ka-YGU"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="cMP-LV-SKR">
+                                <rect key="frame" x="0.0" y="64" width="375" height="556"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="eOI-wb-qpj" firstAttribute="leading" secondItem="Nzy-Qv-Zgv" secondAttribute="leadingMargin" constant="-20" id="JMc-ax-0o2"/>
-                            <constraint firstItem="eOI-wb-qpj" firstAttribute="top" secondItem="bzh-y0-wZL" secondAttribute="bottom" constant="8" id="MUI-9N-iGI"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="eOI-wb-qpj" secondAttribute="trailing" constant="-20" id="YsR-6w-uaI"/>
-                            <constraint firstItem="eOI-wb-qpj" firstAttribute="centerX" secondItem="Nzy-Qv-Zgv" secondAttribute="centerX" id="ccr-Em-VtD"/>
+                            <constraint firstAttribute="trailing" secondItem="E6O-eV-7Ge" secondAttribute="trailing" id="H6G-Wc-kZz"/>
+                            <constraint firstItem="E6O-eV-7Ge" firstAttribute="leading" secondItem="9gV-Fe-cqO" secondAttribute="leading" id="TBt-7T-b7q"/>
+                            <constraint firstItem="E6O-eV-7Ge" firstAttribute="top" secondItem="mSG-LO-99p" secondAttribute="bottom" id="zZC-IH-J0K"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Chat" image="Chat" id="dhe-zA-EFW"/>
+                    <tabBarItem key="tabBarItem" title="Mapa" image="Map Marker-50.png" id="POn-4V-EUd"/>
+                    <connections>
+                        <outlet property="mapView" destination="cMP-LV-SKR" id="Baj-I9-ESM"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ehV-Ul-BBZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yeL-F1-32L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4822" y="1711"/>
+            <point key="canvasLocation" x="4367" y="575"/>
         </scene>
         <!--Insulina-->
         <scene sceneID="X1f-Xd-3yB">
@@ -1322,6 +1328,10 @@
                                     <action selector="solicitarConsulta:" destination="CZc-uE-B1V" eventType="touchUpInside" id="TfU-Y8-bqy"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyx-ah-9Ve">
+                                <rect key="frame" x="152" y="376" width="71" height="30"/>
+                                <state key="normal" title="Ir a Mapas"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -1330,6 +1340,8 @@
                             <constraint firstItem="aQc-vC-gBF" firstAttribute="leading" secondItem="8Sx-gS-MWW" secondAttribute="leadingMargin" id="8r2-TZ-Hgj"/>
                             <constraint firstItem="ew4-3J-co9" firstAttribute="centerX" secondItem="8Sx-gS-MWW" secondAttribute="centerX" id="974-Q9-kBJ"/>
                             <constraint firstItem="uBr-6p-3Br" firstAttribute="centerX" secondItem="8Sx-gS-MWW" secondAttribute="centerX" id="BoK-EN-nyZ"/>
+                            <constraint firstItem="kyx-ah-9Ve" firstAttribute="top" secondItem="o4U-BG-YHY" secondAttribute="bottom" constant="34" id="H3l-fW-Viw"/>
+                            <constraint firstItem="kyx-ah-9Ve" firstAttribute="leading" secondItem="8Sx-gS-MWW" secondAttribute="leadingMargin" constant="136" id="HzO-KW-oae"/>
                             <constraint firstItem="aQc-vC-gBF" firstAttribute="top" secondItem="ATo-AY-Fak" secondAttribute="bottom" constant="8" id="IQj-wv-8LA"/>
                             <constraint firstItem="aQc-vC-gBF" firstAttribute="centerX" secondItem="8Sx-gS-MWW" secondAttribute="centerX" id="Jff-m9-ddM"/>
                             <constraint firstItem="uBr-6p-3Br" firstAttribute="trailing" secondItem="8Sx-gS-MWW" secondAttribute="trailingMargin" id="LAz-ef-h1h"/>
@@ -1813,7 +1825,6 @@
         <image name="Add Rule-50.png" width="25" height="25"/>
         <image name="Add Shopping Cart-50.png" width="25" height="25"/>
         <image name="Caloric Energy-50.png" width="25" height="25"/>
-        <image name="Chat" width="25" height="25"/>
         <image name="Christmas Star Filled-25.png" width="25" height="25"/>
         <image name="Diabetes Monitor-50.png" width="20" height="20"/>
         <image name="Diabetes-50.png" width="30" height="30"/>
@@ -1824,6 +1835,7 @@
         <image name="Image_3.png" width="144" height="153"/>
         <image name="Info-50.png" width="25" height="25"/>
         <image name="Line Chart Filled-25.png" width="25" height="25"/>
+        <image name="Map Marker-50.png" width="30" height="30"/>
         <image name="Menu-501.png" width="20" height="20"/>
         <image name="Pill-50.png" width="20" height="20"/>
         <image name="alimentos.png" width="100" height="129"/>

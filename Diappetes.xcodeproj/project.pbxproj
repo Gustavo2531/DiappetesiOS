@@ -93,7 +93,7 @@
 		B64934581E4D28C900FBE007 /* fondo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64934571E4D28C900FBE007 /* fondo.jpg */; };
 		B64A358D1E4E4AC000B8E7AA /* HistorialMedicoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64A358C1E4E4AC000B8E7AA /* HistorialMedicoViewController.swift */; };
 		B64A358F1E4E4B8600B8E7AA /* FichaMedicaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64A358E1E4E4B8600B8E7AA /* FichaMedicaViewController.swift */; };
-		B64A35911E4E4BEA00B8E7AA /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64A35901E4E4BEA00B8E7AA /* ChatViewController.swift */; };
+		B64A35911E4E4BEA00B8E7AA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64A35901E4E4BEA00B8E7AA /* MapViewController.swift */; };
 		B64A35931E4E733E00B8E7AA /* RewardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64A35921E4E733E00B8E7AA /* RewardsViewController.swift */; };
 		B64A35951E4E741500B8E7AA /* MedicamentosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64A35941E4E741500B8E7AA /* MedicamentosViewController.swift */; };
 		B64A35971E4E746900B8E7AA /* TratamientoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64A35961E4E746900B8E7AA /* TratamientoViewController.swift */; };
@@ -107,6 +107,7 @@
 		B64CDF431E550BB2003C8C7D /* EventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CDF421E550BB2003C8C7D /* EventVC.swift */; };
 		B64CDF451E550DE5003C8C7D /* AddEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CDF441E550DE5003C8C7D /* AddEventVC.swift */; };
 		B68B56C91E553D9B008BCD46 /* Diabetes Monitor-50.png in Resources */ = {isa = PBXBuildFile; fileRef = B68B56C81E553D9B008BCD46 /* Diabetes Monitor-50.png */; };
+		B68B56CB1E55487A008BCD46 /* Map Marker-50.png in Resources */ = {isa = PBXBuildFile; fileRef = B68B56CA1E55487A008BCD46 /* Map Marker-50.png */; };
 		B6D6B3531E4E3F870010BC75 /* fondo4.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D6B3521E4E3F870010BC75 /* fondo4.png */; };
 /* End PBXBuildFile section */
 
@@ -201,7 +202,7 @@
 		B64934571E4D28C900FBE007 /* fondo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fondo.jpg; path = Resources/fondo.jpg; sourceTree = SOURCE_ROOT; };
 		B64A358C1E4E4AC000B8E7AA /* HistorialMedicoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistorialMedicoViewController.swift; sourceTree = "<group>"; };
 		B64A358E1E4E4B8600B8E7AA /* FichaMedicaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FichaMedicaViewController.swift; sourceTree = "<group>"; };
-		B64A35901E4E4BEA00B8E7AA /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		B64A35901E4E4BEA00B8E7AA /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		B64A35921E4E733E00B8E7AA /* RewardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardsViewController.swift; sourceTree = "<group>"; };
 		B64A35941E4E741500B8E7AA /* MedicamentosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicamentosViewController.swift; sourceTree = "<group>"; };
 		B64A35961E4E746900B8E7AA /* TratamientoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TratamientoViewController.swift; sourceTree = "<group>"; };
@@ -215,6 +216,7 @@
 		B64CDF421E550BB2003C8C7D /* EventVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventVC.swift; sourceTree = "<group>"; };
 		B64CDF441E550DE5003C8C7D /* AddEventVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventVC.swift; sourceTree = "<group>"; };
 		B68B56C81E553D9B008BCD46 /* Diabetes Monitor-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Diabetes Monitor-50.png"; path = "Resources/Diabetes Monitor-50.png"; sourceTree = SOURCE_ROOT; };
+		B68B56CA1E55487A008BCD46 /* Map Marker-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Map Marker-50.png"; path = "Resources/Map Marker-50.png"; sourceTree = SOURCE_ROOT; };
 		B6D6B3521E4E3F870010BC75 /* fondo4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fondo4.png; path = Resources/fondo4.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -323,6 +325,7 @@
 		84DF5D791D179B1D004ED18F /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				B68B56CA1E55487A008BCD46 /* Map Marker-50.png */,
 				B68B56C81E553D9B008BCD46 /* Diabetes Monitor-50.png */,
 				B635EB831E551DC000D9D611 /* Chat Filled-50.png */,
 				B6D6B3521E4E3F870010BC75 /* fondo4.png */,
@@ -441,7 +444,7 @@
 				8492419C1D18902F0008696C /* GlucosaViewController.swift */,
 				B64A358C1E4E4AC000B8E7AA /* HistorialMedicoViewController.swift */,
 				B64A358E1E4E4B8600B8E7AA /* FichaMedicaViewController.swift */,
-				B64A35901E4E4BEA00B8E7AA /* ChatViewController.swift */,
+				B64A35901E4E4BEA00B8E7AA /* MapViewController.swift */,
 			);
 			name = HistorialMedicoController;
 			sourceTree = "<group>";
@@ -549,6 +552,7 @@
 				B64934331E4D1BCE00FBE007 /* FAQ-512.png in Resources */,
 				B635EB671E551BD000D9D611 /* Icon-App-20x20@3x.png in Resources */,
 				B68B56C91E553D9B008BCD46 /* Diabetes Monitor-50.png in Resources */,
+				B68B56CB1E55487A008BCD46 /* Map Marker-50.png in Resources */,
 				B64934341E4D1BCE00FBE007 /* historialMedico.png in Resources */,
 				84DF5D741D176D97004ED18F /* Captura de pantalla 2016-06-19 a las 7.15.28 p.m..png in Resources */,
 				B64934351E4D1BCE00FBE007 /* calendario.png in Resources */,
@@ -615,7 +619,7 @@
 				B64A35A21E4E781000B8E7AA /* GraficasViewController.swift in Sources */,
 				8492419D1D18902F0008696C /* GlucosaViewController.swift in Sources */,
 				B64A35931E4E733E00B8E7AA /* RewardsViewController.swift in Sources */,
-				B64A35911E4E4BEA00B8E7AA /* ChatViewController.swift in Sources */,
+				B64A35911E4E4BEA00B8E7AA /* MapViewController.swift in Sources */,
 				8492419F1D18AA5C0008696C /* ConsultaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
