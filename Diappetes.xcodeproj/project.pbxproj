@@ -108,6 +108,8 @@
 		B64CDF451E550DE5003C8C7D /* AddEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CDF441E550DE5003C8C7D /* AddEventVC.swift */; };
 		B68B56C91E553D9B008BCD46 /* Diabetes Monitor-50.png in Resources */ = {isa = PBXBuildFile; fileRef = B68B56C81E553D9B008BCD46 /* Diabetes Monitor-50.png */; };
 		B68B56CB1E55487A008BCD46 /* Map Marker-50.png in Resources */ = {isa = PBXBuildFile; fileRef = B68B56CA1E55487A008BCD46 /* Map Marker-50.png */; };
+		B6D4E0A31E5E8DD2006137C1 /* SignosVitalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D4E0A21E5E8DD2006137C1 /* SignosVitalesViewController.swift */; };
+		B6D4E0A71E5E9F07006137C1 /* MenuSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D4E0A61E5E9F07006137C1 /* MenuSettingsTableViewController.swift */; };
 		B6D6B3531E4E3F870010BC75 /* fondo4.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D6B3521E4E3F870010BC75 /* fondo4.png */; };
 /* End PBXBuildFile section */
 
@@ -217,6 +219,8 @@
 		B64CDF441E550DE5003C8C7D /* AddEventVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventVC.swift; sourceTree = "<group>"; };
 		B68B56C81E553D9B008BCD46 /* Diabetes Monitor-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Diabetes Monitor-50.png"; path = "Resources/Diabetes Monitor-50.png"; sourceTree = SOURCE_ROOT; };
 		B68B56CA1E55487A008BCD46 /* Map Marker-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Map Marker-50.png"; path = "Resources/Map Marker-50.png"; sourceTree = SOURCE_ROOT; };
+		B6D4E0A21E5E8DD2006137C1 /* SignosVitalesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignosVitalesViewController.swift; sourceTree = "<group>"; };
+		B6D4E0A61E5E9F07006137C1 /* MenuSettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuSettingsTableViewController.swift; sourceTree = "<group>"; };
 		B6D6B3521E4E3F870010BC75 /* fondo4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fondo4.png; path = Resources/fondo4.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -273,6 +277,7 @@
 		81BA81471A49DA1800E65899 /* ParseStarterProject */ = {
 			isa = PBXGroup;
 			children = (
+				B6D4E0A11E5E8D90006137C1 /* Settings */,
 				B64A359E1E4E77A400B8E7AA /* Foros */,
 				B6D6B3581E4E41DA0010BC75 /* TipsYRecompensasController */,
 				B6D6B3571E4E41D00010BC75 /* HistorialMedicoController */,
@@ -405,6 +410,15 @@
 			name = Foros;
 			sourceTree = "<group>";
 		};
+		B6D4E0A11E5E8D90006137C1 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B6D4E0A21E5E8DD2006137C1 /* SignosVitalesViewController.swift */,
+				B6D4E0A61E5E9F07006137C1 /* MenuSettingsTableViewController.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
 		B6D6B3541E4E41990010BC75 /* AlimentacionControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -490,8 +504,9 @@
 				TargetAttributes = {
 					81BA81441A49DA1800E65899 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = AG2VLNQY6U;
+						DevelopmentTeam = X99R8FUBK5;
 						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -600,6 +615,8 @@
 				84DF5DA31D17AF9F004ED18F /* cell.swift in Sources */,
 				B64A359D1E4E775200B8E7AA /* CalendarioViewController.swift in Sources */,
 				B64CDF451E550DE5003C8C7D /* AddEventVC.swift in Sources */,
+				B6D4E0A31E5E8DD2006137C1 /* SignosVitalesViewController.swift in Sources */,
+				B6D4E0A71E5E9F07006137C1 /* MenuSettingsTableViewController.swift in Sources */,
 				849241A31D18CA9A0008696C /* FacebookViewController.swift in Sources */,
 				B64A35A01E4E77B400B8E7AA /* ForoViewController.swift in Sources */,
 				844D4E171D122AAF0098C0C1 /* FeedTableViewController.swift in Sources */,
@@ -715,7 +732,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = YES;
-				DEVELOPMENT_TEAM = AG2VLNQY6U;
+				DEVELOPMENT_TEAM = X99R8FUBK5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -737,7 +754,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = YES;
-				DEVELOPMENT_TEAM = AG2VLNQY6U;
+				DEVELOPMENT_TEAM = X99R8FUBK5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
