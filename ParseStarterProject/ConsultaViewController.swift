@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import EventKit
 class ConsultaViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate  {
     
     @IBAction func returnMenu(_ sender: Any) {
@@ -27,6 +28,7 @@ class ConsultaViewController: UIViewController, UIPickerViewDataSource, UIPicker
     @IBOutlet var datePicker: UIDatePicker!
     
     @IBOutlet var doctorPicker: UIPickerView!
+    let eventStore = EKEventStore()
     
     var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
     
@@ -53,6 +55,7 @@ class ConsultaViewController: UIViewController, UIPickerViewDataSource, UIPicker
         self.doctorPicker.delegate = self;
                 
         self.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.red], for:.selected)
+        self.SOGetPermissionCalendarAccess()
 
         // Do any additional setup after loading the view.
     }
@@ -95,7 +98,27 @@ class ConsultaViewController: UIViewController, UIPickerViewDataSource, UIPicker
                 self.displayAlert("Your date was saved", message: "Tu consulta se programo")
                 
                 
+                let dateStart = self.datePicker.date
+                let dateEnd = self.datePicker.date.addingTimeInterval(5.0 * 60.0)
+                
+                let event:EKEvent = EKEvent(eventStore: self.eventStore)
+                
+                event.title = "Consulta con "+String(self.pickerDataSource[self.doctorPicker.selectedRow(inComponent: 0)])
+                event.startDate = dateStart
+                event.endDate = dateEnd
+                event.notes = "Consulta"
+                event.addAlarm(EKAlarm.init(relativeOffset: -1800.0))
+                event.addAlarm(EKAlarm(absoluteDate: event.startDate))
+                event.calendar = self.eventStore.defaultCalendarForNewEvents
+                do{
+                    try self.eventStore.save(event, span: .thisEvent)
+                    print("events added with dates:")
+                } catch let e as NSError {
+                    print(e.description)
+                    return
+                }
                 self.datePicker.setDate(Date(), animated: true)
+
                 
                 
             }else{
@@ -105,6 +128,30 @@ class ConsultaViewController: UIViewController, UIPickerViewDataSource, UIPicker
 
         
     }
+    func SOGetPermissionCalendarAccess() {
+        switch EKEventStore.authorizationStatus(for: .event) {
+        case .authorized:
+            print("Authorised")
+        case .denied:
+            print("Access denied")
+        case .notDetermined:
+            // 3
+            
+            
+            
+            eventStore.requestAccess(to: .event, completion: { (granted: Bool, error: Error?) in
+                if granted {
+                    print("Granted")
+                } else {
+                    print("Access Denied")
+                }
+            } )
+        default:
+            print("Case Default")
+        }
+    }
+    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -118,7 +165,7 @@ class ConsultaViewController: UIViewController, UIPickerViewDataSource, UIPicker
         return pickerDataSource.count;
     }
     
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return String(pickerDataSource[row])
     }
     

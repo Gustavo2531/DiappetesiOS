@@ -89,6 +89,8 @@ class AddEventVC: UIViewController {
         event.startDate = dateStart!
         event.endDate = dateEnd!
         event.notes = "This is a note"
+        event.addAlarm(EKAlarm.init(relativeOffset: -300.0))
+        event.addAlarm(EKAlarm(absoluteDate: event.startDate))
         event.calendar = eventStore.defaultCalendarForNewEvents
         
         do {

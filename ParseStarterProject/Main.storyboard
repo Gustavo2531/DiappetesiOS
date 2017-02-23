@@ -812,14 +812,14 @@
                         <barButtonItem key="leftBarButtonItem" image="Menu-501.png" id="mMT-mL-DHI">
                             <connections>
                                 <action selector="returnMenu:" destination="n5Z-hg-BOR" id="FYI-Wr-Woc"/>
-                                <segue destination="L58-Zu-CeN" kind="show" id="XT6-rU-8Vt"/>
+                                <segue destination="L58-Zu-CeN" kind="presentation" id="kSe-Qj-y93"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1hg-7p-kUW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-796" y="-692"/>
+            <point key="canvasLocation" x="-881" y="-1210"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oQS-nU-k3N">
@@ -830,12 +830,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="n5Z-hg-BOR" kind="relationship" relationship="rootViewController" id="oFD-ZE-EKu"/>
+                        <segue destination="n5Z-hg-BOR" kind="relationship" relationship="rootViewController" id="LbB-u7-fIt"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bJ6-no-4YN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-294" y="-42"/>
+            <point key="canvasLocation" x="-1383" y="-292"/>
         </scene>
         <!--Signos Vitales-->
         <scene sceneID="1T3-wE-zWk">
@@ -849,19 +849,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Máximo Glucosa Ayuno por día" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jc-fU-CoO">
-                                <rect key="frame" x="16" y="85" width="157" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Máximo Glucosa Ayuno por día" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jc-fU-CoO">
+                                <rect key="frame" x="16" y="38" width="157" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="157" id="XZm-RB-MYa"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Máximo Glucosa Postprandial por día" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cy-IO-m4q">
-                                <rect key="frame" x="16" y="154" width="157" height="42"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="157" id="032-3p-aiQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -904,6 +895,15 @@
                                     <action selector="guardarDatos:" destination="5ed-wG-Cwh" eventType="touchUpInside" id="PVU-pP-tMc"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Máximo Glucosa Postprandial por día" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cy-IO-m4q">
+                                <rect key="frame" x="16" y="110" width="157" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="157" id="032-3p-aiQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -923,6 +923,7 @@
                             <constraint firstItem="GhU-Fq-iSP" firstAttribute="top" secondItem="5cy-IO-m4q" secondAttribute="bottom" constant="28" id="jfT-0u-U8Q"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Wwd-zr-Ze2" secondAttribute="trailing" constant="4" id="lQu-Rd-iWL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TMx-gr-XV8" secondAttribute="trailing" constant="4" id="m1A-Yb-NfU"/>
+                            <constraint firstItem="0jc-fU-CoO" firstAttribute="centerY" secondItem="g8N-cD-oZn" secondAttribute="centerY" id="o4c-GM-8U4"/>
                             <constraint firstItem="Wwd-zr-Ze2" firstAttribute="trailing" secondItem="TMx-gr-XV8" secondAttribute="trailing" id="s5J-zN-HD1"/>
                         </constraints>
                     </view>
@@ -935,7 +936,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gwD-IL-Pcw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="37.600000000000001" y="-717.39130434782612"/>
+            <point key="canvasLocation" x="57" y="-778"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="hor-YJ-xbY">
@@ -1443,7 +1444,7 @@
                                     <color key="textColor" red="0.98823529409999999" green="0.050980392159999999" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Datos de Glucosa" id="sBI-8Q-j8N">
+                                    <navigationItem title="Glucosa Ayuno" id="sBI-8Q-j8N">
                                         <barButtonItem key="leftBarButtonItem" image="Menu-501.png" id="nNh-kP-7fB">
                                             <color key="tintColor" red="0.98823529409999999" green="0.050980392159999999" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
@@ -1622,7 +1623,7 @@
                                     <color key="textColor" red="0.98823529409999999" green="0.050980392159999999" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Insulina" id="Phx-T7-6bc">
+                                    <navigationItem title="Glucosa Postprandial" id="Phx-T7-6bc">
                                         <barButtonItem key="leftBarButtonItem" image="Menu-501.png" id="rQe-VD-19C">
                                             <color key="tintColor" red="0.98823529409999999" green="0.050980392159999999" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
@@ -1656,6 +1657,9 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XIc-eI-YeF">
                                 <rect key="frame" x="141" y="322" width="100" height="30"/>
                                 <state key="normal" title="Ingresar Datos"/>
+                                <connections>
+                                    <action selector="ingresarDatos:" destination="zKs-Te-7kP" eventType="touchUpInside" id="bnG-XI-aaF"/>
+                                </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PxM-0A-0Lt">
                                 <rect key="frame" x="20" y="233" width="335" height="61"/>
@@ -1685,10 +1689,14 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Insulina" image="Diabetes-50.png" id="f4Q-nU-pEO"/>
+                    <connections>
+                        <outlet property="datePicker" destination="Wud-7P-xjN" id="gdU-6D-2NS"/>
+                        <outlet property="glucosaPicker" destination="PxM-0A-0Lt" id="sG5-Gq-VCD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sRZ-e2-PcV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4233" y="1744"/>
+            <point key="canvasLocation" x="4365.6000000000004" y="1682.608695652174"/>
         </scene>
         <!--Consultas-->
         <scene sceneID="VbB-m8-9o2">
@@ -1756,10 +1764,6 @@
                                     <action selector="solicitarConsulta:" destination="CZc-uE-B1V" eventType="touchUpInside" id="TfU-Y8-bqy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyx-ah-9Ve">
-                                <rect key="frame" x="152" y="376" width="71" height="30"/>
-                                <state key="normal" title="Ir a Mapas"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -1768,8 +1772,6 @@
                             <constraint firstItem="aQc-vC-gBF" firstAttribute="leading" secondItem="8Sx-gS-MWW" secondAttribute="leadingMargin" id="8r2-TZ-Hgj"/>
                             <constraint firstItem="ew4-3J-co9" firstAttribute="centerX" secondItem="8Sx-gS-MWW" secondAttribute="centerX" id="974-Q9-kBJ"/>
                             <constraint firstItem="uBr-6p-3Br" firstAttribute="centerX" secondItem="8Sx-gS-MWW" secondAttribute="centerX" id="BoK-EN-nyZ"/>
-                            <constraint firstItem="kyx-ah-9Ve" firstAttribute="top" secondItem="o4U-BG-YHY" secondAttribute="bottom" constant="34" id="H3l-fW-Viw"/>
-                            <constraint firstItem="kyx-ah-9Ve" firstAttribute="leading" secondItem="8Sx-gS-MWW" secondAttribute="leadingMargin" constant="136" id="HzO-KW-oae"/>
                             <constraint firstItem="aQc-vC-gBF" firstAttribute="top" secondItem="ATo-AY-Fak" secondAttribute="bottom" constant="8" id="IQj-wv-8LA"/>
                             <constraint firstItem="aQc-vC-gBF" firstAttribute="centerX" secondItem="8Sx-gS-MWW" secondAttribute="centerX" id="Jff-m9-ddM"/>
                             <constraint firstItem="uBr-6p-3Br" firstAttribute="trailing" secondItem="8Sx-gS-MWW" secondAttribute="trailingMargin" id="LAz-ef-h1h"/>
@@ -1793,7 +1795,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tXL-EY-VLy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3338" y="1711"/>
+            <point key="canvasLocation" x="3497" y="1696"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="A15-fi-7OI">
@@ -2279,7 +2281,7 @@
         <image name="tips.png" width="100" height="129"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XT6-rU-8Vt"/>
+        <segue reference="kSe-Qj-y93"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>
