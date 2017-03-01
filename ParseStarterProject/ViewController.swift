@@ -74,7 +74,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 var user = PFUser()
                 user.username = username.text
                 user.password = password.text
-                
+                user["isDoctor"] = false
+                user["name"] = ""
+                user["apellido"] = ""
                 
                 
                 user.signUpInBackground(block: { (success, error) -> Void in

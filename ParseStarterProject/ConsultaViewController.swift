@@ -11,16 +11,8 @@ import Parse
 import EventKit
 class ConsultaViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate  {
     
-    @IBAction func returnMenu(_ sender: Any) {
-//        dismiss(animated: true, completion: nil)
-        let transition: CATransition = CATransition()
-        transition.duration = 0.5
-        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-        transition.type = kCATransitionPush
-        transition.subtype = kCATransitionFromRight
-        self.view.window!.layer.add(transition, forKey: nil)
-        self.dismiss(animated: false, completion: nil)
-    }
+    var userName="username"
+    var apellido="apellido"
     var pickerDataSource = ["Dra. Cortés","Dra. Camargo","Dra. Puerto","Dra. Zamora","Dr. Abdo","Dr. Orihuela"];
     
     
@@ -51,17 +43,14 @@ class ConsultaViewController: UIViewController, UIPickerViewDataSource, UIPicker
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.doctorPicker.dataSource = self;
-        self.doctorPicker.delegate = self;
                 
-        self.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.red], for:.selected)
+        
         self.SOGetPermissionCalendarAccess()
 
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.tabBarController?.tabBar.tintColor = UIColor.red
     }
     @IBAction func solicitarConsulta(_ sender: AnyObject) {
           //print(datePicker.datePickerMode())
@@ -83,7 +72,7 @@ class ConsultaViewController: UIViewController, UIPickerViewDataSource, UIPicker
       
         consulta["date"] = datePicker.date
         consulta["userId"] =  PFUser.current()?.objectId
-        consulta["doctor"] = pickerDataSource[doctorPicker.selectedRow(inComponent: 0)]
+        consulta["doctor"] = self.userName
         
         
         
@@ -103,7 +92,7 @@ class ConsultaViewController: UIViewController, UIPickerViewDataSource, UIPicker
                 
                 let event:EKEvent = EKEvent(eventStore: self.eventStore)
                 
-                event.title = "Consulta con "+String(self.pickerDataSource[self.doctorPicker.selectedRow(inComponent: 0)])
+                event.title = "Consulta con Dr.(a) "+self.apellido
                 event.startDate = dateStart
                 event.endDate = dateEnd
                 event.notes = "Consulta"

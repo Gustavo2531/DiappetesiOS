@@ -16,7 +16,31 @@ class BitcaorasTableViewController: UITableViewController {
     var glucosePost = [""]
     let identificador = "Identificador"
     
-    
+    func obtainData(){
+      
+//        var m=diasS
+//        var l=diasE
+//        if diasS.count>diasE.count{
+//            m=diasS
+//            l=diasE
+//        }else{
+//            m=diasS
+//            l=diasE
+//        }
+//        
+//        for e in m{
+//            if e != ""{
+//            var index1 = e.index(e.endIndex, offsetBy: -4)
+//                print(e.substring(to: index1))
+//            }
+////            for s in l{
+////                if e.substring(to: 9) == s.substring(to: 9){
+////                    
+////                
+////                }
+////            }
+//        }
+    }
     
     @IBAction func returnMenu(_ sender: Any) {
         let transition: CATransition = CATransition()
@@ -28,6 +52,7 @@ class BitcaorasTableViewController: UITableViewController {
         self.dismiss(animated: false, completion: nil)
     }
     override func viewDidLoad() {
+        obtainData()
         super.viewDidLoad()
         let query = PFQuery(className:"Glucose")
         let query2 = PFQuery(className: "GlucosePostrPrandial")
@@ -35,7 +60,7 @@ class BitcaorasTableViewController: UITableViewController {
         query.whereKey("userId", equalTo: (PFUser.current()?.objectId)!)
         query2.order(byDescending: "createdAt");
         query.order(byDescending: "createdAt");
-
+        
         query.findObjectsInBackground(block: { (objects, error) in
             if error != nil{
                 print(error!)
@@ -63,7 +88,6 @@ class BitcaorasTableViewController: UITableViewController {
             }
             
         })
-        
 //        let s: String = self.diasS[0]
 //        let ss1: String = (s as NSString).substring(to: 9)
 //        print(ss1)
