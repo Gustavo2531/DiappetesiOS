@@ -42,8 +42,9 @@ class MedicosTableViewController: UITableViewController, UISearchBarDelegate {
                     self.usernames.append((object["username"] as AnyObject).description)
                     self.direccion.append((object["direccion"] as AnyObject).description)
                     self.apellidos.append((object["apellido"] as AnyObject).description)
-                   
-                    
+                        let h=(object["name"] as AnyObject).description+" "+(object["apellido"] as AnyObject).description
+                    print(h)
+                        self.datos.append((h))
                     self.tableView.reloadData()
                 }
             }
@@ -92,11 +93,11 @@ class MedicosTableViewController: UITableViewController, UISearchBarDelegate {
             cell = UITableViewCell(style: UITableViewCellStyle.default,reuseIdentifier: identificador)
         }
         if(searchActive){
-            cell.textLabel?.text = filtered[indexPath.row]
+            cell.textLabel?.text = "Dr.(a) "+filtered[indexPath.row]
         } else {
         // Configure the cell...
         
-        let objetoMarca = "Dr.(a) "+apellidos[indexPath.row]
+        let objetoMarca = "Dr.(a) "+names[indexPath.row]+" "+apellidos[indexPath.row]
             cell.textLabel?.text=objetoMarca
         }
         
@@ -131,7 +132,7 @@ class MedicosTableViewController: UITableViewController, UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
-        filtered = apellidos.filter({ (text) -> Bool in
+        filtered = datos.filter({ (text) -> Bool in
             let tmp: NSString = text as NSString
            let range = tmp.range(of: searchText, options: NSString.CompareOptions.caseInsensitive)
             return range.location != NSNotFound
