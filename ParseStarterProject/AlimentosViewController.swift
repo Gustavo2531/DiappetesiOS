@@ -12,9 +12,11 @@ class AlimentosViewController: UIViewController, UIPickerViewDataSource, UIPicke
     var foodDataSource = ["Platano","Carne","Atún","Ensalada","Pollo","Pescado","Manzana","Mango","Jamón","Sandwich","Cereal","Barbacoa","Refresco"];
     var quantityDataSource = ["ml","gr","kg","pedazos"];
     
-
+    var nameFood="";
+    var calorias=0.0;
     var quantityFood = 0.0
     
+    @IBOutlet weak var labelName: UILabel!
     @IBOutlet var textField: UITextField!
     @IBOutlet var pickerQuantityView: UIPickerView!
     var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
@@ -34,24 +36,23 @@ class AlimentosViewController: UIViewController, UIPickerViewDataSource, UIPicke
         
         
     }
-    
-    @IBAction func agregarAlimento(_ sender: AnyObject) {
+
+   func agregarAlimento() {
         
-         let food = PFObject(className: "Food")
-        
-        food["food"] = foodDataSource[pickerFoodView.selectedRow(inComponent: 0)]
         
         
         
         switch pickerQuantityView.selectedRow(inComponent: 0) {
         case 0:
-            quantityFood = quantityFood + Double(textField.text!)!
+            self.quantityFood = self.calorias * Double(textField.text!)!
+
         case 1:
-           quantityFood = quantityFood + Double(textField.text!)!
+             self.quantityFood = self.calorias * Double(textField.text!)!
         case 2:
-            quantityFood = quantityFood + Double(textField.text!)!*1000
+            self.quantityFood = self.calorias * Double(textField.text!)!*1000
+
         case 3:
-            quantityFood = quantityFood + Double(textField.text!)! * 10
+              self.quantityFood = self.calorias * (Double(textField.text!)!/10)
         default:
             print("Something else")
         }
@@ -60,6 +61,7 @@ class AlimentosViewController: UIViewController, UIPickerViewDataSource, UIPicke
          //food["quantityFood"] = Double(quantityDataSource[pickerQuantityView.selectedRowInComponent(0)])
     }
     @IBAction func ingresarAlimentos(_ sender: AnyObject) {
+        agregarAlimento()
         activityIndicator = UIActivityIndicatorView(frame: self.view.frame)
         activityIndicator.backgroundColor = UIColor(white: 1.0, alpha: 0.5)
         activityIndicator.center = self.view.center
@@ -74,7 +76,8 @@ class AlimentosViewController: UIViewController, UIPickerViewDataSource, UIPicke
         let food = PFObject(className: "Food")
         //var dateFormatter = NSDateFormatter()
         
-        food["food"] =         
+        food["food"] = nameFood
+        
         food["date"] = Date()
         food["userId"] =  PFUser.current()?.objectId
         
@@ -106,6 +109,7 @@ class AlimentosViewController: UIViewController, UIPickerViewDataSource, UIPicke
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        labelName.text=nameFood
         self.pickerQuantityView.dataSource = self;
         self.pickerQuantityView.delegate = self;
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
@@ -132,8 +136,8 @@ class AlimentosViewController: UIViewController, UIPickerViewDataSource, UIPicke
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        
         var h = 0
+        
         
         if pickerView.tag == 2{
             h = quantityDataSource.count

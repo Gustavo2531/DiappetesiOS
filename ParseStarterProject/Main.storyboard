@@ -37,21 +37,14 @@
                                     <constraint firstAttribute="width" constant="132" id="z2K-JA-7MM"/>
                                 </constraints>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBz-pP-MMk">
-                                <rect key="frame" x="39" y="181" width="55" height="30"/>
-                                <state key="normal" title="Agregar"/>
-                                <connections>
-                                    <action selector="agregarAlimento:" destination="nfV-Xx-8i4" eventType="touchUpInside" id="D3O-1N-Ssd"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHl-O5-UY0">
                                 <rect key="frame" x="39" y="72" width="191" height="31"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qV-Zt-xwc">
-                                <rect key="frame" x="39" y="219" width="56" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qV-Zt-xwc">
+                                <rect key="frame" x="135" y="199" width="56" height="30"/>
                                 <state key="normal" title="Ingresar"/>
                                 <connections>
                                     <action selector="ingresarAlimentos:" destination="nfV-Xx-8i4" eventType="touchUpInside" id="d77-Ym-0bf"/>
@@ -60,11 +53,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="4qV-Zt-xwc" firstAttribute="centerX" secondItem="Xnc-D1-yzt" secondAttribute="centerX" id="0fx-3D-fpt"/>
-                            <constraint firstItem="4qV-Zt-xwc" firstAttribute="top" secondItem="OBz-pP-MMk" secondAttribute="bottom" constant="13" id="COW-Zv-6yn"/>
+                            <constraint firstItem="4qV-Zt-xwc" firstAttribute="centerX" secondItem="Xnc-D1-yzt" secondAttribute="centerX" id="1kR-Hu-yMp"/>
                             <constraint firstItem="LHl-O5-UY0" firstAttribute="leading" secondItem="Xnc-D1-yzt" secondAttribute="leadingMargin" constant="23" id="Gwx-9P-LZb"/>
                             <constraint firstItem="N04-Mn-kon" firstAttribute="leading" secondItem="W7n-Vk-zQD" secondAttribute="trailing" constant="68" id="LAu-Ao-jDI"/>
-                            <constraint firstItem="OBz-pP-MMk" firstAttribute="centerX" secondItem="Xnc-D1-yzt" secondAttribute="centerX" id="PhV-Q7-ChC"/>
+                            <constraint firstItem="4qV-Zt-xwc" firstAttribute="top" secondItem="W7n-Vk-zQD" secondAttribute="bottom" constant="50" id="NON-8q-XS3"/>
                             <constraint firstItem="W7n-Vk-zQD" firstAttribute="top" secondItem="LHl-O5-UY0" secondAttribute="bottom" constant="16" id="Qbp-pn-QaA"/>
                             <constraint firstItem="W7n-Vk-zQD" firstAttribute="leading" secondItem="Xnc-D1-yzt" secondAttribute="leadingMargin" constant="23" id="Udi-9m-uLX"/>
                             <constraint firstItem="N04-Mn-kon" firstAttribute="top" secondItem="LHl-O5-UY0" secondAttribute="bottom" constant="8" id="gBs-YE-U35"/>
@@ -73,13 +65,14 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Alimentacion" image="Add Rule-50.png" id="VeC-I6-3cO"/>
                     <connections>
+                        <outlet property="labelName" destination="LHl-O5-UY0" id="4Cd-Aw-LXe"/>
                         <outlet property="pickerQuantityView" destination="N04-Mn-kon" id="bfT-d5-UP8"/>
                         <outlet property="textField" destination="W7n-Vk-zQD" id="ZHT-WQ-6F0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bjg-Hf-jbi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2421.5999999999999" y="-2401.3493253373317"/>
+            <point key="canvasLocation" x="2159" y="-2581"/>
         </scene>
         <!--Seguimiento-->
         <scene sceneID="ipa-kJ-1dm">
@@ -428,6 +421,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="nfV-Xx-8i4" kind="show" id="ubT-yw-l4p"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -444,7 +440,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="searchBar" destination="wmg-4g-Egd" id="KYg-M6-D2l"/>
-                        <segue destination="nfV-Xx-8i4" kind="show" id="XHU-0S-yT8"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LaE-rR-8qC" userLabel="First Responder" sceneMemberID="firstResponder"/>

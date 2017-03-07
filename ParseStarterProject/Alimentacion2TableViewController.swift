@@ -124,11 +124,10 @@ class Alimentacion2TableViewController: UITableViewController, UISearchBarDelega
         return cell
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let sigVista=segue.destination as! DetailMedicoViewController
-//        let indice = self.tableView.indexPathForSelectedRow?.row
-//        sigVista.nombre=names[indice!]+" "+apellidos[indice!]
-//        sigVista.apellido=apellidos[indice!]
-        
+       let sigVista=segue.destination as! AlimentosViewController
+        let indice = self.tableView.indexPathForSelectedRow?.row
+        sigVista.nameFood=datos[indice!]
+        sigVista.calorias=calorias[indice!]
         
     }
     
@@ -158,7 +157,7 @@ class Alimentacion2TableViewController: UITableViewController, UISearchBarDelega
         if(filtered.count == 0){
             searchActive = false;
         } else {
-            searchActive = true;
+                searchActive = true;
         }
         
         self.tableView.reloadData()
