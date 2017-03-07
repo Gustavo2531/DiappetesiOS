@@ -29,7 +29,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var registeredText: UILabel!
     
     @IBOutlet var loginButton: UIButton!
+    @IBOutlet weak var loginButton2: UIButton!
     
+    @IBOutlet weak var name: UITextField!
+    @IBOutlet weak var lastName: UITextField!
     
     var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
     
@@ -75,8 +78,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 user.username = username.text
                 user.password = password.text
                 user["isDoctor"] = false
-                user["name"] = ""
-                user["apellido"] = ""
+                user["name"] = name.text
+                user["apellido"] = lastName.text
                 
                 
                 user.signUpInBackground(block: { (success, error) -> Void in
@@ -144,6 +147,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func backgroundTap(sender: UIControl) {
         username.resignFirstResponder()
         password.resignFirstResponder()
+        name.resignFirstResponder()
+        lastName.resignFirstResponder()
         
     }
     
@@ -162,6 +167,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
             loginButton.setTitle("Sign Up", for: UIControlState())
             
             signupActive = false
+            name.isHidden = true
+            lastName.isHidden = true
+            signupButton.isHidden=true
+            loginButton2.isHidden = false
             
         } else {
             
@@ -172,6 +181,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
             loginButton.setTitle("Login", for: UIControlState())
             
             signupActive = true
+            name.isHidden = false
+            lastName.isHidden = false
+            loginButton2.isHidden = true
+            signupButton.isHidden=false
             
         }
         
@@ -179,11 +192,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     override func viewDidLoad() {
+        loginButton2.isHidden = true
+
         super.viewDidLoad()
         username.delegate=self
         password.delegate=self
         
-
+        name.delegate=self
+        lastName.delegate=self
         
         
     }

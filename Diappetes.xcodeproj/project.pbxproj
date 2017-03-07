@@ -110,6 +110,7 @@
 		B68B56C91E553D9B008BCD46 /* Diabetes Monitor-50.png in Resources */ = {isa = PBXBuildFile; fileRef = B68B56C81E553D9B008BCD46 /* Diabetes Monitor-50.png */; };
 		B68B56CB1E55487A008BCD46 /* Map Marker-50.png in Resources */ = {isa = PBXBuildFile; fileRef = B68B56CA1E55487A008BCD46 /* Map Marker-50.png */; };
 		B69054301E65F9520045FC77 /* DesgloceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B690542F1E65F9520045FC77 /* DesgloceTableViewController.swift */; };
+		B69C4E591E6F2DBC00297E07 /* Alimentacion2TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69C4E581E6F2DBC00297E07 /* Alimentacion2TableViewController.swift */; };
 		B6BCBB831E676A3F002C1669 /* MedicosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BCBB821E676A3F002C1669 /* MedicosTableViewController.swift */; };
 		B6BCBB851E676F39002C1669 /* DetailMedicoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BCBB841E676F39002C1669 /* DetailMedicoViewController.swift */; };
 		B6D4E0A31E5E8DD2006137C1 /* SignosVitalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D4E0A21E5E8DD2006137C1 /* SignosVitalesViewController.swift */; };
@@ -225,6 +226,7 @@
 		B68B56C81E553D9B008BCD46 /* Diabetes Monitor-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Diabetes Monitor-50.png"; path = "Resources/Diabetes Monitor-50.png"; sourceTree = SOURCE_ROOT; };
 		B68B56CA1E55487A008BCD46 /* Map Marker-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Map Marker-50.png"; path = "Resources/Map Marker-50.png"; sourceTree = SOURCE_ROOT; };
 		B690542F1E65F9520045FC77 /* DesgloceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesgloceTableViewController.swift; sourceTree = "<group>"; };
+		B69C4E581E6F2DBC00297E07 /* Alimentacion2TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alimentacion2TableViewController.swift; sourceTree = "<group>"; };
 		B6BCBB821E676A3F002C1669 /* MedicosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicosTableViewController.swift; sourceTree = "<group>"; };
 		B6BCBB841E676F39002C1669 /* DetailMedicoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailMedicoViewController.swift; sourceTree = "<group>"; };
 		B6D4E0A21E5E8DD2006137C1 /* SignosVitalesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignosVitalesViewController.swift; sourceTree = "<group>"; };
@@ -431,6 +433,7 @@
 			isa = PBXGroup;
 			children = (
 				849241A41D18CC210008696C /* AlimentosViewController.swift */,
+				B69C4E581E6F2DBC00297E07 /* Alimentacion2TableViewController.swift */,
 				B64A35A11E4E781000B8E7AA /* GraficasViewController.swift */,
 				B64A35A31E4E785B00B8E7AA /* DietaViewController.swift */,
 				B690542F1E65F9520045FC77 /* DesgloceTableViewController.swift */,
@@ -637,6 +640,7 @@
 				81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */,
 				844D4E031D120DA70098C0C1 /* TableViewController.swift in Sources */,
 				B64A35A41E4E785B00B8E7AA /* DietaViewController.swift in Sources */,
+				B69C4E591E6F2DBC00297E07 /* Alimentacion2TableViewController.swift in Sources */,
 				B64CDF431E550BB2003C8C7D /* EventVC.swift in Sources */,
 				849241A51D18CC210008696C /* AlimentosViewController.swift in Sources */,
 				B64A35951E4E741500B8E7AA /* MedicamentosViewController.swift in Sources */,

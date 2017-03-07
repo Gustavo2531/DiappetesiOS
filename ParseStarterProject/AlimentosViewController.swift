@@ -16,7 +16,6 @@ class AlimentosViewController: UIViewController, UIPickerViewDataSource, UIPicke
     var quantityFood = 0.0
     
     @IBOutlet var textField: UITextField!
-    @IBOutlet var pickerFoodView: UIPickerView!
     @IBOutlet var pickerQuantityView: UIPickerView!
     var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
     
@@ -75,8 +74,7 @@ class AlimentosViewController: UIViewController, UIPickerViewDataSource, UIPicke
         let food = PFObject(className: "Food")
         //var dateFormatter = NSDateFormatter()
         
-        
-        
+        food["food"] =         
         food["date"] = Date()
         food["userId"] =  PFUser.current()?.objectId
         
@@ -106,20 +104,8 @@ class AlimentosViewController: UIViewController, UIPickerViewDataSource, UIPicke
         
         
     }
-    
-    @IBAction func returnMenu(_ sender: Any) {
-        let transition: CATransition = CATransition()
-        transition.duration = 0.5
-        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-        transition.type = kCATransitionPush
-        transition.subtype = kCATransitionFromRight
-        self.view.window!.layer.add(transition, forKey: nil)
-        self.dismiss(animated: false, completion: nil)
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.pickerFoodView.dataSource = self;
-        self.pickerFoodView.delegate = self;
         self.pickerQuantityView.dataSource = self;
         self.pickerQuantityView.delegate = self;
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
@@ -148,9 +134,6 @@ class AlimentosViewController: UIViewController, UIPickerViewDataSource, UIPicke
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         
         var h = 0
-        if pickerView.tag == 1{
-            h = foodDataSource.count
-        }
         
         if pickerView.tag == 2{
             h = quantityDataSource.count
@@ -161,9 +144,6 @@ class AlimentosViewController: UIViewController, UIPickerViewDataSource, UIPicke
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
         
         var h = ""
-        if pickerView.tag == 1{
-            h = foodDataSource[row]
-        }
         
         if pickerView.tag == 2{
             h = quantityDataSource[row]
