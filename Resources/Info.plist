@@ -34,9 +34,9 @@
 	<key>NSCalendarsUsageDescription</key>
 	<string></string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>It&apos;s need it to function</string>
+	<string>Solicitud de Utilizar Localización</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Because to function i need it always</string>
+	<string>Solicitud de Utilizar Localización</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

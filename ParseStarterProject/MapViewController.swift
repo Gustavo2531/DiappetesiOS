@@ -9,6 +9,7 @@
 import UIKit
 import MapKit
 import CoreLocation
+import CoreTelephony
 
 class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
@@ -16,29 +17,41 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     var locationManager = CLLocationManager()
     
     override func viewDidLoad() {
-        
-            
-        let uilpgr = UILongPressGestureRecognizer(target: self, action: #selector(MapViewController.longpress(gestureRecognizer:)))
-        
-        uilpgr.minimumPressDuration = 2
-        
-        mapView.addGestureRecognizer(uilpgr)
-        
-            locationManager.delegate = self
-           locationManager.desiredAccuracy = kCLLocationAccuracyBest
-            locationManager.requestWhenInUseAuthorization()
-            locationManager.startUpdatingLocation()
+        super.viewDidLoad()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.distanceFilter = 1000.0
+        locationManager.requestWhenInUseAuthorization()
         
         
-            // Get place details to display on map
-            
+        mapView.mapType=MKMapType.standard
+        let cl=CLLocationCoordinate2DMake(19.283996, -99.136006)
+        mapView.region=MKCoordinateRegionMakeWithDistance(cl, 5000, 5000)
+        /* //esta es otra forma de definir la región de un mapa
+         let origen=CLLocationCoordinate2DMake(0.0, 0.0)
+         let delta=CLLocationDegrees(0.01)
+         let span=MKCoordinateSpanMake(delta, delta)
+         let region=MKCoordinateRegionMake(cl, span)
+         mapa.setRegion(region, animated: true)
+         */
+
+        var punto = CLLocationCoordinate2D()
+        punto.latitude = 19.283996
+        punto.longitude = -99.136006
+        let pin = MKPointAnnotation()
+        pin.coordinate = punto
+        pin.title = "Tec CCM"
+        pin.subtitle = "Tlalpan"
+        mapView.addAnnotation(pin)
         
-                
         
-                            
+        mapView.showsCompass=true
+        mapView.showsScale=true
+        mapView.showsTraffic=true
+        mapView.isZoomEnabled=true
+
         
-        
-    }
+}
 
     func longpress(gestureRecognizer: UIGestureRecognizer) {
         
@@ -101,29 +114,17 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         }
         
     }
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        
-        let location = CLLocationCoordinate2D(latitude: locations[0].coordinate.latitude, longitude: locations[0].coordinate.longitude)
-        let latitude = location.latitude
-        let longitude = location.longitude
-        let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
-        
-        let region = MKCoordinateRegion(center: location, span: span)
-        
-        let coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-        
-      
-        
-        self.mapView.setRegion(region, animated: true)
-        let annotation = MKPointAnnotation()
-        
-        annotation.coordinate = coordinate
-        self.mapView.addAnnotation(annotation)
-
-        
-        self.mapView.setRegion(region, animated: true)
-        
+    func locationManager(_ manager: CLLocationManager,
+                         didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == .authorizedWhenInUse{
+            locationManager.startUpdatingLocation()
+            mapView.showsUserLocation = true
+        } else {
+            locationManager.stopUpdatingLocation()
+            mapView.showsUserLocation = false
+        }
     }
+
 
     @IBAction func returnMenu(_ sender: Any) {
         let transition: CATransition = CATransition()
