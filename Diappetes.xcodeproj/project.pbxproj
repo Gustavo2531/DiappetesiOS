@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22A69368B492956AE4AF6ECB /* Pods_Diappetes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A61ED7DA923DEC82F506F5E3 /* Pods_Diappetes.framework */; };
 		814C3ACB1B69877600E307BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814C3AC81B69877600E307BB /* Images.xcassets */; };
 		81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA814A1A49DA1800E65899 /* AppDelegate.swift */; };
 		81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA814C1A49DA1800E65899 /* ViewController.swift */; };
@@ -20,8 +21,6 @@
 		844D4E031D120DA70098C0C1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844D4E021D120DA70098C0C1 /* TableViewController.swift */; };
 		844D4E051D120DF30098C0C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844D4E041D120DF30098C0C1 /* Main.storyboard */; };
 		844D4E091D1214C00098C0C1 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844D4E061D1214C00098C0C1 /* ParseCrashReporting.framework */; };
-		844D4E0A1D1214C00098C0C1 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844D4E071D1214C00098C0C1 /* ParseFacebookUtils.framework */; };
-		844D4E0B1D1214C00098C0C1 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844D4E081D1214C00098C0C1 /* ParseFacebookUtilsV4.framework */; };
 		844D4E111D12184D0098C0C1 /* Man_Woman_Avatar-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 844D4E101D12184D0098C0C1 /* Man_Woman_Avatar-512.png */; };
 		844D4E171D122AAF0098C0C1 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844D4E161D122AAF0098C0C1 /* FeedTableViewController.swift */; };
 		8492419D1D18902F0008696C /* GlucosaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8492419C1D18902F0008696C /* GlucosaViewController.swift */; };
@@ -116,6 +115,8 @@
 		B6D4E0A31E5E8DD2006137C1 /* SignosVitalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D4E0A21E5E8DD2006137C1 /* SignosVitalesViewController.swift */; };
 		B6D4E0A71E5E9F07006137C1 /* MenuSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D4E0A61E5E9F07006137C1 /* MenuSettingsTableViewController.swift */; };
 		B6D6B3531E4E3F870010BC75 /* fondo4.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D6B3521E4E3F870010BC75 /* fondo4.png */; };
+		B6E95E391E81995F00BECDA4 /* Graficas2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E95E381E81995F00BECDA4 /* Graficas2ViewController.swift */; };
+		B6E95E3B1E819C7400BECDA4 /* CountCalorias.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E95E3A1E819C7400BECDA4 /* CountCalorias.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,8 +137,6 @@
 		844D4E021D120DA70098C0C1 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		844D4E041D120DF30098C0C1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		844D4E061D1214C00098C0C1 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
-		844D4E071D1214C00098C0C1 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
-		844D4E081D1214C00098C0C1 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
 		844D4E101D12184D0098C0C1 /* Man_Woman_Avatar-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Man_Woman_Avatar-512.png"; sourceTree = "<group>"; };
 		844D4E161D122AAF0098C0C1 /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		8492419C1D18902F0008696C /* GlucosaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlucosaViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +148,7 @@
 		84DF5D731D176D97004ED18F /* Captura de pantalla 2016-06-19 a las 7.15.28 p.m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de pantalla 2016-06-19 a las 7.15.28 p.m..png"; sourceTree = "<group>"; };
 		84DF5DA01D17AF91004ED18F /* PostImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostImageViewController.swift; sourceTree = "<group>"; };
 		84DF5DA21D17AF9F004ED18F /* cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cell.swift; sourceTree = "<group>"; };
+		A61ED7DA923DEC82F506F5E3 /* Pods_Diappetes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diappetes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B635EB4D1E551BD000D9D611 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		B635EB4E1E551BD000D9D611 /* Icon-App-20x20@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@1x.png"; sourceTree = "<group>"; };
 		B635EB4F1E551BD000D9D611 /* Icon-App-20x20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@2x.png"; sourceTree = "<group>"; };
@@ -232,6 +232,10 @@
 		B6D4E0A21E5E8DD2006137C1 /* SignosVitalesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignosVitalesViewController.swift; sourceTree = "<group>"; };
 		B6D4E0A61E5E9F07006137C1 /* MenuSettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuSettingsTableViewController.swift; sourceTree = "<group>"; };
 		B6D6B3521E4E3F870010BC75 /* fondo4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fondo4.png; path = Resources/fondo4.png; sourceTree = SOURCE_ROOT; };
+		B6E95E381E81995F00BECDA4 /* Graficas2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graficas2ViewController.swift; sourceTree = "<group>"; };
+		B6E95E3A1E819C7400BECDA4 /* CountCalorias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountCalorias.swift; sourceTree = "<group>"; };
+		DB8024D21AA252DDEA8F5CC8 /* Pods-Diappetes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diappetes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diappetes/Pods-Diappetes.debug.xcconfig"; sourceTree = "<group>"; };
+		F8021AE299E9B785AB82290B /* Pods-Diappetes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diappetes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Diappetes/Pods-Diappetes.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,16 +248,24 @@
 				81BA81791A49E0DB00E65899 /* AudioToolbox.framework in Frameworks */,
 				81BA81771A49E0D500E65899 /* libsqlite3.dylib in Frameworks */,
 				81BA81711A49DB6800E65899 /* Parse.framework in Frameworks */,
-				844D4E0B1D1214C00098C0C1 /* ParseFacebookUtilsV4.framework in Frameworks */,
 				844D4E091D1214C00098C0C1 /* ParseCrashReporting.framework in Frameworks */,
-				844D4E0A1D1214C00098C0C1 /* ParseFacebookUtils.framework in Frameworks */,
 				81BA81701A49DB6800E65899 /* Bolts.framework in Frameworks */,
+				22A69368B492956AE4AF6ECB /* Pods_Diappetes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15B146D705FEDAE2D244E0D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB8024D21AA252DDEA8F5CC8 /* Pods-Diappetes.debug.xcconfig */,
+				F8021AE299E9B785AB82290B /* Pods-Diappetes.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		814C3AC51B69877600E307BB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +285,7 @@
 				814C3AC51B69877600E307BB /* Resources */,
 				81BA816A1A49DB5600E65899 /* Frameworks */,
 				81BA81461A49DA1800E65899 /* Products */,
+				15B146D705FEDAE2D244E0D7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -287,6 +300,7 @@
 		81BA81471A49DA1800E65899 /* ParseStarterProject */ = {
 			isa = PBXGroup;
 			children = (
+				B6E95E3A1E819C7400BECDA4 /* CountCalorias.swift */,
 				B6D4E0A11E5E8D90006137C1 /* Settings */,
 				B64A359E1E4E77A400B8E7AA /* Foros */,
 				B6D6B3581E4E41DA0010BC75 /* TipsYRecompensasController */,
@@ -318,10 +332,9 @@
 				81BA816C1A49DB6800E65899 /* Parse.framework */,
 				81BA816E1A49DB6800E65899 /* ParseFacebookUtils.framework */,
 				844D4E061D1214C00098C0C1 /* ParseCrashReporting.framework */,
-				844D4E071D1214C00098C0C1 /* ParseFacebookUtils.framework */,
-				844D4E081D1214C00098C0C1 /* ParseFacebookUtilsV4.framework */,
 				81BA81801A49E10C00E65899 /* ParseUI.framework */,
 				81BA81751A49E0C500E65899 /* System Frameworks */,
+				A61ED7DA923DEC82F506F5E3 /* Pods_Diappetes.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -437,6 +450,7 @@
 				B64A35A11E4E781000B8E7AA /* GraficasViewController.swift */,
 				B64A35A31E4E785B00B8E7AA /* DietaViewController.swift */,
 				B690542F1E65F9520045FC77 /* DesgloceTableViewController.swift */,
+				B6E95E381E81995F00BECDA4 /* Graficas2ViewController.swift */,
 			);
 			name = AlimentacionControllers;
 			sourceTree = "<group>";
@@ -494,9 +508,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81BA81641A49DA1800E65899 /* Build configuration list for PBXNativeTarget "Diappetes" */;
 			buildPhases = (
+				731D7A303B2DC9DBDA151467 /* [CP] Check Pods Manifest.lock */,
 				81BA81411A49DA1800E65899 /* Sources */,
 				81BA81421A49DA1800E65899 /* Frameworks */,
 				81BA81431A49DA1800E65899 /* Resources */,
+				772F8098DF9F0EF70909B5F4 /* [CP] Embed Pods Frameworks */,
+				E0E5552A10D8F246CF31C893 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -514,7 +531,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Parse;
 				TargetAttributes = {
 					81BA81441A49DA1800E65899 = {
@@ -619,6 +636,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		731D7A303B2DC9DBDA151467 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		772F8098DF9F0EF70909B5F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Diappetes/Pods-Diappetes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0E5552A10D8F246CF31C893 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Diappetes/Pods-Diappetes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		81BA81411A49DA1800E65899 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -645,6 +710,7 @@
 				849241A51D18CC210008696C /* AlimentosViewController.swift in Sources */,
 				B64A35951E4E741500B8E7AA /* MedicamentosViewController.swift in Sources */,
 				B64A35A61E4E7AF300B8E7AA /* TabBarViewController.swift in Sources */,
+				B6E95E391E81995F00BECDA4 /* Graficas2ViewController.swift in Sources */,
 				B653D7911E60AA65006C1702 /* BitcaorasTableViewController.swift in Sources */,
 				B6BCBB851E676F39002C1669 /* DetailMedicoViewController.swift in Sources */,
 				849429C31D18EB1500AFE68C /* MenuViewController.swift in Sources */,
@@ -652,6 +718,7 @@
 				B64A358D1E4E4AC000B8E7AA /* HistorialMedicoViewController.swift in Sources */,
 				849241A11D18B5FC0008696C /* TipsViewController.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
+				B6E95E3B1E819C7400BECDA4 /* CountCalorias.swift in Sources */,
 				B64A358F1E4E4B8600B8E7AA /* FichaMedicaViewController.swift in Sources */,
 				B64A35A21E4E781000B8E7AA /* GraficasViewController.swift in Sources */,
 				8492419D1D18902F0008696C /* GlucosaViewController.swift in Sources */,
@@ -677,8 +744,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -687,6 +756,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -721,8 +791,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -730,6 +802,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -739,6 +812,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -746,6 +820,7 @@
 		};
 		81BA81651A49DA1800E65899 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB8024D21AA252DDEA8F5CC8 /* Pods-Diappetes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -768,6 +843,7 @@
 		};
 		81BA81661A49DA1800E65899 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8021AE299E9B785AB82290B /* Pods-Diappetes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

@@ -59,14 +59,14 @@ var caloriasMensual=0.0
             
         })
         
-        let week = Calendar.current.date(byAdding: .weekday, value: 1, to: newDate)
+        let week = Calendar.current.date(byAdding: .day, value: -7, to: newDate)
         
         let query2 = PFQuery(className:"Food")
         query2.whereKey("userId", equalTo: (PFUser.current()?.objectId)!)
         query2.order(byDescending: "createdAt");
         
-        query2.whereKey("createdAt", greaterThanOrEqualTo: newDate)
-        query2.whereKey("createdAt", lessThan: week!)
+        query2.whereKey("createdAt", greaterThanOrEqualTo: week!)
+        query2.whereKey("createdAt", lessThan: newDate)
         
         query2.findObjectsInBackground(block: { (objects, error) in
             if error != nil{
@@ -82,14 +82,14 @@ var caloriasMensual=0.0
             
         })
         
-        let month = Calendar.current.date(byAdding: .month, value: 1, to: newDate)
+        let month = Calendar.current.date(byAdding: .month, value: -1, to: newDate)
         
         let query3 = PFQuery(className:"Food")
         query3.whereKey("userId", equalTo: (PFUser.current()?.objectId)!)
         query3.order(byDescending: "createdAt");
         
-        query3.whereKey("createdAt", greaterThanOrEqualTo: newDate)
-        query3.whereKey("createdAt", lessThan: month!)
+        query3.whereKey("createdAt", greaterThanOrEqualTo: month!)
+        query3.whereKey("createdAt", lessThan: newDate)
         
         query3.findObjectsInBackground(block: { (objects, error) in
             if error != nil{
