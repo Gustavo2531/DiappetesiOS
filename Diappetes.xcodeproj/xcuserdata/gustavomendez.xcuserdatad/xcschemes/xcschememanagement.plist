@@ -9,10 +9,25 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>WatchDiappetes (Notification).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>WatchDiappetes.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>81BA81441A49DA1800E65899</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B6D32A751E8469DC0005660C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
