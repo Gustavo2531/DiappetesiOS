@@ -55,10 +55,15 @@ class Graficas2ViewController: UIViewController {
                     
                     
                 }
+                let formatter = DateFormatter()
+                formatter.dateFormat = "dd"
+                let stringFromDate: String = formatter.string(from: newDate)
+                let integerDate: Int = Int(stringFromDate)!
                 
                 let visitorCount = CountCalorias()
                 visitorCount.count=Int(self.val1)
-                 visitorCount.date=newDate
+                 visitorCount.dattemp=integerDate
+                print(visitorCount.count)
                 visitorCount.save()
                 self.updateChartWithData()
 
@@ -84,10 +89,15 @@ class Graficas2ViewController: UIViewController {
                     
                     
                 }
+                let formatter = DateFormatter()
+                formatter.dateFormat = "dd"
+                let stringFromDate: String = formatter.string(from: yesterday!)
+                let integerDate: Int = Int(stringFromDate)!
                
                 let visitorCount = CountCalorias()
                 visitorCount.count=Int(self.val2)
-                 visitorCount.date=yesterday!
+                 visitorCount.dattemp=integerDate
+                print(visitorCount.count)
                 visitorCount.save()
                 self.updateChartWithData()
 
@@ -114,10 +124,15 @@ class Graficas2ViewController: UIViewController {
                     
                     
                 }
-               
+                let formatter = DateFormatter()
+                formatter.dateFormat = "dd"
+                let stringFromDate: String = formatter.string(from: yesterday2!)
+                let integerDate: Int = Int(stringFromDate)!
+                
                 let visitorCount = CountCalorias()
                 visitorCount.count=Int(self.val3)
-                 visitorCount.date=yesterday2!
+                 visitorCount.dattemp=integerDate
+                print(visitorCount.count)
                 visitorCount.save()
                 self.updateChartWithData()
 
@@ -142,10 +157,15 @@ class Graficas2ViewController: UIViewController {
                     
                     
                 }
-        
+                let formatter = DateFormatter()
+                formatter.dateFormat = "dd"
+                let stringFromDate: String = formatter.string(from: yesterday3!)
+                let integerDate: Int = Int(stringFromDate)!
+                
                 let visitorCount = CountCalorias()
                 visitorCount.count=Int(self.val4)
-                 visitorCount.date=yesterday3!
+                 visitorCount.dattemp=integerDate
+                print(visitorCount.count)
                 visitorCount.save()
                 self.updateChartWithData()
 
@@ -173,9 +193,14 @@ class Graficas2ViewController: UIViewController {
                     
                 }
                 
+                let formatter = DateFormatter()
+                formatter.dateFormat = "dd"
+                let stringFromDate: String = formatter.string(from: yesterday4!)
+                let integerDate: Int = Int(stringFromDate)!
                 let visitorCount = CountCalorias()
                 visitorCount.count=Int(self.val5)
-                visitorCount.date=yesterday4!
+                visitorCount.dattemp=integerDate
+                print(visitorCount.count)
                 visitorCount.save()
                 self.updateChartWithData()
 
@@ -202,9 +227,15 @@ class Graficas2ViewController: UIViewController {
                     
                     
                 }
+                let formatter = DateFormatter()
+                formatter.dateFormat = "dd"
+                let stringFromDate: String = formatter.string(from: yesterday5!)
+                let integerDate: Int = Int(stringFromDate)!
+                
                  let visitorCount = CountCalorias()
                 visitorCount.count=Int(self.val6)
-                visitorCount.date=yesterday5!
+                visitorCount.dattemp=integerDate
+                print(visitorCount.count)
                 visitorCount.save()
                 self.updateChartWithData()
 
@@ -232,12 +263,18 @@ class Graficas2ViewController: UIViewController {
                     
                     
                 }
+                let formatter = DateFormatter()
+                formatter.dateFormat = "dd"
+                let stringFromDate: String = formatter.string(from: yesterday6!)
+                let integerDate: Int = Int(stringFromDate)!
                
                 let visitorCount = CountCalorias()
                 visitorCount.count=Int(self.val7)
-                visitorCount.date=yesterday6!
+                print(visitorCount.count)
+                visitorCount.dattemp=integerDate
                 visitorCount.save()
                 self.updateChartWithData()
+                
                 
             }
             
@@ -245,6 +282,31 @@ class Graficas2ViewController: UIViewController {
         
         
     }
+    func getVisitorCountsFromDatabase() -> Results<CountCalorias> {
+        do {
+            let realm = try Realm()
+            return realm.objects(CountCalorias.self)
+        } catch let error as NSError {
+            fatalError(error.localizedDescription)
+        }
+    }
+    
+    func updateChartWithData() {
+        var dataEntries: [BarChartDataEntry] = []
+        let visitorCounts = getVisitorCountsFromDatabase()
+        print("Hay estos datos \(visitorCounts.count)")
+        for i in 0..<visitorCounts.count {
+//            let timeIntervalForDate: TimeInterval = visitorCounts[i].date.timeIntervalSince1970
+            let dataEntry = BarChartDataEntry(x: Double(visitorCounts[i].dattemp), y: Double(visitorCounts[i].count))
+            dataEntries.append(dataEntry)
+        }
+        let chartDataSet = BarChartDataSet(values: dataEntries, label: "Visitor count")
+        let chartData = BarChartData(dataSet: chartDataSet)
+        barView.data = chartData
+//        let xaxis = barView.xAxis
+//        xaxis.valueFormatter = axisFormatDelegate
+    }
+    
     func erase(){
         do{
             let realm = try Realm()
@@ -255,50 +317,24 @@ class Graficas2ViewController: UIViewController {
             fatalError(error.localizedDescription)
         }
     }
-    func getVisitorCountsFromDatabase() -> Results<CountCalorias> {
-        do {
-            let realm = try Realm()
-            return realm.objects(CountCalorias.self)
-        } catch let error as NSError {
-            fatalError(error.localizedDescription)
-        }
-    }
-    func updateChartWithData() {
-        var dataEntries: [BarChartDataEntry] = []
-        let today = Date()
-        let cal = Calendar(identifier: .gregorian)
-        let newDate = cal.startOfDay(for: today)
-        let tomorrow = Calendar.current.date(byAdding: .day, value: -7, to: newDate)
-        let visitorCounts = getVisitorCountsFromDatabase()
-        if(visitorCounts.count>7){
-            erase()
-            obtainDatos()
-//        }else if(visitorCounts.count==0){
-//            obtainDatos()
-//            
-        }else{
-            
-        print(visitorCounts.count)
-        for i in 0..<visitorCounts.count{
-            let timeIntervalForDate: TimeInterval = visitorCounts[i].date.timeIntervalSince(tomorrow!)
-            let dataEntry = BarChartDataEntry(x: Double(timeIntervalForDate), y: Double(visitorCounts[i].count))
-            dataEntries.append(dataEntry)
-            
-        }
-//        let xaxis = barView.xAxis
-//        xaxis.valueFormatter = axisFormatDelegate
-
-        let chartDataSet = BarChartDataSet(values: dataEntries, label: "Visitor count")
-        let chartData = BarChartData(dataSet: chartDataSet)
-        barView.data = chartData
-        }
-    }
     
+    @IBAction func returnMenu(_ sender: Any) {
+        erase()
+        let transition: CATransition = CATransition()
+        transition.duration = 0.5
+        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        transition.type = kCATransitionPush
+        transition.subtype = kCATransitionFromRight
+        self.view.window!.layer.add(transition, forKey: nil)
+        self.dismiss(animated: false, completion: nil)
+    }
     override func viewDidLoad() {
         
-        obtainDatos()
+        
         super.viewDidLoad()
-        axisFormatDelegate = self
+        obtainDatos()
+        
+//        axisFormatDelegate = self
         
         
         
@@ -329,13 +365,13 @@ class Graficas2ViewController: UIViewController {
 }
 
 // MARK: axisFormatDelegate
-extension Graficas2ViewController: IAxisValueFormatter {
-    
-    func stringForValue(_ value: Double, axis: AxisBase?) -> String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd"
-        return dateFormatter.string(from: Date(timeIntervalSince1970: value))
-    }
-    
-}
+//extension Graficas2ViewController: IAxisValueFormatter {
+//    
+//    func stringForValue(_ value: Double, axis: AxisBase?) -> String {
+//        let dateFormatter = DateFormatter()
+//        dateFormatter.dateFormat = "dd"
+//        return dateFormatter.string(from: Date(timeIntervalSince1970: value))
+//    }
+//    
+//}
 

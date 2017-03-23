@@ -7,10 +7,33 @@
 //
 
 import UIKit
-
+import RealmSwift
 class MenuViewController: UIViewController {
+    func getVisitorCountsFromDatabase() -> Results<CountCalorias> {
+        do {
+            let realm = try Realm()
+            return realm.objects(CountCalorias.self)
+        } catch let error as NSError {
+            fatalError(error.localizedDescription)
+        }
+    }
 
+    func erase(){
+        do{
+            let realm = try Realm()
+            try! realm.write {
+                realm.deleteAll()
+            }
+        } catch let error as NSError {
+            fatalError(error.localizedDescription)
+        }
+    }
     override func viewDidLoad() {
+        
+        if getVisitorCountsFromDatabase().count != 0 {
+             erase()
+        }
+       
         super.viewDidLoad()
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "fondo4.png")

@@ -12,7 +12,7 @@ import RealmSwift
 class CountCalorias: Object{
     dynamic var date: Date = Date()
     dynamic var count: Int = Int(0)
-    
+    dynamic var dattemp: Int = Int(0)
     func save() {
         do {
             let realm = try Realm()
