@@ -75,25 +75,30 @@ class MedicamentosViewController: UIViewController {
                 
                 if ((object?["Medicamento4"] as AnyObject).description) != "" {
                     self.tiempoString4 = "Cada "+((object?["HoraMedicamento4"] as AnyObject).description)+" Hora por "+((object?["DiaMedicamento4"] as AnyObject).description)+" dia/s"
+                    self.medicamento4.text=((object?["Medicamento4"] as AnyObject).description)+" mg"
                 }
                 if ((object?["Medicamento2"] as AnyObject).description) != "" {
                     self.tiempoString2 = "Cada "+((object?["HoraMedicamento2"] as AnyObject).description)+" Hora por "+((object?["DiaMedicamento2"] as AnyObject).description)+" dia/s"
+                    self.medicamento2.text=((object?["Medicamento2"] as AnyObject).description)+" mg"
                 }
                 if ((object?["Medicamento3"] as AnyObject).description) != "" {
                     self.tiempoString3 = "Cada "+((object?["HoraMedicamento3"] as AnyObject).description)+" Hora por "+((object?["DiaMedicamento3"] as AnyObject).description)+" dia/s"
+                    self.medicamento3.text=((object?["Medicamento3"] as AnyObject).description)+" mg"
                 }
                 if ((object?["Medicamento5"] as AnyObject).description) != "" {
                     self.tiempoString5 = "Cada "+((object?["HoraMedicamento5"] as AnyObject).description)+" Hora por "+((object?["DiaMedicamento5"] as AnyObject).description)+" dia/s"
+                    self.medicamento5.text=((object?["Medicamento5"] as AnyObject).description)+" mg"
                 }
                 if ((object?["Medicamento1"] as AnyObject).description) != "" {
                     self.tiempoString = "Cada "+((object?["HoraMedicamento1"] as AnyObject).description)+" Hora por "+((object?["DiaMedicamento1"] as AnyObject).description)+" dia/s"
+                    self.medicamento.text=((object?["Medicamento1"] as AnyObject).description)+" mg"
                 }
                 
-                self.medicamento.text=((object?["Medicamento1"] as AnyObject).description)+" mg"
-                self.medicamento2.text=((object?["Medicamento2"] as AnyObject).description)+" mg"
-                self.medicamento3.text=((object?["Medicamento3"] as AnyObject).description)+" mg"
-                self.medicamento4.text=((object?["Medicamento4"] as AnyObject).description)+" mg"
-                self.medicamento5.text=((object?["Medicamento5"] as AnyObject).description)+" mg"
+                
+                
+                
+                
+                
                 self.tiempo.text=self.tiempoString
                 self.tiempo2.text=self.tiempoString2
                 self.tiempo3.text=self.tiempoString3

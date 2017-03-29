@@ -8,7 +8,7 @@
 
 import UIKit
 import Parse
-class AlimentosViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate  {
+class AlimentosViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate  {
     var foodDataSource = ["Platano","Carne","Atún","Ensalada","Pollo","Pescado","Manzana","Mango","Jamón","Sandwich","Cereal","Barbacoa","Refresco"];
     var quantityDataSource = ["ml","gr","kg","pedazos"];
     
@@ -36,6 +36,16 @@ class AlimentosViewController: UIViewController, UIPickerViewDataSource, UIPicke
         
         
     }
+    
+    @IBAction func backgroundTap(sender: UIControl) {
+        textField.resignFirstResponder()
+        
+    }
+    
+    @IBAction func textFieldDoneEditing(sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    
 
    func agregarAlimento() {
         

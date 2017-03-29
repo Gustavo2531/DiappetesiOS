@@ -28,6 +28,24 @@ class MedicosTableViewController: UITableViewController, UISearchBarDelegate {
         self.dismiss(animated: false, completion: nil)
 
     }
+    
+   
+    
+    private func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
+        searchBar.showsCancelButton = true
+    }
+    
+    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+        searchBar.text = nil
+        searchBar.showsCancelButton = true
+        
+        // Remove focus from the search bar.
+        searchBar.endEditing(true)
+        
+        // Perform any necessary work.  E.g., repopulating a table view
+        // if the search bar performs filtering.
+    }
+    
     func obtatinData(){
     
         let query = PFUser.query()
@@ -93,7 +111,9 @@ class MedicosTableViewController: UITableViewController, UISearchBarDelegate {
             cell = UITableViewCell(style: UITableViewCellStyle.default,reuseIdentifier: identificador)
         }
         if(searchActive){
+            if(filtered.count>0){
             cell.textLabel?.text = "Dr.(a) "+filtered[indexPath.row]
+            }
         } else {
         // Configure the cell...
         
@@ -120,14 +140,21 @@ class MedicosTableViewController: UITableViewController, UISearchBarDelegate {
     
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
         searchActive = false;
+        self.searchBar.endEditing(true)
+        self.searchBar.resignFirstResponder()
+        
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchActive = false;
+        self.searchBar.endEditing(true)
+        self.searchBar.resignFirstResponder()
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchActive = false;
+        self.searchBar.endEditing(true)
+        self.searchBar.resignFirstResponder()
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {

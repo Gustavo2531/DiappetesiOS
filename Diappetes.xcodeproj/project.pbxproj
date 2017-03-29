@@ -105,6 +105,10 @@
 		B64A35A61E4E7AF300B8E7AA /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64A35A51E4E7AF300B8E7AA /* TabBarViewController.swift */; };
 		B64CDF431E550BB2003C8C7D /* EventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CDF421E550BB2003C8C7D /* EventVC.swift */; };
 		B64CDF451E550DE5003C8C7D /* AddEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CDF441E550DE5003C8C7D /* AddEventVC.swift */; };
+		B6505A781E8C401700D8D8CE /* controladorRenglon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6505A761E8C401700D8D8CE /* controladorRenglon.swift */; };
+		B6505A791E8C401700D8D8CE /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6505A771E8C401700D8D8CE /* MapController.swift */; };
+		B6505A7B1E8C40E400D8D8CE /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6505A7A1E8C40E400D8D8CE /* Interface.storyboard */; };
+		B6505A7E1E8C5CC000D8D8CE /* MarcaAuto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6505A7D1E8C5CC000D8D8CE /* MarcaAuto.swift */; };
 		B653D7911E60AA65006C1702 /* BitcaorasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B653D7901E60AA65006C1702 /* BitcaorasTableViewController.swift */; };
 		B68B56C91E553D9B008BCD46 /* Diabetes Monitor-50.png in Resources */ = {isa = PBXBuildFile; fileRef = B68B56C81E553D9B008BCD46 /* Diabetes Monitor-50.png */; };
 		B68B56CB1E55487A008BCD46 /* Map Marker-50.png in Resources */ = {isa = PBXBuildFile; fileRef = B68B56CA1E55487A008BCD46 /* Map Marker-50.png */; };
@@ -112,7 +116,6 @@
 		B69C4E591E6F2DBC00297E07 /* Alimentacion2TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69C4E581E6F2DBC00297E07 /* Alimentacion2TableViewController.swift */; };
 		B6BCBB831E676A3F002C1669 /* MedicosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BCBB821E676A3F002C1669 /* MedicosTableViewController.swift */; };
 		B6BCBB851E676F39002C1669 /* DetailMedicoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BCBB841E676F39002C1669 /* DetailMedicoViewController.swift */; };
-		B6D32A7A1E8469DC0005660C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D32A781E8469DC0005660C /* Interface.storyboard */; };
 		B6D32A7C1E8469DC0005660C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D32A7B1E8469DC0005660C /* Assets.xcassets */; };
 		B6D32A831E8469DC0005660C /* WatchDiappetes Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B6D32A821E8469DC0005660C /* WatchDiappetes Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B6D32A8A1E8469DC0005660C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D32A891E8469DC0005660C /* InterfaceController.swift */; };
@@ -272,6 +275,11 @@
 		B64A35A51E4E7AF300B8E7AA /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		B64CDF421E550BB2003C8C7D /* EventVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventVC.swift; sourceTree = "<group>"; };
 		B64CDF441E550DE5003C8C7D /* AddEventVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventVC.swift; sourceTree = "<group>"; };
+		B6505A761E8C401700D8D8CE /* controladorRenglon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = controladorRenglon.swift; sourceTree = "<group>"; };
+		B6505A771E8C401700D8D8CE /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
+		B6505A7A1E8C40E400D8D8CE /* Interface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		B6505A7C1E8C5C0F00D8D8CE /* DetalleControladorInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetalleControladorInterfaceController.swift; path = ../WatchDiappetes/DetalleControladorInterfaceController.swift; sourceTree = "<group>"; };
+		B6505A7D1E8C5CC000D8D8CE /* MarcaAuto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarcaAuto.swift; sourceTree = "<group>"; };
 		B653D7901E60AA65006C1702 /* BitcaorasTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitcaorasTableViewController.swift; sourceTree = "<group>"; };
 		B68B56C81E553D9B008BCD46 /* Diabetes Monitor-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Diabetes Monitor-50.png"; path = "Resources/Diabetes Monitor-50.png"; sourceTree = SOURCE_ROOT; };
 		B68B56CA1E55487A008BCD46 /* Map Marker-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Map Marker-50.png"; path = "Resources/Map Marker-50.png"; sourceTree = SOURCE_ROOT; };
@@ -280,7 +288,6 @@
 		B6BCBB821E676A3F002C1669 /* MedicosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicosTableViewController.swift; sourceTree = "<group>"; };
 		B6BCBB841E676F39002C1669 /* DetailMedicoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailMedicoViewController.swift; sourceTree = "<group>"; };
 		B6D32A761E8469DC0005660C /* WatchDiappetes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchDiappetes.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6D32A791E8469DC0005660C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		B6D32A7B1E8469DC0005660C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6D32A7D1E8469DC0005660C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6D32A821E8469DC0005660C /* WatchDiappetes Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchDiappetes Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -508,7 +515,7 @@
 		B6D32A771E8469DC0005660C /* WatchDiappetes */ = {
 			isa = PBXGroup;
 			children = (
-				B6D32A781E8469DC0005660C /* Interface.storyboard */,
+				B6505A7A1E8C40E400D8D8CE /* Interface.storyboard */,
 				B6D32A7B1E8469DC0005660C /* Assets.xcassets */,
 				B6D32A7D1E8469DC0005660C /* Info.plist */,
 			);
@@ -518,6 +525,10 @@
 		B6D32A861E8469DC0005660C /* WatchDiappetes Extension */ = {
 			isa = PBXGroup;
 			children = (
+				B6505A7D1E8C5CC000D8D8CE /* MarcaAuto.swift */,
+				B6505A7C1E8C5C0F00D8D8CE /* DetalleControladorInterfaceController.swift */,
+				B6505A761E8C401700D8D8CE /* controladorRenglon.swift */,
+				B6505A771E8C401700D8D8CE /* MapController.swift */,
 				B6D32A891E8469DC0005660C /* InterfaceController.swift */,
 				B6D32A8B1E8469DC0005660C /* ExtensionDelegate.swift */,
 				B6D32A8D1E8469DC0005660C /* NotificationController.swift */,
@@ -682,6 +693,7 @@
 					B6D32A751E8469DC0005660C = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = X99R8FUBK5;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					B6D32A811E8469DC0005660C = {
@@ -789,8 +801,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6505A7B1E8C40E400D8D8CE /* Interface.storyboard in Resources */,
 				B6D32A7C1E8469DC0005660C /* Assets.xcassets in Resources */,
-				B6D32A7A1E8469DC0005660C /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -903,6 +915,9 @@
 				B6D32A8E1E8469DC0005660C /* NotificationController.swift in Sources */,
 				B6D32A8C1E8469DC0005660C /* ExtensionDelegate.swift in Sources */,
 				B6D32A8A1E8469DC0005660C /* InterfaceController.swift in Sources */,
+				B6505A791E8C401700D8D8CE /* MapController.swift in Sources */,
+				B6505A781E8C401700D8D8CE /* controladorRenglon.swift in Sources */,
+				B6505A7E1E8C5CC000D8D8CE /* MarcaAuto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -920,17 +935,6 @@
 			targetProxy = B6D32A921E8469DC0005660C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		B6D32A781E8469DC0005660C /* Interface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B6D32A791E8469DC0005660C /* Base */,
-			);
-			name = Interface.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		81BA81621A49DA1800E65899 /* Debug */ = {
@@ -1072,6 +1076,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1079,11 +1084,13 @@
 				DEVELOPMENT_TEAM = X99R8FUBK5;
 				IBSC_MODULE = WatchDiappetes_Extension;
 				INFOPLIST_FILE = WatchDiappetes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mx.IA.Diappetes.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.1;
@@ -1096,6 +1103,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1104,6 +1112,7 @@
 				DEVELOPMENT_TEAM = X99R8FUBK5;
 				IBSC_MODULE = WatchDiappetes_Extension;
 				INFOPLIST_FILE = WatchDiappetes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mx.IA.Diappetes.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -1184,6 +1193,7 @@
 				B6D32A981E8469DC0005660C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6D32A9B1E8469DC0005660C /* Build configuration list for PBXNativeTarget "WatchDiappetes" */ = {
 			isa = XCConfigurationList;
@@ -1192,6 +1202,7 @@
 				B6D32A961E8469DC0005660C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

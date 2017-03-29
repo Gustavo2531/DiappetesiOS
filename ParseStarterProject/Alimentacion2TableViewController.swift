@@ -110,7 +110,9 @@ class Alimentacion2TableViewController: UITableViewController, UISearchBarDelega
             cell = UITableViewCell(style: UITableViewCellStyle.default,reuseIdentifier: identificador)
         }
         if(searchActive){
-            cell.textLabel?.text = filtered[indexPath.row]
+            if(filtered.count>0){
+                cell.textLabel?.text = filtered[indexPath.row]
+            }
         } else {
 
         // Configure the cell...
@@ -137,14 +139,21 @@ class Alimentacion2TableViewController: UITableViewController, UISearchBarDelega
     
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
         searchActive = false;
+        self.searchBar.endEditing(true)
+        self.searchBar.resignFirstResponder()
+        
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchActive = false;
+        self.searchBar.endEditing(true)
+        self.searchBar.resignFirstResponder()
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchActive = false;
+        self.searchBar.endEditing(true)
+        self.searchBar.resignFirstResponder()
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
