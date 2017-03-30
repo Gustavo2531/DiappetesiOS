@@ -24,10 +24,14 @@
                                 <segue destination="384-vV-H16" kind="push" id="wS5-Bf-ZHX"/>
                             </connections>
                         </button>
+                        <imageView width="136" height="122" alignment="left" image="juanjo_junoy_conferencia_campana_th" id="Rqo-rI-5vS"/>
                     </items>
+                    <connections>
+                        <outlet property="image" destination="Rqo-rI-5vS" id="HcD-ar-UrX"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="220" y="372"/>
         </scene>
         <!--Map Controller-->
         <scene sceneID="IOH-Md-kYy">

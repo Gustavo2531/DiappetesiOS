@@ -128,6 +128,7 @@
 		B6CCB60F1E8CAB310053E7D4 /* Icon-44@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6CCB6061E8CAB310053E7D4 /* Icon-44@2x.png */; };
 		B6CCB6101E8CAB310053E7D4 /* Icon-86@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6CCB6071E8CAB310053E7D4 /* Icon-86@2x.png */; };
 		B6CCB6111E8CAB310053E7D4 /* Icon-98@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6CCB6081E8CAB310053E7D4 /* Icon-98@2x.png */; };
+		B6CCB6131E8CAE6B0053E7D4 /* juanjo_junoy_conferencia_campana_th.png in Resources */ = {isa = PBXBuildFile; fileRef = B6CCB6121E8CAE6B0053E7D4 /* juanjo_junoy_conferencia_campana_th.png */; };
 		B6D32A7C1E8469DC0005660C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D32A7B1E8469DC0005660C /* Assets.xcassets */; };
 		B6D32A831E8469DC0005660C /* WatchDiappetes Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B6D32A821E8469DC0005660C /* WatchDiappetes Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B6D32A8A1E8469DC0005660C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D32A891E8469DC0005660C /* InterfaceController.swift */; };
@@ -311,6 +312,7 @@
 		B6CCB6061E8CAB310053E7D4 /* Icon-44@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-44@2x.png"; sourceTree = "<group>"; };
 		B6CCB6071E8CAB310053E7D4 /* Icon-86@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-86@2x.png"; sourceTree = "<group>"; };
 		B6CCB6081E8CAB310053E7D4 /* Icon-98@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-98@2x.png"; sourceTree = "<group>"; };
+		B6CCB6121E8CAE6B0053E7D4 /* juanjo_junoy_conferencia_campana_th.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = juanjo_junoy_conferencia_campana_th.png; sourceTree = "<group>"; };
 		B6D32A761E8469DC0005660C /* WatchDiappetes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchDiappetes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D32A7B1E8469DC0005660C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6D32A7D1E8469DC0005660C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -555,6 +557,7 @@
 		B6D32A771E8469DC0005660C /* WatchDiappetes */ = {
 			isa = PBXGroup;
 			children = (
+				B6CCB6121E8CAE6B0053E7D4 /* juanjo_junoy_conferencia_campana_th.png */,
 				B6505A7A1E8C40E400D8D8CE /* Interface.storyboard */,
 				B6D32A7B1E8469DC0005660C /* Assets.xcassets */,
 				B6CCB5FF1E8CAB310053E7D4 /* AppIcon.appiconset */,
@@ -853,6 +856,7 @@
 				B6CCB6091E8CAB310053E7D4 /* Contents.json in Resources */,
 				B6CCB60A1E8CAB310053E7D4 /* Icon-24@2x.png in Resources */,
 				B6CCB60E1E8CAB310053E7D4 /* Icon-40@2x.png in Resources */,
+				B6CCB6131E8CAE6B0053E7D4 /* juanjo_junoy_conferencia_campana_th.png in Resources */,
 				B6CCB6111E8CAB310053E7D4 /* Icon-98@2x.png in Resources */,
 				B6CCB60C1E8CAB310053E7D4 /* Icon-29@2x.png in Resources */,
 				B6CCB60B1E8CAB310053E7D4 /* Icon-27.5@2x.png in Resources */,
