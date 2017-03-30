@@ -32,7 +32,7 @@
 		84DF5DA11D17AF91004ED18F /* PostImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DF5DA01D17AF91004ED18F /* PostImageViewController.swift */; };
 		84DF5DA31D17AF9F004ED18F /* cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DF5DA21D17AF9F004ED18F /* cell.swift */; };
 		B6046E271E8DA7830045BB8F /* DetalleControladorInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6046E261E8DA7830045BB8F /* DetalleControladorInterfaceController.swift */; };
-		B633FD201E8CCC07008774F4 /* mapas.json in Resources */ = {isa = PBXBuildFile; fileRef = B633FD1F1E8CCC07008774F4 /* mapas.json */; };
+		B6046E2B1E8DAA7A0045BB8F /* mapas.json in Resources */ = {isa = PBXBuildFile; fileRef = B6046E2A1E8DAA7A0045BB8F /* mapas.json */; };
 		B635EB641E551BD000D9D611 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = B635EB4D1E551BD000D9D611 /* Contents.json */; };
 		B635EB651E551BD000D9D611 /* Icon-App-20x20@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B635EB4E1E551BD000D9D611 /* Icon-App-20x20@1x.png */; };
 		B635EB661E551BD000D9D611 /* Icon-App-20x20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B635EB4F1E551BD000D9D611 /* Icon-App-20x20@2x.png */; };
@@ -219,7 +219,7 @@
 		84DF5DA21D17AF9F004ED18F /* cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cell.swift; sourceTree = "<group>"; };
 		A61ED7DA923DEC82F506F5E3 /* Pods_Diappetes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diappetes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6046E261E8DA7830045BB8F /* DetalleControladorInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetalleControladorInterfaceController.swift; path = ../../../../Downloads/hjeje/DetalleControladorInterfaceController.swift; sourceTree = "<group>"; };
-		B633FD1F1E8CCC07008774F4 /* mapas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = mapas.json; path = ../../../../Downloads/mapas.json; sourceTree = "<group>"; };
+		B6046E2A1E8DAA7A0045BB8F /* mapas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mapas.json; sourceTree = "<group>"; };
 		B635EB4D1E551BD000D9D611 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		B635EB4E1E551BD000D9D611 /* Icon-App-20x20@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@1x.png"; sourceTree = "<group>"; };
 		B635EB4F1E551BD000D9D611 /* Icon-App-20x20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@2x.png"; sourceTree = "<group>"; };
@@ -580,8 +580,8 @@
 		B6D32A861E8469DC0005660C /* WatchDiappetes Extension */ = {
 			isa = PBXGroup;
 			children = (
+				B6046E2A1E8DAA7A0045BB8F /* mapas.json */,
 				B6046E261E8DA7830045BB8F /* DetalleControladorInterfaceController.swift */,
-				B633FD1F1E8CCC07008774F4 /* mapas.json */,
 				B6CCB5FB1E8CA72D0053E7D4 /* CalendarioInterfaceController.swift */,
 				B6CCB5F91E8CA71E0053E7D4 /* MyRowController.swift */,
 				B6505A7D1E8C5CC000D8D8CE /* MarcaAuto.swift */,
@@ -878,7 +878,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B633FD201E8CCC07008774F4 /* mapas.json in Resources */,
+				B6046E2B1E8DAA7A0045BB8F /* mapas.json in Resources */,
 				B6D32A901E8469DC0005660C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
