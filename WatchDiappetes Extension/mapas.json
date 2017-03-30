@@ -1,0 +1,124 @@
+{
+"hospitales" : [
+    {
+        "id": 1,
+        "name": "Centro de Atencion Integral del Paciente con Diabetes",
+        "latitude": "19.288167",
+        "longitude": "-99.157047"
+    },
+    {
+        "id": 2,
+        "name": "CEDOPEC",
+        "latitude": "19.430933", 
+        "longitude": "-99.216578"
+    },
+    {
+        "id": 3,
+        "name": "Centro de Diabetes",
+        "latitude": "19.402052",
+        "longitude": "-99.170705"
+    },
+    {
+        "id": 4,
+        "name": "Clinica para el Control Total de la Diabetes",
+        "latitude": "19.390520", 
+        "longitude": "-99.163997"
+    },
+    {
+        "id": 5,
+        "name": "FederaciÃ³n Mexicana de Diabetes",
+        "latitude": "19.421993",
+        "longitude": "-99.162862"
+    },
+    {
+        "id": 6,
+        "name": "Instituto Nacional de Ciencias MÃ©dicas y NutriciÃ³n",
+        "latitude": "19.288068",
+        "longitude": "-99.156309"
+    },
+    {
+        "id": 7,
+        "name": "Clinica de Tiroides, Diabetes y Enfermedades Glandulares",
+        "latitude": "19.438585",
+        "longitude": "-99.196939"
+    },
+    {
+        "id": 8,
+        "name": "Hospital Espanol",
+        "latitude": "19.439014",
+        "longitude": "-99.197409"
+    },
+    {
+        "id": 9,
+        "name": "Centro de Diagnostico Angeles",
+        "latitude": "19.437459",
+        "longitude": "-99.191265"
+    },
+    {
+        "id": 10,
+        "name": "Hospital General Torre Medica Tepepan",
+        "latitude": "19.275658",
+        "longitude":  "-99.144315"
+    },
+    {
+        "id": 11,
+        "name": "Hospital Merlos",
+        "latitude": "19.302040",
+        "longitude": "-99.161629"
+    },
+    {
+        "id": 12,
+        "name": "Hospital Medica Sur",
+        "latitude": "19.297306",
+        "longitude": "-99.161511"
+    },
+    {
+        "id": 13,
+        "name": "Sedna Hospital",
+        "latitude": "19.303291",
+        "longitude": "-99.174051"
+    },
+    {
+        "id": 14,
+        "name": "Hospital Angeles Acoxpa",
+        "latitude": "19.299722",
+        "longitude": "-99.135586"
+    },
+    {
+        "id": 15,
+        "name": "Hospital Coyoacan",
+        "latitude": "19.327505",
+        "longitude": "-99.144915"
+    },
+    {
+        "id": 16,
+        "name": "Hospital San Angel Inn",
+        "latitude": "19.359098",
+        "longitude": "-99.167100"
+    },
+    {
+        "id": 17,
+        "name": "Hospital General Xoco",
+        "latitude": "19.360142",
+        "longitude": "-99.162274"
+    },
+    {
+        "id": 18,
+        "name": "Hospital Santa Coleta",
+        "latitude": "19.367899",
+        "longitude": "-99.186510"
+    },
+    {
+        "id": 19,
+        "name": "Sanatorio San Francisco",
+        "latitude": "19.371492",
+        "longitude": "-99.187158"
+    },
+    {
+        "id": 20,
+        "name": "Hospital Star Medica Hip",
+        "latitude": "19.396258",
+        "longitude": "-99.179609"
+    }
+	]
+}
