@@ -116,6 +116,18 @@
 		B69C4E591E6F2DBC00297E07 /* Alimentacion2TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69C4E581E6F2DBC00297E07 /* Alimentacion2TableViewController.swift */; };
 		B6BCBB831E676A3F002C1669 /* MedicosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BCBB821E676A3F002C1669 /* MedicosTableViewController.swift */; };
 		B6BCBB851E676F39002C1669 /* DetailMedicoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BCBB841E676F39002C1669 /* DetailMedicoViewController.swift */; };
+		B6CCB5FA1E8CA71E0053E7D4 /* MyRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CCB5F91E8CA71E0053E7D4 /* MyRowController.swift */; };
+		B6CCB5FC1E8CA72D0053E7D4 /* CalendarioInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CCB5FB1E8CA72D0053E7D4 /* CalendarioInterfaceController.swift */; };
+		B6CCB5FE1E8CAA5A0053E7D4 /* DetalleControladorInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CCB5FD1E8CAA5A0053E7D4 /* DetalleControladorInterfaceController.swift */; };
+		B6CCB6091E8CAB310053E7D4 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = B6CCB6001E8CAB310053E7D4 /* Contents.json */; };
+		B6CCB60A1E8CAB310053E7D4 /* Icon-24@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6CCB6011E8CAB310053E7D4 /* Icon-24@2x.png */; };
+		B6CCB60B1E8CAB310053E7D4 /* Icon-27.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6CCB6021E8CAB310053E7D4 /* Icon-27.5@2x.png */; };
+		B6CCB60C1E8CAB310053E7D4 /* Icon-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6CCB6031E8CAB310053E7D4 /* Icon-29@2x.png */; };
+		B6CCB60D1E8CAB310053E7D4 /* Icon-29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6CCB6041E8CAB310053E7D4 /* Icon-29@3x.png */; };
+		B6CCB60E1E8CAB310053E7D4 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6CCB6051E8CAB310053E7D4 /* Icon-40@2x.png */; };
+		B6CCB60F1E8CAB310053E7D4 /* Icon-44@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6CCB6061E8CAB310053E7D4 /* Icon-44@2x.png */; };
+		B6CCB6101E8CAB310053E7D4 /* Icon-86@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6CCB6071E8CAB310053E7D4 /* Icon-86@2x.png */; };
+		B6CCB6111E8CAB310053E7D4 /* Icon-98@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6CCB6081E8CAB310053E7D4 /* Icon-98@2x.png */; };
 		B6D32A7C1E8469DC0005660C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D32A7B1E8469DC0005660C /* Assets.xcassets */; };
 		B6D32A831E8469DC0005660C /* WatchDiappetes Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B6D32A821E8469DC0005660C /* WatchDiappetes Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B6D32A8A1E8469DC0005660C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D32A891E8469DC0005660C /* InterfaceController.swift */; };
@@ -287,6 +299,18 @@
 		B69C4E581E6F2DBC00297E07 /* Alimentacion2TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alimentacion2TableViewController.swift; sourceTree = "<group>"; };
 		B6BCBB821E676A3F002C1669 /* MedicosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicosTableViewController.swift; sourceTree = "<group>"; };
 		B6BCBB841E676F39002C1669 /* DetailMedicoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailMedicoViewController.swift; sourceTree = "<group>"; };
+		B6CCB5F91E8CA71E0053E7D4 /* MyRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRowController.swift; sourceTree = "<group>"; };
+		B6CCB5FB1E8CA72D0053E7D4 /* CalendarioInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarioInterfaceController.swift; sourceTree = "<group>"; };
+		B6CCB5FD1E8CAA5A0053E7D4 /* DetalleControladorInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleControladorInterfaceController.swift; sourceTree = "<group>"; };
+		B6CCB6001E8CAB310053E7D4 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		B6CCB6011E8CAB310053E7D4 /* Icon-24@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-24@2x.png"; sourceTree = "<group>"; };
+		B6CCB6021E8CAB310053E7D4 /* Icon-27.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-27.5@2x.png"; sourceTree = "<group>"; };
+		B6CCB6031E8CAB310053E7D4 /* Icon-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29@2x.png"; sourceTree = "<group>"; };
+		B6CCB6041E8CAB310053E7D4 /* Icon-29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29@3x.png"; sourceTree = "<group>"; };
+		B6CCB6051E8CAB310053E7D4 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
+		B6CCB6061E8CAB310053E7D4 /* Icon-44@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-44@2x.png"; sourceTree = "<group>"; };
+		B6CCB6071E8CAB310053E7D4 /* Icon-86@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-86@2x.png"; sourceTree = "<group>"; };
+		B6CCB6081E8CAB310053E7D4 /* Icon-98@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-98@2x.png"; sourceTree = "<group>"; };
 		B6D32A761E8469DC0005660C /* WatchDiappetes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchDiappetes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D32A7B1E8469DC0005660C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6D32A7D1E8469DC0005660C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -512,11 +536,28 @@
 			name = Foros;
 			sourceTree = "<group>";
 		};
+		B6CCB5FF1E8CAB310053E7D4 /* AppIcon.appiconset */ = {
+			isa = PBXGroup;
+			children = (
+				B6CCB6001E8CAB310053E7D4 /* Contents.json */,
+				B6CCB6011E8CAB310053E7D4 /* Icon-24@2x.png */,
+				B6CCB6021E8CAB310053E7D4 /* Icon-27.5@2x.png */,
+				B6CCB6031E8CAB310053E7D4 /* Icon-29@2x.png */,
+				B6CCB6041E8CAB310053E7D4 /* Icon-29@3x.png */,
+				B6CCB6051E8CAB310053E7D4 /* Icon-40@2x.png */,
+				B6CCB6061E8CAB310053E7D4 /* Icon-44@2x.png */,
+				B6CCB6071E8CAB310053E7D4 /* Icon-86@2x.png */,
+				B6CCB6081E8CAB310053E7D4 /* Icon-98@2x.png */,
+			);
+			path = AppIcon.appiconset;
+			sourceTree = "<group>";
+		};
 		B6D32A771E8469DC0005660C /* WatchDiappetes */ = {
 			isa = PBXGroup;
 			children = (
 				B6505A7A1E8C40E400D8D8CE /* Interface.storyboard */,
 				B6D32A7B1E8469DC0005660C /* Assets.xcassets */,
+				B6CCB5FF1E8CAB310053E7D4 /* AppIcon.appiconset */,
 				B6D32A7D1E8469DC0005660C /* Info.plist */,
 			);
 			path = WatchDiappetes;
@@ -525,6 +566,9 @@
 		B6D32A861E8469DC0005660C /* WatchDiappetes Extension */ = {
 			isa = PBXGroup;
 			children = (
+				B6CCB5FD1E8CAA5A0053E7D4 /* DetalleControladorInterfaceController.swift */,
+				B6CCB5FB1E8CA72D0053E7D4 /* CalendarioInterfaceController.swift */,
+				B6CCB5F91E8CA71E0053E7D4 /* MyRowController.swift */,
 				B6505A7D1E8C5CC000D8D8CE /* MarcaAuto.swift */,
 				B6505A7C1E8C5C0F00D8D8CE /* DetalleControladorInterfaceController.swift */,
 				B6505A761E8C401700D8D8CE /* controladorRenglon.swift */,
@@ -802,7 +846,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6505A7B1E8C40E400D8D8CE /* Interface.storyboard in Resources */,
+				B6CCB6101E8CAB310053E7D4 /* Icon-86@2x.png in Resources */,
+				B6CCB60D1E8CAB310053E7D4 /* Icon-29@3x.png in Resources */,
+				B6CCB60F1E8CAB310053E7D4 /* Icon-44@2x.png in Resources */,
 				B6D32A7C1E8469DC0005660C /* Assets.xcassets in Resources */,
+				B6CCB6091E8CAB310053E7D4 /* Contents.json in Resources */,
+				B6CCB60A1E8CAB310053E7D4 /* Icon-24@2x.png in Resources */,
+				B6CCB60E1E8CAB310053E7D4 /* Icon-40@2x.png in Resources */,
+				B6CCB6111E8CAB310053E7D4 /* Icon-98@2x.png in Resources */,
+				B6CCB60C1E8CAB310053E7D4 /* Icon-29@2x.png in Resources */,
+				B6CCB60B1E8CAB310053E7D4 /* Icon-27.5@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -913,9 +966,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6D32A8E1E8469DC0005660C /* NotificationController.swift in Sources */,
+				B6CCB5FA1E8CA71E0053E7D4 /* MyRowController.swift in Sources */,
 				B6D32A8C1E8469DC0005660C /* ExtensionDelegate.swift in Sources */,
+				B6CCB5FE1E8CAA5A0053E7D4 /* DetalleControladorInterfaceController.swift in Sources */,
 				B6D32A8A1E8469DC0005660C /* InterfaceController.swift in Sources */,
 				B6505A791E8C401700D8D8CE /* MapController.swift in Sources */,
+				B6CCB5FC1E8CA72D0053E7D4 /* CalendarioInterfaceController.swift in Sources */,
 				B6505A781E8C401700D8D8CE /* controladorRenglon.swift in Sources */,
 				B6505A7E1E8C5CC000D8D8CE /* MarcaAuto.swift in Sources */,
 			);
