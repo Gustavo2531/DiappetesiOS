@@ -29,23 +29,23 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
-	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
 	<key>NSCalendarsUsageDescription</key>
 	<string></string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Solicitud de Utilizar Localización</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Solicitud de Utilizar Localización</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Solicitud de Utilizar Localización</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIRequiresFullScreen</key>
+	<true/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

@@ -31,7 +31,7 @@ class CalendarioInterfaceController: WKInterfaceController {
         let calendars = eventStore.calendars(for: EKEntityType.event)
         
         for calendar in calendars as [EKCalendar] {
-            if (calendar.title == "Calendar"){
+            
                
                 let dateFormatter = DateFormatter()
                 
@@ -58,15 +58,18 @@ class CalendarioInterfaceController: WKInterfaceController {
                     rows.append("\(item.title)")
                 }
                 
-            }
+            
         }
+        
+        let font = UIFont(name: "Times New Roman", size: 12)!
+        let fontAttrs = [NSFontAttributeName : font]
         
         table.setNumberOfRows(rows.count, withRowType: "MainRowType")
         for (i,_) in rows.enumerated(){
             let row=table.rowController(at: i) as! MyRowController
-            row.itemLabel.setText(rows[i])
+            let attrsString = NSAttributedString(string: rows[i], attributes: fontAttrs)
+            row.itemLabel.setAttributedText(attrsString)
         }
-        
     }
 
     override func willActivate() {

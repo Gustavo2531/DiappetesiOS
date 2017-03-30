@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="watchOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
     </dependencies>
@@ -75,7 +74,7 @@
         <!--Detalle Controlador Interface Controller-->
         <scene sceneID="h5e-W0-tru">
             <objects>
-                <controller id="uRJ-kZ-e7t" customClass="DetalleControladorInterfaceController" customModule="WatchDiappetes" customModuleProvider="target">
+                <controller id="uRJ-kZ-e7t" customClass="DetalleControladorInterfaceController" customModule="WatchDiappetes_Extension">
                     <items>
                         <label width="133" alignment="left" text="Label" id="AZF-Y7-w0v"/>
                         <map height="126" alignment="left" id="Oz7-fH-N1V"/>
@@ -121,7 +120,7 @@
                                 <tableRow identifier="MainRowType" id="EL3-x1-0Q6" customClass="MyRowController" customModule="WatchDiappetes_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="wj1-pq-x8F">
                                         <items>
-                                            <label width="129" height="37" alignment="left" text="Label" id="Yva-Uo-EYh"/>
+                                            <label width="129" height="37" alignment="left" text="Label" numberOfLines="0" id="Yva-Uo-EYh"/>
                                         </items>
                                     </group>
                                     <connections>

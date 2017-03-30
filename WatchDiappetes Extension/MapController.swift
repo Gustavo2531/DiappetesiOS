@@ -46,17 +46,21 @@ class MapController: WKInterfaceController {
         self.mapa.setRegion(region)
         self.mapa.addAnnotation(tec, with: .purple)
         
-
-        let url=URL(string:"http://199.233.252.86/201711/Diappetes/hospitales2.json")
+  
+        
+        let url = Bundle.main.path(forResource: "mapas", ofType: "json")
         do {
-            let allContactsData = try Data(contentsOf: url!)
-            let allContacts = try JSONSerialization.jsonObject(with: allContactsData, options: JSONSerialization.ReadingOptions.allowFragments) as! [String : AnyObject]
+            
+            let allContactsData = try NSData(contentsOfFile: url!, options: NSData.ReadingOptions.mappedIfSafe)
+            let allContacts = try JSONSerialization.jsonObject(with: allContactsData as Data, options: JSONSerialization.ReadingOptions.allowFragments) as! [String : AnyObject]
+            
             if let arrJSON = allContacts["hospitales"] {
                 for index in 0...arrJSON.count-1 {
                     
                     let aObject = arrJSON[index] as! [String : AnyObject]
-
+                    
                     names.append(aObject["name"] as! String)
+                    
                     latitude.append(aObject["latitude"] as! String)
                     longitude.append(aObject["longitude"] as! String)
 
