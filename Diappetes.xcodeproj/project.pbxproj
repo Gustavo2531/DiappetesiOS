@@ -111,6 +111,7 @@
 		B6505A7B1E8C40E400D8D8CE /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6505A7A1E8C40E400D8D8CE /* Interface.storyboard */; };
 		B6505A7E1E8C5CC000D8D8CE /* MarcaAuto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6505A7D1E8C5CC000D8D8CE /* MarcaAuto.swift */; };
 		B653D7911E60AA65006C1702 /* BitcaorasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B653D7901E60AA65006C1702 /* BitcaorasTableViewController.swift */; };
+		B68940AF1EA11D1200740603 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68940AE1EA11D1200740603 /* PhotoViewController.swift */; };
 		B68B56C91E553D9B008BCD46 /* Diabetes Monitor-50.png in Resources */ = {isa = PBXBuildFile; fileRef = B68B56C81E553D9B008BCD46 /* Diabetes Monitor-50.png */; };
 		B68B56CB1E55487A008BCD46 /* Map Marker-50.png in Resources */ = {isa = PBXBuildFile; fileRef = B68B56CA1E55487A008BCD46 /* Map Marker-50.png */; };
 		B69054301E65F9520045FC77 /* DesgloceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B690542F1E65F9520045FC77 /* DesgloceTableViewController.swift */; };
@@ -298,6 +299,7 @@
 		B6505A7A1E8C40E400D8D8CE /* Interface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
 		B6505A7D1E8C5CC000D8D8CE /* MarcaAuto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarcaAuto.swift; sourceTree = "<group>"; };
 		B653D7901E60AA65006C1702 /* BitcaorasTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitcaorasTableViewController.swift; sourceTree = "<group>"; };
+		B68940AE1EA11D1200740603 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		B68B56C81E553D9B008BCD46 /* Diabetes Monitor-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Diabetes Monitor-50.png"; path = "Resources/Diabetes Monitor-50.png"; sourceTree = SOURCE_ROOT; };
 		B68B56CA1E55487A008BCD46 /* Map Marker-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Map Marker-50.png"; path = "Resources/Map Marker-50.png"; sourceTree = SOURCE_ROOT; };
 		B690542F1E65F9520045FC77 /* DesgloceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesgloceTableViewController.swift; sourceTree = "<group>"; };
@@ -660,6 +662,7 @@
 				B653D7901E60AA65006C1702 /* BitcaorasTableViewController.swift */,
 				B6BCBB821E676A3F002C1669 /* MedicosTableViewController.swift */,
 				B6BCBB841E676F39002C1669 /* DetailMedicoViewController.swift */,
+				B68940AE1EA11D1200740603 /* PhotoViewController.swift */,
 			);
 			name = HistorialMedicoController;
 			sourceTree = "<group>";
@@ -948,6 +951,7 @@
 				B6D4E0A71E5E9F07006137C1 /* MenuSettingsTableViewController.swift in Sources */,
 				849241A31D18CA9A0008696C /* FacebookViewController.swift in Sources */,
 				B69054301E65F9520045FC77 /* DesgloceTableViewController.swift in Sources */,
+				B68940AF1EA11D1200740603 /* PhotoViewController.swift in Sources */,
 				B64A35A01E4E77B400B8E7AA /* ForoViewController.swift in Sources */,
 				844D4E171D122AAF0098C0C1 /* FeedTableViewController.swift in Sources */,
 				B6BCBB831E676A3F002C1669 /* MedicosTableViewController.swift in Sources */,

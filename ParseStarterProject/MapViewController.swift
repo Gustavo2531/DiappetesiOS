@@ -14,6 +14,10 @@ import CoreTelephony
 class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
+    var names: [String] = []
+    var latitude: [String] = []
+    var longitude: [String] = []
+    
     var locationManager = CLLocationManager()
     
     override func viewDidLoad() {
@@ -35,14 +39,42 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
          mapa.setRegion(region, animated: true)
          */
 
-        var punto = CLLocationCoordinate2D()
-        punto.latitude = 19.283996
-        punto.longitude = -99.136006
-        let pin = MKPointAnnotation()
-        pin.coordinate = punto
-        pin.title = "Tec CCM"
-        pin.subtitle = "Tlalpan"
-        mapView.addAnnotation(pin)
+        let url = Bundle.main.path(forResource: "mapas", ofType: "json")
+        do {
+            
+            let allContactsData = try NSData(contentsOfFile: url!, options: NSData.ReadingOptions.mappedIfSafe)
+            let allContacts = try JSONSerialization.jsonObject(with: allContactsData as Data, options: JSONSerialization.ReadingOptions.allowFragments) as! [String : AnyObject]
+            
+            if let arrJSON = allContacts["hospitales"] {
+                for index in 0...arrJSON.count-1 {
+                    
+                    let aObject = arrJSON[index] as! [String : AnyObject]
+                    
+                    names.append(aObject["name"] as! String)
+                    
+                    latitude.append(aObject["latitude"] as! String)
+                    longitude.append(aObject["longitude"] as! String)
+                    
+                }
+            }
+        }
+        catch {
+            
+        }
+        
+        for indice in 0 ..< names.count {
+            var punto = CLLocationCoordinate2D()
+            punto.latitude = Double(latitude[indice])!
+            punto.longitude =  Double(longitude[indice])!
+            let pin = MKPointAnnotation()
+            pin.coordinate = punto
+            pin.title = names[indice]
+            mapView.addAnnotation(pin)
+            
+        }
+
+        
+        
         
         
         mapView.showsCompass=true
@@ -53,68 +85,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         
 }
 
-    func longpress(gestureRecognizer: UIGestureRecognizer) {
-        
-        if gestureRecognizer.state == UIGestureRecognizerState.began {
-            
-            let touchPoint = gestureRecognizer.location(in: self.mapView)
-            
-            let newCoordinate = self.mapView.convert(touchPoint, toCoordinateFrom: self.mapView)
-            
-            let location = CLLocation(latitude: newCoordinate.latitude, longitude: newCoordinate.longitude)
-            
-            var title = ""
-            
-            CLGeocoder().reverseGeocodeLocation(location, completionHandler: { (placemarks, error) in
-                
-                if error != nil {
-                    
-                    print(error)
-                    
-                } else {
-                    
-                    if let placemark = placemarks?[0] {
-                        
-                        if placemark.subThoroughfare != nil {
-                            
-                            title += placemark.subThoroughfare! + " "
-                            
-                        }
-                        
-                        if placemark.thoroughfare != nil {
-                            
-                            title += placemark.thoroughfare!
-                            
-                        }
-                        
-                    }
-                    
-                }
-                
-                if title == "" {
-                    
-                    title = "Added \(NSDate())"
-                    
-                }
-                
-                let annotation = MKPointAnnotation()
-                
-                annotation.coordinate = newCoordinate
-                
-                annotation.title = title
-                
-                self.mapView.addAnnotation(annotation)
-                
-               
-                
-                
-            })
-            
-            
-        }
-        
-    }
-    func locationManager(_ manager: CLLocationManager,
+        func locationManager(_ manager: CLLocationManager,
                          didChangeAuthorization status: CLAuthorizationStatus) {
         if status == .authorizedWhenInUse{
             locationManager.startUpdatingLocation()

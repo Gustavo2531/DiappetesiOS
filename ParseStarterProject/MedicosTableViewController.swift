@@ -126,10 +126,22 @@ class MedicosTableViewController: UITableViewController, UISearchBarDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let sigVista=segue.destination as! DetailMedicoViewController
         let indice = self.tableView.indexPathForSelectedRow?.row
-        sigVista.nombre=names[indice!]+" "+apellidos[indice!]
-        sigVista.apellido=apellidos[indice!]
-        sigVista.direccion=direccion[indice!]
-        sigVista.userName=usernames[indice!]
+        if(searchActive){
+            sigVista.nombre=filtered[indice!]
+            var i=0
+            while(filtered[indice!] != datos[i]){
+                i += 1
+            }
+            sigVista.apellido=apellidos[i]
+            sigVista.direccion=direccion[i]
+            sigVista.userName=usernames[i]
+        } else {
+            sigVista.nombre=names[indice!]+" "+apellidos[indice!]
+            sigVista.apellido=apellidos[indice!]
+            sigVista.direccion=direccion[indice!]
+            sigVista.userName=usernames[indice!]
+        }
+       
         
         
     }

@@ -9,7 +9,11 @@
 import UIKit
 
 class RewardsViewController: UIViewController {
+    @IBOutlet weak var labelDays: UILabel!
 
+    @IBOutlet weak var labelReward: UILabel!
+    @IBAction func compartirAFace(_ sender: Any) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)

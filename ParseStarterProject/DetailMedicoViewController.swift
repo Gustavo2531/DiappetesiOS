@@ -28,9 +28,17 @@ class DetailMedicoViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let sigVista=segue.destination as! ConsultaViewController
-        sigVista.apellido=apellido
-        sigVista.userName=userName
+        if segue.identifier == "cita"{
+            let sigVista=segue.destination as! ConsultaViewController
+            sigVista.apellido=apellido
+            sigVista.userName=userName
+        }else{
+        
+            let sigVista=segue.destination as! PhotoViewController
+            
+            sigVista.userName=userName
+        }
+       
         
         
     }

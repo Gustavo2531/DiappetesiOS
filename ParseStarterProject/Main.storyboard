@@ -1356,6 +1356,28 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cn-Yt-4Uo">
+                                <rect key="frame" x="47" y="222" width="69" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Compartir"/>
+                                <connections>
+                                    <action selector="compartirAFace:" destination="D2i-vy-CIC" eventType="touchUpInside" id="bue-GH-xTp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Estas abajo de tus limite por  7 dias" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Vr-Rg-zSR">
+                                <rect key="frame" x="47" y="140" width="269" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Premio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Xy-Dr-xNo">
+                                <rect key="frame" x="47" y="184" width="54" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -1366,10 +1388,14 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Recompensas" image="Christmas Star Filled-25.png" id="j6f-pp-Rzd"/>
+                    <connections>
+                        <outlet property="labelDays" destination="8Vr-Rg-zSR" id="4nT-7X-IAL"/>
+                        <outlet property="labelReward" destination="8Xy-Dr-xNo" id="s9k-B4-ZVW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mVD-FR-2mu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1311" y="1471"/>
+            <point key="canvasLocation" x="-1311.2" y="1470.3148425787108"/>
         </scene>
         <!--Foro View Controller-->
         <scene sceneID="KLw-cR-KA7">
@@ -1972,9 +1998,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPT-qf-8f4">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPT-qf-8f4">
                                 <rect key="frame" x="36" y="185" width="114" height="30"/>
                                 <state key="normal" title="Mandar Mensaje"/>
+                                <connections>
+                                    <segue destination="ZKs-cu-Rcz" kind="show" identifier="foto" id="zh9-hF-MNn"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v3f-N8-ZDf">
                                 <rect key="frame" x="41" y="136" width="42" height="21"/>
@@ -1986,7 +2015,7 @@
                                 <rect key="frame" x="246" y="185" width="89" height="30"/>
                                 <state key="normal" title="Agendar Cita"/>
                                 <connections>
-                                    <segue destination="CZc-uE-B1V" kind="show" id="KQX-pI-6Yd"/>
+                                    <segue destination="CZc-uE-B1V" kind="show" identifier="cita" id="KQX-pI-6Yd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2010,6 +2039,128 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oop-Yz-qJy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6763" y="1717"/>
+        </scene>
+        <!--Photo View Controller-->
+        <scene sceneID="QS1-Ye-zyT">
+            <objects>
+                <viewController id="ZKs-cu-Rcz" customClass="PhotoViewController" customModule="Diappetes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="af6-4D-EDe"/>
+                        <viewControllerLayoutGuide type="bottom" id="2JN-ko-mVM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1IS-cY-g0X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="feH-6Q-taG">
+                                <rect key="frame" x="16" y="72" width="248" height="208"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="248" id="AiQ-ea-l6R"/>
+                                    <constraint firstAttribute="height" constant="208" id="PGt-Kc-VV8"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rf8-1U-lia">
+                                <rect key="frame" x="32" y="295" width="53" height="30"/>
+                                <state key="normal" title="Cámara"/>
+                                <connections>
+                                    <action selector="camara:" destination="ZKs-cu-Rcz" eventType="touchUpInside" id="h6N-cD-5rC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ap2-Zv-Pwk">
+                                <rect key="frame" x="32" y="337" width="34" height="30"/>
+                                <state key="normal" title="Rollo"/>
+                                <connections>
+                                    <action selector="camara:" destination="ZKs-cu-Rcz" eventType="touchUpInside" id="epe-yW-H87"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zg9-lo-JOY">
+                                <rect key="frame" x="32" y="381" width="44" height="30"/>
+                                <state key="normal" title="Álbum"/>
+                                <connections>
+                                    <action selector="album" destination="ZKs-cu-Rcz" eventType="touchUpInside" id="H0z-Cv-0o5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSm-3V-DLV">
+                                <rect key="frame" x="174" y="299" width="27" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hUt-87-E9h">
+                                <rect key="frame" x="216" y="294" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="ugA-Gn-IKh"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="quitarTeclado:" destination="ZKs-cu-Rcz" eventType="editingDidEnd" id="Dtg-8t-Az1"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEn-b6-yk1">
+                                <rect key="frame" x="231" y="337" width="56" height="30"/>
+                                <state key="normal" title="Guardar"/>
+                                <connections>
+                                    <action selector="save" destination="ZKs-cu-Rcz" eventType="touchUpInside" id="Uig-gM-pbb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OqK-p2-ceR">
+                                <rect key="frame" x="231" y="381" width="47" height="30"/>
+                                <state key="normal" title="Cargar"/>
+                                <connections>
+                                    <action selector="load:" destination="ZKs-cu-Rcz" eventType="touchUpInside" id="zGQ-ZK-PdC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9h-gw-3d1">
+                                <rect key="frame" x="212" y="429" width="104" height="30"/>
+                                <state key="normal" title="Guardar Álbum"/>
+                                <connections>
+                                    <action selector="saveAlbum:" destination="ZKs-cu-Rcz" eventType="touchUpInside" id="Qqt-Bw-pp7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYX-zx-rpk">
+                                <rect key="frame" x="15" y="429" width="86" height="30"/>
+                                <state key="normal" title="Enviar a Doc"/>
+                                <connections>
+                                    <action selector="ingresarDatos:" destination="ZKs-cu-Rcz" eventType="touchUpInside" id="Sv7-os-y3O"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rf8-1U-lia" firstAttribute="leading" secondItem="1IS-cY-g0X" secondAttribute="leadingMargin" constant="16" id="5ef-Co-gRU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EEn-b6-yk1" secondAttribute="trailing" constant="72" id="9pS-pC-4TF"/>
+                            <constraint firstItem="Zg9-lo-JOY" firstAttribute="leading" secondItem="1IS-cY-g0X" secondAttribute="leadingMargin" constant="16" id="BuU-n3-PuW"/>
+                            <constraint firstItem="oSm-3V-DLV" firstAttribute="leading" secondItem="rf8-1U-lia" secondAttribute="trailing" constant="89" id="E9a-hW-o7K"/>
+                            <constraint firstItem="oSm-3V-DLV" firstAttribute="top" secondItem="feH-6Q-taG" secondAttribute="bottom" constant="19" id="Egm-ku-Dve"/>
+                            <constraint firstItem="EEn-b6-yk1" firstAttribute="top" secondItem="hUt-87-E9h" secondAttribute="bottom" constant="13" id="L70-CT-0js"/>
+                            <constraint firstItem="feH-6Q-taG" firstAttribute="top" secondItem="af6-4D-EDe" secondAttribute="bottom" constant="8" id="SSW-0X-I2S"/>
+                            <constraint firstItem="uYX-zx-rpk" firstAttribute="top" secondItem="Zg9-lo-JOY" secondAttribute="bottom" constant="18" id="Si3-JV-RrK"/>
+                            <constraint firstItem="ap2-Zv-Pwk" firstAttribute="leading" secondItem="1IS-cY-g0X" secondAttribute="leadingMargin" constant="16" id="agB-iF-I7N"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="D9h-gw-3d1" secondAttribute="trailing" constant="43" id="bPD-Wq-lZF"/>
+                            <constraint firstItem="rf8-1U-lia" firstAttribute="top" secondItem="feH-6Q-taG" secondAttribute="bottom" constant="15" id="bUq-Fg-bhG"/>
+                            <constraint firstItem="ap2-Zv-Pwk" firstAttribute="top" secondItem="rf8-1U-lia" secondAttribute="bottom" constant="12" id="e2x-2d-f8C"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="feH-6Q-taG" secondAttribute="leading" id="fEt-vJ-gKh"/>
+                            <constraint firstItem="hUt-87-E9h" firstAttribute="top" secondItem="feH-6Q-taG" secondAttribute="bottom" constant="14" id="gCX-tV-fmI"/>
+                            <constraint firstItem="Zg9-lo-JOY" firstAttribute="top" secondItem="ap2-Zv-Pwk" secondAttribute="bottom" constant="14" id="hBN-63-ymS"/>
+                            <constraint firstItem="hUt-87-E9h" firstAttribute="leading" secondItem="oSm-3V-DLV" secondAttribute="trailing" constant="15" id="hLf-H2-2nl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OqK-p2-ceR" secondAttribute="trailing" constant="81" id="hzc-zd-0oE"/>
+                            <constraint firstItem="uYX-zx-rpk" firstAttribute="leading" secondItem="1IS-cY-g0X" secondAttribute="leadingMargin" constant="-1" id="j5i-fv-QNr"/>
+                            <constraint firstItem="OqK-p2-ceR" firstAttribute="top" secondItem="EEn-b6-yk1" secondAttribute="bottom" constant="14" id="lOi-nN-0e9"/>
+                            <constraint firstItem="D9h-gw-3d1" firstAttribute="top" secondItem="OqK-p2-ceR" secondAttribute="bottom" constant="18" id="r4S-oE-dpf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="camaraBoton" destination="rf8-1U-lia" id="bfO-EW-4pw"/>
+                        <outlet property="imagenVista" destination="feH-6Q-taG" id="boE-nP-NcP"/>
+                        <outlet property="numero" destination="hUt-87-E9h" id="9ng-Sh-chf"/>
+                        <outlet property="rolloBoton" destination="ap2-Zv-Pwk" id="9y5-b2-3qr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xa8-wE-BD4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6780" y="2450.8245877061472"/>
         </scene>
         <!--Consulta View Controller-->
         <scene sceneID="VbB-m8-9o2">
