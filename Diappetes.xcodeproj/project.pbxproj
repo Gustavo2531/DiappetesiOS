@@ -116,6 +116,7 @@
 		B68B56CB1E55487A008BCD46 /* Map Marker-50.png in Resources */ = {isa = PBXBuildFile; fileRef = B68B56CA1E55487A008BCD46 /* Map Marker-50.png */; };
 		B69054301E65F9520045FC77 /* DesgloceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B690542F1E65F9520045FC77 /* DesgloceTableViewController.swift */; };
 		B69C4E591E6F2DBC00297E07 /* Alimentacion2TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69C4E581E6F2DBC00297E07 /* Alimentacion2TableViewController.swift */; };
+		B6B6C9211EAECDAF00D63AD4 /* mapas.json in Resources */ = {isa = PBXBuildFile; fileRef = B6B6C9201EAECDAF00D63AD4 /* mapas.json */; };
 		B6BCBB831E676A3F002C1669 /* MedicosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BCBB821E676A3F002C1669 /* MedicosTableViewController.swift */; };
 		B6BCBB851E676F39002C1669 /* DetailMedicoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BCBB841E676F39002C1669 /* DetailMedicoViewController.swift */; };
 		B6CCB5FA1E8CA71E0053E7D4 /* MyRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CCB5F91E8CA71E0053E7D4 /* MyRowController.swift */; };
@@ -312,6 +313,7 @@
 		B68B56CA1E55487A008BCD46 /* Map Marker-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Map Marker-50.png"; path = "Resources/Map Marker-50.png"; sourceTree = SOURCE_ROOT; };
 		B690542F1E65F9520045FC77 /* DesgloceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesgloceTableViewController.swift; sourceTree = "<group>"; };
 		B69C4E581E6F2DBC00297E07 /* Alimentacion2TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alimentacion2TableViewController.swift; sourceTree = "<group>"; };
+		B6B6C9201EAECDAF00D63AD4 /* mapas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mapas.json; sourceTree = "<group>"; };
 		B6BCBB821E676A3F002C1669 /* MedicosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicosTableViewController.swift; sourceTree = "<group>"; };
 		B6BCBB841E676F39002C1669 /* DetailMedicoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailMedicoViewController.swift; sourceTree = "<group>"; };
 		B6CCB5F91E8CA71E0053E7D4 /* MyRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRowController.swift; sourceTree = "<group>"; };
@@ -674,6 +676,7 @@
 		B6D6B3571E4E41D00010BC75 /* HistorialMedicoController */ = {
 			isa = PBXGroup;
 			children = (
+				B6B6C9201EAECDAF00D63AD4 /* mapas.json */,
 				8492419E1D18AA5C0008696C /* ConsultaViewController.swift */,
 				8492419C1D18902F0008696C /* GlucosaViewController.swift */,
 				B64A358C1E4E4AC000B8E7AA /* HistorialMedicoViewController.swift */,
@@ -901,6 +904,7 @@
 				B635EB641E551BD000D9D611 /* Contents.json in Resources */,
 				B635EB741E551BD000D9D611 /* Icon-App-72x72@2x.png in Resources */,
 				B635EB6B1E551BD000D9D611 /* Icon-App-40x40@1x.png in Resources */,
+				B6B6C9211EAECDAF00D63AD4 /* mapas.json in Resources */,
 				B635EB751E551BD000D9D611 /* Icon-App-76x76@1x.png in Resources */,
 				B635EB821E551DAE00D9D611 /* Treatment Plan-50.png in Resources */,
 				B635EB681E551BD000D9D611 /* Icon-App-29x29@1x.png in Resources */,
@@ -1401,6 +1405,7 @@
 				B6F12D3C1EA557B100AF391F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

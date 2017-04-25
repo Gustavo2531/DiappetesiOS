@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M1f-kJ-pRD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M1f-kJ-pRD">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -2080,13 +2080,13 @@
                                     <action selector="album" destination="ZKs-cu-Rcz" eventType="touchUpInside" id="H0z-Cv-0o5"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSm-3V-DLV">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="No." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSm-3V-DLV">
                                 <rect key="frame" x="174" y="299" width="27" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hUt-87-E9h">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hUt-87-E9h">
                                 <rect key="frame" x="216" y="294" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="ugA-Gn-IKh"/>
@@ -2132,7 +2132,6 @@
                             <constraint firstItem="rf8-1U-lia" firstAttribute="leading" secondItem="1IS-cY-g0X" secondAttribute="leadingMargin" constant="16" id="5ef-Co-gRU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="EEn-b6-yk1" secondAttribute="trailing" constant="72" id="9pS-pC-4TF"/>
                             <constraint firstItem="Zg9-lo-JOY" firstAttribute="leading" secondItem="1IS-cY-g0X" secondAttribute="leadingMargin" constant="16" id="BuU-n3-PuW"/>
-                            <constraint firstItem="oSm-3V-DLV" firstAttribute="leading" secondItem="rf8-1U-lia" secondAttribute="trailing" constant="89" id="E9a-hW-o7K"/>
                             <constraint firstItem="oSm-3V-DLV" firstAttribute="top" secondItem="feH-6Q-taG" secondAttribute="bottom" constant="19" id="Egm-ku-Dve"/>
                             <constraint firstItem="EEn-b6-yk1" firstAttribute="top" secondItem="hUt-87-E9h" secondAttribute="bottom" constant="13" id="L70-CT-0js"/>
                             <constraint firstItem="feH-6Q-taG" firstAttribute="top" secondItem="af6-4D-EDe" secondAttribute="bottom" constant="8" id="SSW-0X-I2S"/>

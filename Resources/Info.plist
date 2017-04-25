@@ -35,6 +35,8 @@
 	<string>Solicitud de Utilizar Localización</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Solicitud de Utilizar Localización</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Solicitud de Usar Album</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
