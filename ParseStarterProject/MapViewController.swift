@@ -45,10 +45,9 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
             let allContactsData = try NSData(contentsOfFile: url!, options: NSData.ReadingOptions.mappedIfSafe)
             let allContacts = try JSONSerialization.jsonObject(with: allContactsData as Data, options: JSONSerialization.ReadingOptions.allowFragments) as! [String : AnyObject]
             
-            if let arrJSON = allContacts["hospitales"] {
-                for index in 0...arrJSON.count-1 {
+            if let arrJSON = allContacts["hospitales"] as? [[String : Any]] {
+                for aObject in arrJSON {
                     
-                    let aObject = arrJSON[index] as! [String : AnyObject]
                     
                     names.append(aObject["name"] as! String)
                     

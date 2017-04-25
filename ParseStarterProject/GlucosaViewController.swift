@@ -150,7 +150,56 @@ class GlucosaViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return String(pickerDataSource[row])
     }
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        if motion == .motionShake {
+            activityIndicator = UIActivityIndicatorView(frame: self.view.frame)
+            activityIndicator.backgroundColor = UIColor(white: 1.0, alpha: 0.5)
+            activityIndicator.center = self.view.center
+            activityIndicator.hidesWhenStopped = true
+            activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+            view.addSubview(activityIndicator)
+            activityIndicator.startAnimating()
+            
+            UIApplication.shared.beginIgnoringInteractionEvents()
+            
+            
+            let glucose = PFObject(className: "Glucose")
+            //var dateFormatter = NSDateFormatter()
+            
+            
+            
+            glucose["date"] = datePicker.date
+            glucose["userId"] =  PFUser.current()?.objectId
+            glucose["quantity"] = Double(pickerDataSource[pickerView.selectedRow(inComponent: 0)])
+            
+            
+            if(Double(pickerDataSource[pickerView.selectedRow(inComponent: 0)]) > 180){
+                labelGlucose.text = "Cuidate tienes la glucosa alta"
+            }
+            glucose.saveInBackground{(save,error) -> Void in
+                
+                self.activityIndicator.stopAnimating()
+                
+                UIApplication.shared.endIgnoringInteractionEvents()
+                
+                if error ==  nil{
+                    
+                    self.displayAlert("Glucose Saved", message: "Your data has been saved successfully")
+                    
+                    
+                    self.datePicker.setDate(Date(), animated: true)
+                    
+                    
+                }else{
+                    self.displayAlert("Could Not Save Data", message: "Please Try Again")
+                }
+            }
+            
+
+        }
+    }
     
+   
     
     /*
     // MARK: - Navigation

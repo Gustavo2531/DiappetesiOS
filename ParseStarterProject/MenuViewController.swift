@@ -48,6 +48,17 @@ class MenuViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        if motion == .motionShake {
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            
+            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "next") as! SignosVitalesViewController
+            
+            self.present(nextViewController, animated:true, completion:nil)
+        }
+    }
+    
+    
 
     /*
     // MARK: - Navigation

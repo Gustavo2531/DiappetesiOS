@@ -132,9 +132,13 @@ class MedicosTableViewController: UITableViewController, UISearchBarDelegate {
             while(filtered[indice!] != datos[i]){
                 i += 1
             }
+            if (i >= apellidos.count){
+                i=i-1
+            }
             sigVista.apellido=apellidos[i]
             sigVista.direccion=direccion[i]
             sigVista.userName=usernames[i]
+        
         } else {
             sigVista.nombre=names[indice!]+" "+apellidos[indice!]
             sigVista.apellido=apellidos[indice!]
