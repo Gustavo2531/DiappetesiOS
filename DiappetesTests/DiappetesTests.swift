@@ -7,7 +7,7 @@
 //
 
 import XCTest
-
+@testable import Diappetes
 class DiappetesTests: XCTestCase {
     
     override func setUp() {
@@ -26,11 +26,15 @@ class DiappetesTests: XCTestCase {
     }
     
     func testPorDos(){
-//        let num=2
-//        let resultado=Prueba()
-//        
-//        XCTAssertEqual(resultado.porDos(num), 4)
+        let num=2
+        let resultado=PruebasAlimento()
+        
+        XCTAssertEqual(resultado.porDos(num), 4)
     }
+    
+    
+    
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {

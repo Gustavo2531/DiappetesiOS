@@ -8,6 +8,32 @@
 
 import UIKit
 import Parse
+
+class PruebasAlimento:NSObject{
+    func agregarAlimento(x:Int, cal:Double, cant :Double)->Double{
+        var resultado = 0.0
+        switch x {
+        case 0:
+            resultado = cal * cant
+            
+        case 1:
+            resultado = cal * cant
+        case 2:
+            resultado = cal * cant * 1000
+            
+        case 3:
+            resultado = cal * (cant/10)
+        default:
+            print("Something else")
+        }
+        return resultado
+        
+    }
+    func porDos(_ x:Int)->Int{
+        return x*2
+    }
+}
+
 class AlimentosViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate  {
     var foodDataSource = ["Platano","Carne","Atún","Ensalada","Pollo","Pescado","Manzana","Mango","Jamón","Sandwich","Cereal","Barbacoa","Refresco"];
     var quantityDataSource = ["ml","gr","kg","pedazos"];
@@ -47,28 +73,33 @@ class AlimentosViewController: UIViewController, UIPickerViewDataSource, UIPicke
     }
     
 
-   func agregarAlimento() {
+    func agregarAlimento() {
         
         
+        let caso=pickerQuantityView.selectedRow(inComponent: 0)
+        let cal = self.calorias
         
+        let cantidadPreeliminar = Double(textField.text!)
+        let r = PruebasAlimento()
         
-        switch pickerQuantityView.selectedRow(inComponent: 0) {
-        case 0:
-            self.quantityFood = self.calorias * Double(textField.text!)!
-
-        case 1:
-             self.quantityFood = self.calorias * Double(textField.text!)!
-        case 2:
-            self.quantityFood = self.calorias * Double(textField.text!)!*1000
-
-        case 3:
-              self.quantityFood = self.calorias * (Double(textField.text!)!/10)
-        default:
-            print("Something else")
-        }
-        
+        self.quantityFood = r.agregarAlimento(x: caso, cal: cal, cant: cantidadPreeliminar!)
+        //        switch pickerQuantityView.selectedRow(inComponent: 0) {
+        //        case 0:
+        //            self.quantityFood = self.calorias * Double(textField.text!)!
+        //
+        //        case 1:
+        //             self.quantityFood = self.calorias * Double(textField.text!)!
+        //        case 2:
+        //            self.quantityFood = self.calorias * Double(textField.text!)!*1000
+        //
+        //        case 3:
+        //              self.quantityFood = self.calorias * (Double(textField.text!)!/10)
+        //        default:
+        //            print("Something else")
+        //        }
+        //
         print(quantityFood)
-         //food["quantityFood"] = Double(quantityDataSource[pickerQuantityView.selectedRowInComponent(0)])
+        //food["quantityFood"] = Double(quantityDataSource[pickerQuantityView.selectedRowInComponent(0)])
     }
     @IBAction func ingresarAlimentos(_ sender: AnyObject) {
         agregarAlimento()
