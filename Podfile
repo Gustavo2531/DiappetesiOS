@@ -8,6 +8,7 @@ target 'Diappetes' do
   # Pods for Diappetes
 	pod 'Charts', '~> 3.0.1'
 	pod 'RealmSwift', '~> 2.0.2'
+	pod 'ParseTwitterUtils'
 
     post_install do |installer|
     	installer.pods_project.targets.each do |target|

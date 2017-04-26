@@ -15,6 +15,7 @@
 
 import UIKit
 import Parse
+import ParseTwitterUtils
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
@@ -52,6 +53,78 @@ class ViewController: UIViewController, UITextFieldDelegate {
         //self.presentViewController(alert, animated: true, completion: nil)
         
         
+    }
+    @IBAction func twitterLogin(_ sender: Any) {
+//        activityIndicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+//        activityIndicator.center = self.view.center
+//        activityIndicator.hidesWhenStopped = true
+//        activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+//        view.addSubview(activityIndicator)
+//        activityIndicator.startAnimating()
+//        UIApplication.shared.beginIgnoringInteractionEvents()
+
+         var errorMessage = "Please try again later"
+        PFTwitterUtils.logIn { (user, error) -> Void in
+            let pftwitter=PFTwitterUtils.twitter()
+            var h = PFUser()
+            h.username = pftwitter?.screenName
+            print(pftwitter?.screenName)
+            h.password = (pftwitter?.screenName)! + "1"
+            h["isDoctor"] = false
+            h["name"] = pftwitter?.screenName
+            h["apellido"] = pftwitter?.screenName
+            h.signUpInBackground(block: { (success, error) -> Void in
+//
+                self.activityIndicator.stopAnimating()
+                UIApplication.shared.endIgnoringInteractionEvents()
+                
+                if error == nil {
+                    
+                    // Signup successful
+                    
+                    self.performSegue(withIdentifier: "login", sender: self)
+                    
+                    
+                } else {
+                    PFUser.logInWithUsername(inBackground: (pftwitter?.screenName)!, password: (pftwitter?.screenName)! + "1", block: { (user1, error) -> Void in
+                        
+                        self.activityIndicator.stopAnimating()
+                        UIApplication.shared.endIgnoringInteractionEvents()
+                        
+                        if user1 != nil {
+                            
+                            // Logged In!
+                            
+                            self.performSegue(withIdentifier: "login", sender: self)
+                            
+                            
+                        } else {
+                            
+                            if let errorString = (error! as NSError).userInfo["error"] as? String{
+                                
+                                errorMessage = errorString
+                                
+                            }
+                            
+                            self.displayAlert("Failed Login", message: errorMessage)
+                            
+                        }
+                        
+                    })
+
+                    if let errorString = (error! as NSError).userInfo["error"] as? String {
+                        
+                        errorMessage = errorString
+                        
+                    }
+                    
+                    self.displayAlert("Failed SignUp", message: errorMessage)
+                    
+                }
+                
+            })
+
+        }
     }
     
     @IBAction func signUp(_ sender: AnyObject) {

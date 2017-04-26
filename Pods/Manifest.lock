@@ -1,7 +1,13 @@
 PODS:
+  - Bolts/Tasks (1.8.4)
   - Charts (3.0.1):
     - Charts/Core (= 3.0.1)
   - Charts/Core (3.0.1)
+  - Parse (1.14.2):
+    - Bolts/Tasks (~> 1.8)
+  - ParseTwitterUtils (1.11.0):
+    - Bolts/Tasks (~> 1.7)
+    - Parse (~> 1.13)
   - Realm (2.0.4):
     - Realm/Headers (= 2.0.4)
   - Realm/Headers (2.0.4)
@@ -10,13 +16,17 @@ PODS:
 
 DEPENDENCIES:
   - Charts (~> 3.0.1)
+  - ParseTwitterUtils
   - RealmSwift (~> 2.0.2)
 
 SPEC CHECKSUMS:
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   Charts: 0e84f4418e87dad6a9edde221fba37ebb51d3ba7
+  Parse: 4335d65f40cb3d43190d723144bbe1afb9c38230
+  ParseTwitterUtils: 0dde9689565e7012d83f892c64aed2ebe69f2ea9
   Realm: 9da97f48365f8b99dd95c28d45ad8222d62e1775
   RealmSwift: 01e8db006035f16003e6307ae8eae1adccce68db
 
-PODFILE CHECKSUM: 10860c497440774de548af358a31ec0a9cec455a
+PODFILE CHECKSUM: 5454efea870d43a808339a0131fb2a2fa2081656
 
 COCOAPODS: 1.2.0

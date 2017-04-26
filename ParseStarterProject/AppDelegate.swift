@@ -10,7 +10,7 @@
 import UIKit
 
 import Parse
-
+import ParseTwitterUtils
 // If you want to use any of the UI components, uncomment this line
 // import ParseUI
 
@@ -35,6 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         })
         
         Parse.initialize(with: parseConfiguration)
+        PFTwitterUtils.initialize(withConsumerKey: "5KMX98fv62x703YzGIlYJ7jE3", consumerSecret: "lwvzENmaKEtbLBUIMr0qF4AwdxsK0xYVlJUpQ7DcSXaj1Up4mB")
 
 
         // ****************************************************************************
@@ -107,8 +108,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         let installation = PFInstallation.current()
-        installation.setDeviceTokenFrom(deviceToken)
-        installation.saveInBackground()
+        installation?.setDeviceTokenFrom(deviceToken)
+        installation?.saveInBackground()
 
     PFPush.subscribeToChannel(inBackground: "", block: { (succeeded, error) -> Void in
             if succeeded {
