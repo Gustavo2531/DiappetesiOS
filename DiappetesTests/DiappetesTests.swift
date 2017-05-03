@@ -2,11 +2,12 @@
 //  DiappetesTests.swift
 //  DiappetesTests
 //
-//  Created by Gustavo Méndez on 17/04/17.
+//  Created by Gustavo Méndez on 27/04/17.
 //  Copyright © 2017 Parse. All rights reserved.
 //
 
 import XCTest
+
 @testable import Diappetes
 class DiappetesTests: XCTestCase {
     
@@ -25,15 +26,16 @@ class DiappetesTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
-    func testPorDos(){
-        let num=2
-        let resultado=PruebasAlimento()
-        
-        XCTAssertEqual(resultado.porDos(num), 4)
+    func testAlimentos(){
+    let caso = 0
+    let calorias = 2
+    let cantidad = 4
+    
+    
+    let resultado = PruebasAlimento()
+    //
+    XCTAssertEqual(resultado.agregarAlimento(x: caso, cal: Double(calorias), cant: Double(cantidad)),8)
     }
-    
-    
-    
     
     func testPerformanceExample() {
         // This is an example of a performance test case.

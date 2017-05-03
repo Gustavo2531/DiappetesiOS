@@ -128,8 +128,23 @@ class Alimentacion2TableViewController: UITableViewController, UISearchBarDelega
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
        let sigVista=segue.destination as! AlimentosViewController
         let indice = self.tableView.indexPathForSelectedRow?.row
+        if(searchActive){
+            
+            var i=0
+            while(filtered[indice!] != datos[i]){
+                i += 1
+            }
+            if (i >= apellidos.count){
+                i=i-1
+            }
+            sigVista.nameFood=filtered[indice!]
+            sigVista.calorias=calorias[i]
+
+            
+        } else{
         sigVista.nameFood=datos[indice!]
         sigVista.calorias=calorias[indice!]
+        }
         
     }
     
