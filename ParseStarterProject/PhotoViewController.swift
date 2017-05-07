@@ -22,7 +22,7 @@ class PhotoViewController:UIViewController, UIImagePickerControllerDelegate, UIN
         // Do any additional setup after loading the view, typically from a nib.
         if !UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera){
             camaraBoton.isHidden = false
-            rolloBoton.isHidden = false
+//            rolloBoton.isHidden = false
         }
     }
     

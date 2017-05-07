@@ -7,15 +7,51 @@
 //
 
 import UIKit
-
+import Parse
 class HistorialMedicoViewController: UIViewController {
 
+    @IBOutlet weak var glucosaAyun: UILabel!
+    @IBOutlet weak var glucosaPost: UILabel!
+    @IBOutlet weak var dia: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.red], for:.selected)
         
-
+        let query = PFQuery(className:"Glucose")
+        let query2 = PFQuery(className: "GlucosePostrPrandial")
+        query2.whereKey("userId", equalTo: (PFUser.current()?.objectId)!)
+        query.whereKey("userId", equalTo: (PFUser.current()?.objectId)!)
+        query2.order(byDescending: "createdAt");
+        query.order(byDescending: "createdAt");
+        query.getFirstObjectInBackground(block: {(object, error) in
+            if error != nil{
+                print(error!)
+            }else{
+               
+                    
+                self.glucosaAyun.text = ((object?["quantity"] as AnyObject).description)
+               
+                
+            
+                self.dia.text = ((object?["date"] as AnyObject).description)
+//
+//                print(formatter.string(for: date))
+            }
+            
+        })
+        
+        query2.getFirstObjectInBackground(block: { (objects, error) in
+            if error != nil{
+                print(error!)
+            }else{
+                    self.glucosaPost.text=((objects?["quantity"] as AnyObject).description)
+                
+                
+            }
+            
+        })
         // Do any additional setup after loading the view.
     }
     @IBAction func returnMenu(_ sender: Any) {
